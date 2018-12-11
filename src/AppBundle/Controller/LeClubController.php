@@ -28,7 +28,7 @@ class LeClubController extends Controller
         $info = $repository->find($id);
 
         if ($id==2){
-            return $this->render("@App/pages/LeClub/salle.php.twig",
+            return $this->render("@App/pages/LeClub/salle.html.twig",
                 [
                     'infos' => $info
                 ]);
@@ -52,7 +52,7 @@ class LeClubController extends Controller
         $horaires = $repository->findAll();
 
 
-        return $this->render("@App/pages/LeClub/horaire.php.twig",
+        return $this->render("@App/pages/LeClub/horaire.html.twig",
             [
                 'horaires' => $horaires
             ]

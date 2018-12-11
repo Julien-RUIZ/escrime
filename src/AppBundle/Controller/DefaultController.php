@@ -44,20 +44,5 @@ class DefaultController extends Controller
         );
     }
 
-//---------------------Partie connexion-------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

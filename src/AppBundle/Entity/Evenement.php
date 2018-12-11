@@ -59,19 +59,6 @@ class Evenement
      */
     private $date;
 
-//    ---------------------------------partie en lien avec la table user en Many TO Many
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    protected $nom;
-
-
-
-
-
-
-
-
 
     /**
      * Get id

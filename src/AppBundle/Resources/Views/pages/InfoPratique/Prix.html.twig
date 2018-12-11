@@ -1,0 +1,16 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+
+    <ul>
+        {% for tarif in tarifs|slice(0, 3) %}
+            <H4>{{ tarif.nom }}</H4>
+            <p>{{ tarif.Produit }}</p>
+            <p>{{ tarif.prix }} euros</p>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock %}

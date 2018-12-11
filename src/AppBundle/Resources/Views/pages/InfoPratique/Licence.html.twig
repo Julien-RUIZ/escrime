@@ -1,0 +1,16 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+
+    <ul>
+        {% for licence in licences|slice(3, 6) %}
+            <H4>{{ licence.nom }}</H4>
+            <p>{{ licence.Produit }}</p>
+            <p>{{ licence.prix }} euros</p>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock %}
