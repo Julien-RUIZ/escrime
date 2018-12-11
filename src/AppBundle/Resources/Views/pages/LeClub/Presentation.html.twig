@@ -1,0 +1,16 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+    <div class="container-fluid texte">
+        <div class="container d-flex align-items-center">
+            <div class="py-5 mr-3">
+                <h1>{{ infos.titre }}</h1>
+                <p>{{ infos.contenu }}</p>
+            </div>
+            <div>
+                <img src="{{ asset('img/ancien.jpeg') }}" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}

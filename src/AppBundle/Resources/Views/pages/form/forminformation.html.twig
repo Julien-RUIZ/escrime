@@ -1,0 +1,36 @@
+{% extends '@App/base/baseAdmin.html.twig' %}
+
+
+
+
+    {% block admin %}
+
+        <h4 class="titreListInfo">Formulaire pour mise a jour des informations </h4>
+
+        <div class="container">
+            <div class="d-flex ">
+                <div class="offset-5 ">
+                    {{ form_start(forminfo) }}
+
+                    <div>{{ form_label(forminfo.titre) }}</div>
+                    <div>{{ form_widget(forminfo.titre) }}</div>
+                    <div>{{ form_label(forminfo.contenu) }}</div>
+                    <div>{{ form_widget(forminfo.contenu) }}</div>
+                    <div class="mt-3">{{ form_widget(forminfo.save) }}</div>
+
+                    {{ form_end(forminfo) }}
+                </div>
+            </div>
+
+
+
+            <div class="mb-5"><a href="{{ path('liste_information') }}"><button>Retour a la liste</button></a></div>
+
+        </div>
+
+
+
+    {% endblock %}
+
+
+

@@ -1,0 +1,39 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
+<div>
+    <div>{{ form_label(form.nom) }}</div>
+    <div>{{ form_widget(form.nom) }}</div>
+
+    <div>{{ form_label(form.prenom) }}</div>
+    <div>{{ form_widget(form.prenom) }}</div>
+
+    <div>{{ form_label(form.username) }}</div>
+    <div>{{ form_widget(form.username) }}</div>
+
+    <div>{{ form_label(form.email) }}</div>
+    <div>{{ form_widget(form.email) }}</div>
+
+    <div>{{ form_label(form.plainPassword.first)}}</div>
+    <div>{{ form_widget(form.plainPassword.first) }}</div>
+
+    <div>{{ form_label(form.plainPassword.second) }}</div>
+    <div>{{ form_widget(form.plainPassword.second) }}</div>
+
+    <div>{{ form_label(form.adresse) }}</div>
+    <div>{{ form_widget(form.adresse) }}</div>
+
+    <div>{{ form_label(form.ville) }}</div>
+    <div>{{ form_widget(form.ville) }}</div>
+
+    <div>{{ form_label(form.code_postal) }}</div>
+    <div>{{ form_widget(form.code_postal) }}</div>
+</div>
+
+    <div>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+{{ form_end(form) }}
+
+<button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>

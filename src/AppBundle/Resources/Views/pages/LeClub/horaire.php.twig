@@ -1,0 +1,19 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+
+            <div class="container-fluid my-5 texte">
+                <h3>Les horaires d'ouverture de la salle</h3>
+                {% for horaire in horaires  %}
+                <div class="container">
+                    <div>
+                        <h5 class="Cat">{{ horaire.categorie }}:</h5>
+                        <p class="Per">{{ horaire.periode }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+
+{% endblock %}
