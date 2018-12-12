@@ -32,8 +32,18 @@ class LeClubController extends Controller
                 [
                     'infos' => $info
                 ]);
+        }elseif ($id==4){
+            return $this->render("@App/pages/InfoPiedPage/credit.html.twig",
+            [
+                'infos' => $info
+            ]);
 
-        }else{ return $this->render("@App/pages/LeClub/Presentation.html.twig",
+        }elseif ($id==3){
+            return $this->render("@App/pages/InfoPiedPage/mentionlegal.html.twig",
+                [
+                    'infos' => $info
+                ]);
+        } else{ return $this->render("@App/pages/LeClub/Presentation.html.twig",
             [
                 'infos' => $info
             ]);

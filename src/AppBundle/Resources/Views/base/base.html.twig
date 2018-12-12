@@ -31,7 +31,7 @@
                         <li><a href="{{ path('le_club_presentation', {'id': 1}) }}" title="Lien 1">Presentation</a></li>
                         <li><a href="{{ path('le_club_presentation', {'id': 2}) }}" title="Lien 2">la salle</a></li>
                         <li><a href="{{ path('le_club_les_horaires') }}" title="Lien 3">Les horaires</a></li>
-                        <li><a href="#" title="Lien 4">Lien 4</a></li>
+                        <li><a href="#" title="Lien 4">Staff</a></li>
                     </ul>
                 </div>
 
@@ -58,8 +58,7 @@
                         <li><a href="{{ path('location_materiel') }}" title="Lien 1">Location</a></li>
                         <li><a href="{{ path('licence') }}" title="Lien 2">Licence</a></li>
                         <li><a href="#" title="Lien 3">Lien 3</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#" title="Lien 4">Lien 4</a></li>
+
                     </ul>
                 </div>
                 {#-------------------------menu déroulant------#}
@@ -116,8 +115,8 @@
             <div class="col-1"><img src="{{ asset('img/logoSPUC.jpeg') }}" alt="logo" class="img-fluid" ></div>
 
             <div class="offset-6 col-5 mt-2 d-flex justify-content-center  groupeTrois ">
-                <div class="mx-4"><a href="">Mention légal</a></div>
-                <div class="mx-4"><a href="">Crédit</a></div>
+                <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 3}) }}">Mention légal</a></div>
+                <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 4}) }}">Crédit</a></div>
             </div>
         </div>
 
