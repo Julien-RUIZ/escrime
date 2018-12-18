@@ -38,7 +38,7 @@ class Actualites
     /**
      * @var string
      *
-     * @ORM\Column(name="photo", type="string", length=255)
+     * @ORM\Column(name="photo", type="string", length=1000)
      */
     private $photo;
 

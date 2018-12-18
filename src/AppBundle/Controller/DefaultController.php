@@ -17,7 +17,11 @@ class DefaultController extends Controller
     {
 
         $repository = $this->getDoctrine()->getRepository(Actualites::class);
-        $actus = $repository->findAll();
+        //affiche dans l'ordre décroissant des id
+        $actus = $repository->findBy(array(), array('id' => 'desc'));
+
+
+
 
 
        return $this->render("@App/pages/accueil.html.twig",

@@ -18,8 +18,8 @@ class ActualitesType extends AbstractType
     {
         $builder
             ->add('titre')
-            ->add('contenu', TextareaType::class, array('attr'=>array('placeholder' => 'Information actus')))
-            ->add('photo',FileType::class)
+            ->add('contenu', TextareaType::class)
+            ->add('photo',FileType::class, array('data_class' => null))
             ->add('save', SubmitType::class, array('label' => 'valide'));;
     }/**
      * {@inheritdoc}

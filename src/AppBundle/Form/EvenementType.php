@@ -18,7 +18,6 @@ class EvenementType extends AbstractType
         $builder
             ->add('type')
             ->add('titre')
-            ->add('image')
             ->add('contenu')
             ->add('date',DateType::class, ['widget'=>'single_text', 'placeholder' => 'YYYY-MM-dd', 'required'=>true])
             ->add('save', SubmitType::class, array('label' => 'valide'));

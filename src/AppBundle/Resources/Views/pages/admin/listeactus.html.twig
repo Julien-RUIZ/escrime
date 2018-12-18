@@ -12,10 +12,22 @@
     {% for actu in actus %}
         <h3>{{ actu.titre }}</h3>
         <p>{{ actu.contenu }}</p>
-        <div>{{ actu.photo }}</div>
+
+{#Nous réalisons une partie pour faire apparaitre une photo si il y en a une#}
+        {% if actu.photo %}
+            <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image">
+        {% else %}
+            <p>pas d'image</p>
+        {% endif %}
+
+
+
+
+
         <hr>
 
-        <div><a href="{{ path('mise_a_jour_information', {'id': actu.id}) }}"><button>A réaliser, pas encore fait</button></a></div>
+        <div><a href="{{ path('mise_a_jour_actus', {'id': actu.id}) }}"><button>Modifier l'actualité</button></a></div>
+        <div><a href="{{ path('suppr_actus', {'id': actu.id}) }}"><button>Suprimer l'actualité</button></a></div>
         <hr>
 
     {% endfor %}

@@ -36,13 +36,6 @@ class Evenement
     /**
      * @var string
      *
-     * @ORM\Column(name="image", type="string", length=255)
-     */
-    private $image;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="contenu", type="string", length=1000)
      */
     private $contenu;
@@ -113,29 +106,6 @@ class Evenement
         return $this->titre;
     }
 
-    /**
-     * Set image
-     *
-     * @param string $image
-     *
-     * @return Evenement
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    /**
-     * Get image
-     *
-     * @return string
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
 
     /**
      * Set contenu
