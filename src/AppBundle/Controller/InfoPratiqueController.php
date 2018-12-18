@@ -23,8 +23,6 @@ class InfoPratiqueController extends Controller
 
     public function prixLocationAction(){
 
-
-
             $repository = $this->getDoctrine()->getRepository(Tarif::class);
 //la variable info aura pour répository toutes les données de la base de donnée Information
             $tarifs = $repository->findAll();
@@ -46,8 +44,6 @@ class InfoPratiqueController extends Controller
      */
 
     public function prixlicenceAction(){
-
-
 
         $repository = $this->getDoctrine()->getRepository(Tarif::class);
 //la variable info aura pour répository toutes les données de la base de donnée Information

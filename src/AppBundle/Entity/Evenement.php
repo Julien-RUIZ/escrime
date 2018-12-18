@@ -30,11 +30,6 @@ class Evenement
 
     /**
      * * @ORM\Column(type="string")
-     *  @Assert\Length(
-     *      min = 1,
-     *      max = 100,
-     *     minMessage = "trop court ",
-     *     maxMessage = "trop long ")
      */
     private $titre;
 

@@ -7,7 +7,13 @@
 <div class="container-fluid my-5 texte">
     <div class="container">
         <div>
-             <h2>{{ variable }}</h2>
+            {% for actu in actus  %}
+                <h2>{{ actu.titre }}</h2>
+                <p>{{ actu.contenu }}</p>
+                <div>{{ actu.photo }}</div>
+                <hr>
+
+            {% endfor %}
         </div>
     </div>
 </div>

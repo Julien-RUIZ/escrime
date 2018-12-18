@@ -1,0 +1,26 @@
+{% extends '@App/base/baseAdmin.html.twig' %}
+
+
+
+{% block admin %}
+
+<h2 class="titreListInfo">Partie qui va mettre a jour les actus de la page principale</h2>
+
+<div class="container">
+    <div><a href="{{ path('ajout_actualite') }}"><button>Ajouter une actualité</button></a></div>
+    <hr>
+    {% for actu in actus %}
+        <h3>{{ actu.titre }}</h3>
+        <p>{{ actu.contenu }}</p>
+        <div>{{ actu.photo }}</div>
+        <hr>
+
+        <div><a href="{{ path('mise_a_jour_information', {'id': actu.id}) }}"><button>A réaliser, pas encore fait</button></a></div>
+        <hr>
+
+    {% endfor %}
+    <div class="mb-5"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
+</div>
+
+
+{% endblock %}

@@ -16,13 +16,15 @@
     <div class="container-fluid entete">
         <div class="row d-flex">
             <div class="col-1 mt-3"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/logoSPUC.jpeg') }}" alt="logo" class="img-fluid" ></a></div>
-            <div class="offset-4 col-7"><h1>Spuc Escrime</h1></div>
+            <div class="offset-3 col-7"><h1>Mise a jour des informations</h1></div>
+
         </div>
 
-        <div class="row d-flex mb-2">
+        <div class="row d-fle cmb-2">
             <div class="offset-4 col-4 d-flex justify-content-center">
-            <div><a href="{{ path('mise_a_jour_prix', {'id': 1}) }}"><button>Mise a jour prix</button></a></div>
-            <div class="mx-2"><a href="{{ path('liste_information') }}"><button>Mise a jour liste information</button></a></div>
+            <div><a href="{{ path('mise_a_jour_prix', {'id': 1}) }}"><button>Prix</button></a></div>
+            <div class="mx-2"><a href="{{ path('liste_information') }}"><button>Information</button></a></div>
+                <div><a href="{{ path('liste_actus') }}"><button>Actualités</button></a></div>
 
             </div>
 

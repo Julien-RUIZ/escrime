@@ -9,9 +9,7 @@
 namespace AppBundle\Controller\admin;
 
 use AppBundle\Entity\Information;
-use AppBundle\Entity\Tarif;
 use AppBundle\Form\InformationType;
-use AppBundle\Form\TarifType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -75,7 +73,7 @@ class MiseAJourInformationController extends Controller
             //exécute réellement les requêtes
             $entityManager->flush();
 
-            return $this->redirectToRoute('mise_a_jour_information');
+            return $this->redirectToRoute('homepage_admin');
 
         } else {
 
