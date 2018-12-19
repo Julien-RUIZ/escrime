@@ -5,7 +5,23 @@
 
     {% block admin %}
 
+        {{ form_start(formeven) }}
 
+        <div>{{ form_label(formeven.type) }}</div>
+        <div>{{ form_widget(formeven.type) }}</div>
+
+        <div>{{ form_label(formeven.titre) }}</div>
+        <div>{{ form_widget(formeven.titre) }}</div>
+
+        <div>{{ form_label(formeven.contenu) }}</div>
+        <div>{{ form_widget(formeven.contenu) }}</div>
+
+        <div>{{ form_label(formeven.date) }}</div>
+        <div>{{ form_widget(formeven.date) }}</div>
+
+        <div>{{ form_widget(formeven.save) }}</div>
+
+        {{ form_end(formeven) }}
 
 
 

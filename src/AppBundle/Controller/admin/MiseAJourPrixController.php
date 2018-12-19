@@ -23,7 +23,7 @@ class MiseAJourPrixController extends Controller
      * @Route("/admin/miseajourprix/{id}", name="mise_a_jour_prix")
      */
 
-    public function MiseajourauteurAction(Request $request,$id){
+    public function MiseajourPrixAction(Request $request,$id){
 
 
 

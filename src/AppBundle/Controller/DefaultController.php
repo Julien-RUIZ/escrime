@@ -15,6 +15,7 @@ class DefaultController extends Controller
      */
     public function indexActusAction()
     {
+// Attention c est ici que ce trouve la partie affichage en plublic des actus
 
         $repository = $this->getDoctrine()->getRepository(Actualites::class);
         //affiche dans l'ordre décroissant des id

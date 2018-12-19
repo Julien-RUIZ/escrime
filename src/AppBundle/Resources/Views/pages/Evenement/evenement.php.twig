@@ -1,0 +1,17 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+
+    <ul>
+        {% for even in evens %}
+            <H4>{{ even.type }}</H4>
+            <p>{{ even.titre }}</p>
+            <p>{{ even.contenu }}</p>
+            <p>{{ even.date | date("d/m/y") }}</p>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock %}

@@ -29,14 +29,15 @@ class Evenement
     private $type;
 
     /**
-     * * @ORM\Column(type="string")
+     * @ORM\Column(type="string")
+     *
      */
     private $titre;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="contenu", type="string", length=1000)
+     * @ORM\Column(name="contenu", type="string", length=5000)
      */
     private $contenu;
 

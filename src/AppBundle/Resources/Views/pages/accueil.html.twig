@@ -4,10 +4,11 @@
 
 {% block content %}
 
-<div class="container-fluid my-5 texte">
-    <div class="container">
+
         <div>
             {% for actu in actus  %}
+            <div class="container my-5 texte">
+                <div class="container">
                 <h2>{{ actu.titre }}</h2>
                 <p>{{ actu.contenu }}</p>
 
@@ -17,15 +18,12 @@
                     <p>pas d'image</p>
                 {% endif %}
 
-
-
-
-
                 <hr>
+                </div>
+            </div>
 
             {% endfor %}
         </div>
-    </div>
-</div>
+
 
 {% endblock %}
