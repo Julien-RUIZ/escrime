@@ -22,9 +22,8 @@ class Evenement
     private $id;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="type", type="string", length=255)
+     * il y a plusieurs evenement pour un type, donc many to one
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Type", inversedBy="evenement")
      */
     private $type;
 

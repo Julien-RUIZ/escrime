@@ -2,10 +2,12 @@
 
 
 {% block content %}
-
+    {#Ici nous allons avoir la liste des evenements réalisé grace au formulaire en partie admin, mais la
+    liste est réalisé par la 1ere route de l'EvenementController#}
+<h1>juste pour voir</h1>
     <ul>
         {% for even in evens %}
-            <H4>{{ even.type }}</H4>
+            <H4>{{ even.type.nom }}</H4>
             <p>{{ even.titre }}</p>
             <p>{{ even.contenu }}</p>
             <p>{{ even.date | date("d/m/y") }}</p>

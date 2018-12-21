@@ -1,0 +1,18 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+
+
+        {% for even in types.evenement %}
+
+            <h5>{{ even.titre }}</h5>
+            <p>{{ even.contenu }}</p>
+
+
+        {% endfor %}
+
+
+
+
+{% endblock %}

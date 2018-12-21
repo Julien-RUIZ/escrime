@@ -15,52 +15,52 @@
 <header>
     <div class="container-fluid entete">
         <div class="row d-flex">
-            <div class="col-1 mt-3"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.jpeg') }}" alt="logo" class="img-fluid" ></a></div>
+            <div class="col-1 mt-3"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" ></a></div>
             <div class="offset-4 col-7"><h1>Spuc Escrime</h1></div>
         </div>
 
         <div class="row d-flex mb-2">
             <div class="offset-4 col-4 d-flex justify-content-center">
                 {#-----------------------menu déroulant------#}
-                <div class="dropdown">
-                    <p class="btn btn-default dropdown-toggle " id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
-                        Le club
-                        <span class="caret"></span>
-                    </p>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="{{ path('le_club_presentation', {'id': 1}) }}" title="Lien 1">Presentation</a></li>
-                        <li><a href="{{ path('le_club_presentation', {'id': 2}) }}" title="Lien 2">la salle</a></li>
-                        <li><a href="{{ path('le_club_les_horaires') }}" title="Lien 3">Les horaires</a></li>
-                        <li><a href="#" title="Lien 4">Staff</a></li>
-                    </ul>
-                </div>
 
-                <div class="dropdown">
-                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Le sport
-                        <span class="caret"></span>
-                    </p>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#" title="Lien 1">Lien 1</a></li>
-                        <li><a href="#" title="Lien 2">Lien 2</a></li>
-                        <li><a href="#" title="Lien 3">Lien 3</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#" title="Lien 4">Lien 4</a></li>
-                    </ul>
-                </div>
+                    <div class="dropdown">
+                        <p class="btn btn-default dropdown-toggle " id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
 
-                <div class="dropdown">
-                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Info Pratique
-                        <span class="caret"></span>
-                    </p>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="{{ path('location_materiel') }}" title="Lien 1">Location</a></li>
-                        <li><a href="{{ path('licence') }}" title="Lien 2">Licence</a></li>
-                        <li><a href="#" title="Lien 3">Lien 3</a></li>
+                            <span class="caret">Le club</span>
+                        </p>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="{{ path('le_club_presentation', {'id': 1}) }}" title="Lien 1">Presentation</a></li>
+                            <li><a href="{{ path('le_club_presentation', {'id': 2}) }}" title="Lien 2">la salle</a></li>
+                            <li><a href="{{ path('le_club_les_horaires') }}" title="Lien 3">Les horaires</a></li>
+                            <li><a href="#" title="Lien 4">Staff</a></li>
+                        </ul>
+                    </div>
 
-                    </ul>
-                </div>
+                    <div class="dropdown">
+                        <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                            <span class="caret">Le sport</span>
+                        </p>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" title="Lien 1">Lien 1</a></li>
+                            <li><a href="#" title="Lien 2">Lien 2</a></li>
+                            <li><a href="#" title="Lien 3">Lien 3</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                            <span class="caret">Info Pratique</span>
+                        </p>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="{{ path('location_materiel') }}" title="Lien 1">Location</a></li>
+                            <li><a href="{{ path('licence') }}" title="Lien 2">Licence</a></li>
+                            <li><a href="#" title="Lien 3">Lien 3</a></li>
+
+                        </ul>
+                    </div>
+
                 {#-------------------------menu déroulant------#}
             </div>
 
@@ -74,10 +74,11 @@
                         </p>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li><a href="{{ path('fos_user_profile_show') }}" title="Profil">Informations perso</a></li>
-                            <li><a href="#" title="Lien 2">Competition</a></li>
-                            <li><a href="#" title="Lien 3">Soirée</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#" title="Lien 4">Réunion</a></li>
+                            <li><a href="{{ path('evenement') }}" title="Lien 2">Tous les evenements</a></li>
+
+                            <li><a href="{{ path('info_type', {'id': 1}) }}" title="Lien 2">les Compétitions</a></li>
+                            <li><a href="{{ path('info_type', {'id': 2}) }}" title="Lien 2">les Soirées</a></li>
+                            <li><a href="{{ path('info_type', {'id': 3}) }}" title="Lien 2">les Réunions</a></li>
                         </ul>
                     </div>
 
@@ -100,8 +101,6 @@
 
 
 
-
-
     {% block content %}{% endblock %}
 
 
@@ -112,7 +111,7 @@
 <footer>
     <div class="container-fluid piedDepage">
         <div class="row d-flex">
-            <div class="col-1"><img src="{{ asset('img/logoSPUC.jpeg') }}" alt="logo" class="img-fluid" ></div>
+            <div class="col-1"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" ></div>
 
             <div class="offset-6 col-5 mt-2 d-flex justify-content-center  groupeTrois ">
                 <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 3}) }}">Mention légal</a></div>

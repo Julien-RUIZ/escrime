@@ -28,6 +28,31 @@ class Type
      */
     private $nom;
 
+    /**
+     * pour un type il y a plusieurs evenements, donc un one to many
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Evenement", mappedBy="type")
+     */
+    private $evenement;
+
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getEvenement()
+    {
+        return $this->evenement;
+    }
+
+    /**
+     * @param mixed $evenement
+     */
+    public function setEvenement($evenement)
+    {
+        $this->evenement = $evenement;
+    }
+
 
     /**
      * Get id

@@ -3,27 +3,20 @@
 
 
 {% block content %}
-
-
         <div>
             {% for actu in actus  %}
-            <div class="container my-5 texte">
-                <div class="container">
-                <h2>{{ actu.titre }}</h2>
-                <p>{{ actu.contenu }}</p>
-
-                {% if actu.photo %}
-                    <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image">
-                {% else %}
-                    <p>pas d'image</p>
-                {% endif %}
-
-                <hr>
+                <div class="container my-5 texte">
+                    <div class="container">
+                    <h2>{{ actu.titre }}</h2>
+                    <p>{{ actu.contenu }}</p>
+                    {% if actu.photo %}
+                        <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image">
+                    {% else %}
+                        <p>pas d'image</p>
+                    {% endif %}
+                    </div>
                 </div>
-            </div>
 
             {% endfor %}
         </div>
-
-
 {% endblock %}
