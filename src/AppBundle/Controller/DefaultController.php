@@ -15,8 +15,11 @@ class DefaultController extends Controller
      */
     public function indexActusAction()
     {
-// Attention c est ici que ce trouve la partie affichage en plublic des actus
-
+        // Attention c est ici que ce trouve la partie affichage en plublic des actus
+        //on a besoin du repository  pour récupérer le contenu de la table
+        // pour récupérer ce repository :
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository Auteur (avec Actualites::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(Actualites::class);
         //affiche dans l'ordre décroissant des id
         $actus = $repository->findBy(array(), array('id' => 'desc'));
@@ -24,7 +27,7 @@ class DefaultController extends Controller
 
 
 
-
+        //Redirection pour l'affichage sur la page html.twig
        return $this->render("@App/pages/accueil.html.twig",
            [
                'actus' => $actus

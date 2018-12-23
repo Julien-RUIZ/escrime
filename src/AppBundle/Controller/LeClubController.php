@@ -22,9 +22,13 @@ class LeClubController extends Controller
      * @Route("/leClub/{id}", name="le_club_presentation")
      */
     public function listeInfoAction($id){
-
+        //on a besoin du repository pour récupérer le contenu de la table
+        // pour récupérer ce repository :
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository information (avec Information::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(Information::class);
-//la variable info aura pour répository toutes les données de la base de donnée Information
+        //la variable info aura pour répository toutes les données selon la valeur de l'id, ainsi pour chaque
+        // valeur nous aurons une redirection sur un twig
         $info = $repository->find($id);
 
         if ($id==2){
@@ -56,9 +60,12 @@ class LeClubController extends Controller
      * @Route("/leClubHoraire", name="le_club_les_horaires")
      */
     public function HoraireAction(){
-
+        //on a besoin du repository pour récupérer le contenu de la table
+        // pour récupérer ce repository :
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository horaire (avec horaire::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(horaire::class);
-//la variable info aura pour répository toutes les données de la base de donnée Information
+        //la variable info aura pour répository toutes les données de la base de donnée
         $horaires = $repository->findAll();
 
 

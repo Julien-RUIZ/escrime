@@ -21,10 +21,13 @@ class EvenementController extends Controller
      */
     public function indexActusAction()
     {
-// Attention c est ici que ce trouve la partie affichage en plublic des actus
-
+        // Attention c est ici que ce trouve la partie affichage en plublic des actus
+        //on a besoin du repository pour récupérer le contenu de la table evenement
+        // pour récupérer ce repository :
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository evenement (avec Evenement::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(Evenement::class);
-        //affiche dans l'ordre décroissant des id
+        //affiche dans l'ordre décroissant des id, et ainsi avoir les actualitées affiché du plus recents au plus anciens
         $evens = $repository->findBY(array(), array('id' => 'desc'));
 
         return $this->render("@App/pages/Evenement/evenement.php.twig",
@@ -44,12 +47,12 @@ class EvenementController extends Controller
      * @Route("/type/{id}", name="info_type")
      */
     public function typeAction($id){
-//le repository sert a récuperer les entités depuis la base de donnée
+        //le repository sert a récuperer les entités depuis la base de donnée, grace a doctrine
         $repository = $this->getDoctrine()->getRepository(Type::class);
-//on déclare la variable auteur en écrivant $id, car c est par l'id
+        //on déclare la variable types en utilisant $id inscrit dans l'url
         $types = $repository->find($id);
 
-//cette partie permet de retourner la vue auteur, celle qui va au final afficher le résultat apres selection
+        //cette partie permet de retourner la vue types, celle qui va au final afficher le résultat apres selection
         return $this->render("@App/pages/Evenement/competition.php.twig",
             [
                 'types' => $types

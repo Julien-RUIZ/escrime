@@ -42,19 +42,20 @@ class MiseAJourInformationController extends Controller
     public function MiseajourLivreAction(Request $request, $id)
     {
 
-        //on a besoin du repository Livre pour récupérer le contenu de la table Auteur
+        //on a besoin du repository  pour récupérer le contenu de la table
         // pour récupérer ce repository :
         // on appelle Doctrine (qui gère les répository)
-        // pour appeler la méthode getRepository qui récupère le repository Auteur (avec Auteur::class passé en parametre)
+        // pour appeler la méthode getRepository qui récupère le repository information (avec Information::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(Information::class);
         //on déclare la variable auteur en écrivant $id, car c est par l'id
         $info = $repository->find($id);
 
 
 
-        //
+
+        //grace a cette ligne de commande nous allons avoir le formulaire prérempli
         $form = $this->createform(InformationType::class, $info);
-//associe les données envoyé via le formulaire a mettre sur la variable $form, donc la variable $form contient bien le $°post[]
+        //associe les données envoyé via le formulaire a mettre sur la variable $form, donc la variable $form contient bien le $°post[]
         $form->handleRequest($request);
 
 

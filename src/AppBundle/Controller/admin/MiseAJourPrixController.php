@@ -25,13 +25,9 @@ class MiseAJourPrixController extends Controller
 
     public function MiseajourPrixAction(Request $request,$id){
 
-
-
-
-        //on a besoin du repository Livre pour récupérer le contenu de la table Auteur
         // pour récupérer ce repository :
         // on appelle Doctrine (qui gère les répository)
-        // pour appeler la méthode getRepository qui récupère le repository Auteur (avec Auteur::class passé en parametre)
+        // pour appeler la méthode getRepository qui récupère le repository tarif (avec Tarif::class passé en parametre)
 
         $repository = $this->getDoctrine()->getRepository(Tarif::class);
 
@@ -40,11 +36,11 @@ class MiseAJourPrixController extends Controller
         $tarif=$repository->find($id);
 
         $form = $this->createform(TarifType::class, $tarif);
-        //associe les données envoyé via le formulaire a mettre sur la variable $form, donc la variable $form contient bien le $°post[]
+        //associe les données envoyé via le formulaire a mettre sur la variable $form, donc la variable $form contient bien le $_post[]
         $form->handleRequest($request);
 
 
-//on regarde si le formulaire a etait envoyé
+        //on regarde si le formulaire a etait envoyé
         if($form->isSubmitted() && $form->isValid()){
 
             $tarif=$form->getData();

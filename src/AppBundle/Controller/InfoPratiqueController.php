@@ -44,12 +44,15 @@ class InfoPratiqueController extends Controller
      */
 
     public function prixlicenceAction(){
-
+        //on a besoin du repository pour récupérer le contenu de la table evenement
+        // pour récupérer ce repository :
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository tarif (avec Tarif::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(Tarif::class);
-//la variable info aura pour répository toutes les données de la base de donnée Information
+        //la variable  aura pour répository toutes les données de la base de donnée Information
         $licences = $repository->findAll();
 
-
+        //redirection
         return $this->render("@App/pages/InfoPratique/Licence.html.twig",
             [
                 'licences' => $licences
