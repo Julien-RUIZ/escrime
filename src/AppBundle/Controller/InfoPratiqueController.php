@@ -18,6 +18,7 @@ class InfoPratiqueController extends Controller
 {
 
     /**
+     * Création d'une route pour l'affichage des tarif le location et prix licence (voir route suivante)
      * @Route("/location", name="location_materiel")
      */
 

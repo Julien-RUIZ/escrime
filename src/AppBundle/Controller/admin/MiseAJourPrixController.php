@@ -20,6 +20,7 @@ class MiseAJourPrixController extends Controller
 
 
     /**
+     * Cette route va nous permettre de mettre a jour les prix, les formulaire vont etre prérempli automatiquement
      * @Route("/admin/miseajourprix/{id}", name="mise_a_jour_prix")
      */
 
@@ -31,7 +32,7 @@ class MiseAJourPrixController extends Controller
 
         $repository = $this->getDoctrine()->getRepository(Tarif::class);
 
-        //on déclare la variable auteur en écrivant $id, car c est par l'id
+        //on fait appel a toutes les deonnées du répository
 
         $tarif=$repository->find($id);
 

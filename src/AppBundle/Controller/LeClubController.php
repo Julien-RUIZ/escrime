@@ -19,6 +19,8 @@ class LeClubController extends Controller
 
 
     /**
+     * Cette route va nous donner la possibilité d'afficher différentes informations contenu dans une base de donnée, ainsi en utilisant le numero
+     * de l'id concerné dans l'url nous pourrons afficher les informations souhaitées
      * @Route("/leClub/{id}", name="le_club_presentation")
      */
     public function listeInfoAction($id){
@@ -57,6 +59,7 @@ class LeClubController extends Controller
 
 
     /**
+     * Route permettant d'afficher les horaires d'entrainement, route appelé par un lien dans la base principale
      * @Route("/leClubHoraire", name="le_club_les_horaires")
      */
     public function HoraireAction(){

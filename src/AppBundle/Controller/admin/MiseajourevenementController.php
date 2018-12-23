@@ -19,6 +19,7 @@ class MiseajourevenementController extends Controller
 {
 
     /**
+     * Une route pour la création de nouveau évenements, seulement accessible par l'admin
      * @Route("/admin/formajouteven", name="form_ajout_even")
      */
 

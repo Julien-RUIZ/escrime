@@ -11,6 +11,7 @@ class DefaultController extends Controller
 {
 //---------------------partie accueil qui va afficher les actus------------------------------------------------------------
     /**
+     * C'est notre page principale sur laquelle nous allons avoir la liste des actus
      * @Route("/", name="homepage")
      */
     public function indexActusAction()
@@ -38,6 +39,7 @@ class DefaultController extends Controller
 //---------------------partie accueil admin-------------------------------------------------------
 
     /**
+     * Page principale admin
      * @Route("/admin", name="homepage_admin")
      */
     public function indexAdminAction()

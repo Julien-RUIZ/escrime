@@ -18,12 +18,14 @@ class MiseAJourInformationController extends Controller
 {
 //--------------partie qui va nous permettre de lister le contenue de la base de donnée---------------------
     /**
+     *
      * @Route("/admin/listeinformation", name="liste_information")
      */
     public function listInfoAction(){
 
-
+        // doctrine va appeler la méthode getRepository qui récupère le repository information (avec Information::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(Information::class);
+        //on fait appel a toutes les deonnées du répository
         $infos = $repository->findAll();
 
         return $this->render("@App/pages/admin/listeInformation.html.twig",
