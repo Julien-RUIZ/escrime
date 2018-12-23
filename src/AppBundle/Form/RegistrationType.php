@@ -11,6 +11,8 @@
 
 namespace AppBundle\Form;
 
+use AppBundle\Entity\civilite;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
@@ -33,7 +35,11 @@ class RegistrationType extends AbstractType
             ->add('prenom')
             ->add('adresse')
             ->add('code_postal')
-            ->add('ville');
+            ->add('ville')
+            ->add('civilite',EntityType::class, [
+        'class' => 'AppBundle\Entity\civilite',
+        'choice_label' => 'sexe',
+    ]);
 
     }
 
@@ -44,5 +50,5 @@ class RegistrationType extends AbstractType
 
     }
 
-    
+
 }

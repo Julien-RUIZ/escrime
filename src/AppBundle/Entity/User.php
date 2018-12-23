@@ -52,6 +52,29 @@ class User extends BaseUser
     protected $ville;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\civilite", inversedBy="user")
+     */
+    private $civilite;
+
+    /**
+     * @return mixed
+     */
+    public function getCivilite()
+    {
+        return $this->civilite;
+    }
+
+    /**
+     * @param mixed $civilite
+     */
+    public function setCivilite($civilite)
+    {
+        $this->civilite = $civilite;
+    }
+
+
+
+    /**
      * @return mixed
      */
     public function getAdresse()

@@ -19,6 +19,7 @@ class MiseAJourActusController extends Controller
 {
 
     /**
+     *
      * @Route("/listeactus", name="liste_actus")
      */
     public function indexActusAction()

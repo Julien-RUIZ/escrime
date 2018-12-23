@@ -4,6 +4,8 @@
 
     <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
     <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+{# La partie sexe , et la liaison entre les bases user et civilité, en many to one#}
+    <p>{{ 'Sexe' }}: {{ user.civilite.sexe }}</p>
     <p>{{ 'Nom' }}: {{ user.nom }}</p>
     <p>{{ 'Prenom' }}: {{ user.Prenom }}</p>
     <p>{{ 'Adresse' }}: {{ user.adresse }}</p>

@@ -3,6 +3,10 @@
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
 
 <div>
+
+    <div>{{ form_label(form.civilite) }}</div>
+    <div>{{ form_widget(form.civilite) }}</div>
+
     <div>{{ form_label(form.nom) }}</div>
     <div>{{ form_widget(form.nom) }}</div>
 
