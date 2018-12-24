@@ -47,7 +47,6 @@ class Evenement
      */
     private $date;
 
-
     /**
      * Get id
      *

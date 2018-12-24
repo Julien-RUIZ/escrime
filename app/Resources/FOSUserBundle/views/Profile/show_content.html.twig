@@ -11,6 +11,10 @@
     <p>{{ 'Adresse' }}: {{ user.adresse }}</p>
     <p>{{ 'Ville' }}: {{ user.ville }}</p>
     <p>{{ 'Code postal' }}: {{ user.codepostal }}</p>
+{# La partie Role , et la liaison entre les bases user et role, en many to one#}
+    <p>{{ 'Role' }}: {{ user.role.role }}</p>
+
+
     <div class="mx-4"><a href="{{ path('fos_user_profile_edit') }}">Modifier infos</a></div>
     <hr>
     <button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>

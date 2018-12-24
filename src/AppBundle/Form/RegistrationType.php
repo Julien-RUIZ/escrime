@@ -39,6 +39,10 @@ class RegistrationType extends AbstractType
             ->add('civilite',EntityType::class, [
         'class' => 'AppBundle\Entity\civilite',
         'choice_label' => 'sexe',
+    ])
+            ->add('role',EntityType::class, [
+        'class' => 'AppBundle\Entity\Role',
+        'choice_label' => 'role',
     ]);
 
     }

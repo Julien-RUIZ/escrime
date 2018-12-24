@@ -57,6 +57,34 @@ class User extends BaseUser
     private $civilite;
 
     /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Role", inversedBy="user")
+     */
+    private $role;
+
+    /**
+     * @return mixed
+     */
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    /**
+     * @param mixed $role
+     */
+    public function setRole($role)
+    {
+        $this->role = $role;
+    }
+
+
+
+
+
+
+
+
+    /**
      * @return mixed
      */
     public function getCivilite()

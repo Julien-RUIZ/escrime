@@ -10,6 +10,8 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\horaire;
 use AppBundle\Entity\Information;
+use AppBundle\Entity\Role;
+use AppBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -75,6 +77,28 @@ class LeClubController extends Controller
         return $this->render("@App/pages/LeClub/horaire.html.twig",
             [
                 'horaires' => $horaires
+            ]
+
+        );
+
+    }
+
+//--------------------------------------TROUVER LE MOYEN D AFFICHER LES NOM EN RAPPORT AU ROLE------------------
+    /**
+     *
+     * @Route("/lesMembresDuClub", name="les_membres_du_club")
+     */
+    public function staffAction(){
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository horaire (avec User::class passé en parametre)
+        $repository = $this->getDoctrine()->getRepository(User::class);
+        //la variable info aura pour répository toutes les données de la base de donnée
+        $membres = $repository->findAll();
+
+
+        return $this->render("@App/pages/LeClub/LeBureau.html.twig",
+            [
+                'membres' => $membres
             ]
 
         );
