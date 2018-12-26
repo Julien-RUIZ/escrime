@@ -2,20 +2,20 @@
 
 
 {% block content %}
-
+<article>
     <div class="container my-5 texte">
-        <h3>Les membres du bureau</h3>
-
+        <h2>Les membres du bureau</h2>
+        <hr>
         {% for membre in membres %}
             <div class="container">
                 <div>
-{#--------------FAIRE EN SORTE DE N AFFICHER QUE LES MEMBRE DU BUREAU-------------------------------#}
-                    <h5 class="Cat">{{ membre.role.role }} : {{ membre.nom }} </h5>
-
+                    {#cette condition va permettre de limiter au 6 premier id de la base de donnée de role#}
+                    {% if membre.role.id<6 %}
+                        <p class="Cat">{{ membre.role.role }} : {{ membre.nom }} </p>
+                    {% endif %}
                 </div>
             </div>
         {% endfor %}
     </div>
-
-
+</article>
 {% endblock %}

@@ -3,14 +3,17 @@
 
 {% block content %}
 
-    <ul>
-        {% for licence in licences|slice(3, 6) %}
-            <H4>{{ licence.nom }}</H4>
-            <p>{{ licence.Produit }}</p>
-            <p>{{ licence.prix }} euros</p>
-        {% endfor %}
-    </ul>
 
 
+    <div class="container my-5 texte">
+        <h3>Prix des licences</h3>
+<p>Prix des licences en fonctions du niveau de l'escrimeur</p>
 
+
+                    {% for licence in licences|slice(3, 6) %}
+
+                        <p>{{ licence.Produit }}, {{ licence.prix }} euros </p>
+
+                    {% endfor %}
+    </div>
 {% endblock %}

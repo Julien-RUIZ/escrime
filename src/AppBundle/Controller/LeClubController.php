@@ -83,9 +83,10 @@ class LeClubController extends Controller
 
     }
 
-//--------------------------------------TROUVER LE MOYEN D AFFICHER LES NOM EN RAPPORT AU ROLE------------------
+//--------------------------------------Affiche les membres du burreau et liste inscrit en admin------------------
     /**
-     *
+     * Une route nour permettant de faire la liste des inscrits, utiliser le lien many to one entre user et role pour afficher, le poste et le nom des
+     * membre du bureau
      * @Route("/lesMembresDuClub", name="les_membres_du_club")
      */
     public function staffAction(){
@@ -102,6 +103,59 @@ class LeClubController extends Controller
             ]
 
         );
+
+    }
+
+    /**
+     * Liste seulement pour la partie admin et a gérer les membre, action possible (supprimer un membre) voir route suivante
+     * @Route("/admin/listeInscrit", name="liste_inscrit")
+     */
+    public function listeInscritAction(){
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository horaire (avec User::class passé en parametre)
+        $repository = $this->getDoctrine()->getRepository(User::class);
+        //la variable info aura pour répository toutes les données de la base de donnée
+        $membres = $repository->findAll();
+
+
+        return $this->render("@App/pages/admin/listeInscrit.html.twig",
+            [
+                'membres' => $membres
+            ]
+
+        );
+
+    }
+
+    /**
+     * Cette route va nous permettre de supprimer les membres
+     * @Route("/admin/supprmembre/{id}", name="suppr_membre")
+     */
+    public function supprMembreAction($id){
+
+        //on a besoin du repository Livre pour récupérer le contenu de la table Auteur
+        // pour récupérer ce repository :
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository Auteur (avec Auteur::class passé en parametre)
+        $repository = $this->getDoctrine()->getRepository(User::class);
+
+        // getDoctrine va appeler la methode getManager
+        // get manager va prendre les données et les convertir en données sql
+        $entityManager= $this->getDoctrine()->getManager();
+
+        //on déclare la variable auteur en écrivant $id, car c est par l'id
+        $membre=$repository->find($id);
+
+
+        //Comme on pouvait s'y attendre, la méthode remove () indique à Doctrine que vous souhaitez supprimer l'objet spécifié
+        // de la base de données. Cependant, la requête DELETE n'est exécutée que lorsque la méthode flush ()
+        // est appelée.
+        $entityManager->remove($membre);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('liste_inscrit');
+
+
 
     }
 }

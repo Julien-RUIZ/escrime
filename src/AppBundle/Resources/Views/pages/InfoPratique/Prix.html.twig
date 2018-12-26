@@ -2,15 +2,27 @@
 
 
 {% block content %}
-
-    <ul>
-        {% for tarif in tarifs|slice(0, 3) %}
-            <H4>{{ tarif.nom }}</H4>
-            <p>{{ tarif.Produit }}</p>
-            <p>{{ tarif.prix }} euros</p>
-        {% endfor %}
-    </ul>
+        <div class="container my-5 texte">
+            <h3>Prix des licences</h3>
+            <p>Prix des licences en fonctions du niveau de l'escrimeur</p>
 
 
+            {% for tarif in tarifs|slice(0, 3) %}
 
-{% endblock %}
+                <p>{{ tarif.Produit }}: {{ tarif.prix }} euros</p>
+
+            {% endfor %}
+        </div>
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

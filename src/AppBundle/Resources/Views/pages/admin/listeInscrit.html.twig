@@ -1,0 +1,49 @@
+{% extends '@App/base/baseAdmin.html.twig' %}
+
+
+
+
+{% block admin %}
+
+<article>
+    <div class="container my-5 texte">
+        <h3>Les membres du bureau</h3>
+
+        {% for membre in membres %}
+            <div class="container">
+                <div class="row">
+                    {#cette condition va permettre de limiter au 6 premier id de la base de donnée de role#}
+                    {% if membre.role.id<6 %}
+
+                        <div class="offset-2 col-4 listinscrit"><p class="Cat">{{ membre.id }} / {{ membre.role.role }} : {{ membre.nom }} </p></div>
+                        <div class="offset-2 col-4"><a href="{{ path('suppr_membre', {'id': membre.id}) }}"><button>Supprimer</button></a></div>
+
+                    {% endif %}
+
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+    <div class="container my-5 texte ">
+        <h3>Les escrimeurs ou autre</h3>
+
+        {% for membre in membres %}
+            <div class="container">
+                <div class="row">
+                    {#cette condition va permettre de limiter au 6 premier id de la base de donnée de role#}
+                    {% if membre.role.id>5 %}
+
+                        <div class="offset-2 col-4 listinscrit"><p class="Cat">{{ membre.id }} / {{ membre.role.role }} : {{ membre.nom }} </p></div>
+                        <div class="offset-2 col-4"><a href="{{ path('suppr_membre', {'id': membre.id}) }}"><button>Supprimer</button></a></div>
+
+
+                    {% endif %}
+
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</article>
+
+{% endblock %}
