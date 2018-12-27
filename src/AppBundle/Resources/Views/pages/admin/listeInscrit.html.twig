@@ -15,7 +15,7 @@
                     {#cette condition va permettre de limiter au 6 premier id de la base de donnée de role#}
                     {% if membre.role.id<6 %}
 
-                        <div class="offset-2 col-4 listinscrit"><p class="Cat">{{ membre.id }} / {{ membre.role.role }} : {{ membre.nom }} </p></div>
+                        <div class="offset-2 col-4 listinscrit"><p class="Cat">{{ membre.id }} / {{ membre.role.role }} : {{ membre.civilite.sexe }} {{ membre.nom }} </p></div>
                         <div class="offset-2 col-4"><a href="{{ path('suppr_membre', {'id': membre.id}) }}"><button>Supprimer</button></a></div>
 
                     {% endif %}
@@ -34,7 +34,7 @@
                     {#cette condition va permettre de limiter au 6 premier id de la base de donnée de role#}
                     {% if membre.role.id>5 %}
 
-                        <div class="offset-2 col-4 listinscrit"><p class="Cat">{{ membre.id }} / {{ membre.role.role }} : {{ membre.nom }} </p></div>
+                        <div class="offset-2 col-4 listinscrit"><p class="Cat">{{ membre.id }} / {{ membre.role.role }} : {{ membre.civilite.sexe }} {{ membre.nom }} </p></div>
                         <div class="offset-2 col-4"><a href="{{ path('suppr_membre', {'id': membre.id}) }}"><button>Supprimer</button></a></div>
 
 

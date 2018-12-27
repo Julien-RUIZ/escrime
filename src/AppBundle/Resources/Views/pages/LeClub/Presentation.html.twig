@@ -2,15 +2,24 @@
 
 
 {% block content %}
-    <div class="container texte">
-        <div class=" d-flex align-items-center">
-            <div class="py-5 mr-3">
-                <h1>{{ infos.titre }} du club</h1>
-                <p>{{ infos.contenu }}</p>
-            </div>
-            <div class="mr-3">
-                <img src="{{ asset('img/ancien.jpeg') }}" alt="">
-            </div>
+    <section>
+        <article>
+            <div class="container texte">
+                <div class=" d-flex align-items-center">
+                    <div class="py-5 mr-3">
+                        <h1>{{ infos.titre }} du club</h1>
+                        <p>{{ infos.contenu }}</p>
+                    </div>
+                    <div class="mr-3">
+                        <img src="{{ asset('img/ancien.jpeg') }}" alt="">
+                    </div>
+                </div>
         </div>
-    </div>
+        </article>
+            <div class="container photosalle mb-5">
+                <div><img src="{{ asset('img/salle.jpg') }}" alt="Photo de la salle"></div>
+                <div><img src="{{ asset('img/Sallespuc.jpg') }}" alt="Photo de la salle"></div>
+            </div>
+    </section>
+
 {% endblock %}

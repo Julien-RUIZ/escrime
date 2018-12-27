@@ -1,45 +1,91 @@
+/*--------------------------------------------*/
+/*-------------SASS---------------------------*/
+/*--------------------------------------------*/
+.bordure{
+  border:1px solid black;
+}
+$degrade:
+linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
+
+
 
 
 /*--------------------------------------------*/
 /*---------partie public----------------------*/
 /*--------------------------------------------*/
-
+.nomclub{
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  text-align: center;
+}
 .menuderoul{
   text-align: center;
 }
+
+.barrenav{
+  @extend .bordure;
+  position: sticky;
+  background-color: rgba(255,255,255,0.9);
+  top:0;
+  z-index: 1;
+
+}
+
+
+
 .entete{
-  border:1px solid black;
-  background-image: linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
+  @extend .bordure;
+  background-image:$degrade;
 }
 
 .texte{
-  border:1px solid black;
+  @extend .bordure;
   margin-top: 90px;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   text-align: center;
-  padding: 10px;
-  padding-right: 0;
+
 }
 
 .piedDepage{
-  border:1px solid black;
-  background-image: linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
+  @extend .bordure;
+  background-image:$degrade;
+}
+/*--------adresse de la salle--------------------*/
+.map{
+  margin-left: 100px;
+}
+.salle{
+  margin-left: 50px;
+}
+.photosalle{
+  display: flex;
+  justify-content: space-around;
 }
 
-/*--------connexion--------*/
+/*--------connexion--------------------*/
 .connexion{
-  border:1px solid black;
+  @extend .bordure;
 }
 .name{
   text-align: center;
 }
+
 #dropdownMenu1{
   font-size: 20px;
 }
 .deconn{
   font-size: 20px;
-
 }
+/*--------------Staff----------------------*/
+.defbureau{
+  @extend .bordure;
+  margin-left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
 
 /*--------------------------------------------*/
 /*----------partie admin----------------------*/
@@ -54,7 +100,7 @@
 }
 
 .formprix{
-  border:1px solid black;
+  @extend .bordure;
   padding-top: 20px;
 }
 

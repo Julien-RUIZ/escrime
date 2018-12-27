@@ -2,18 +2,16 @@
 
 
 {% block admin %}
-<h2 class="titreListInfo">Partie de la base de donnée pour les information général du club</h2>
-<div class="container">
-    {% for info in infos %}
-        <h3>{{ info.titre }}</h3>
-        <p>{{ info.contenu }}</p>
-
-        <div><a href="{{ path('mise_a_jour_information', {'id': info.id}) }}"><button>mise a jour information</button></a></div>
-        <hr>
-
-    {% endfor %}
-    <div class="mb-5"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
-</div>
-
+<article>
+        <h2 class="titreListInfo">Partie de la base de donnée pour les information général du club</h2>
+        <div class="container">
+            {% for info in infos %}
+                <h3>{{ info.titre }}</h3>
+                <p>{{ info.contenu }}</p>
+                <div><a href="{{ path('mise_a_jour_information', {'id': info.id}) }}"><button>mise a jour information</button></a></div>
+            {% endfor %}
+            <div class="mb-5"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
+        </div>
+</article>
 
 {% endblock %}

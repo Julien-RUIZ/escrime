@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -14,95 +15,109 @@
 
 <header>
     <div class="container-fluid entete">
-        <div class="row d-flex">
-            <div class="col-1 mt-3"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" ></a></div>
-            <div class="offset-4 col-7"><h1>Spuc Escrime</h1></div>
-        </div>
-
-        <div class="row d-flex mb-2">
-            <div class="offset-4 col-4 d-flex justify-content-center">
-                {#-----------------------menu déroulant------#}
-
-                    <div class="dropdown">
-                        <p class="btn btn-default dropdown-toggle " id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
-
-                            <span class="caret">Le club</span>
-                        </p>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="{{ path('le_club_presentation', {'id': 1}) }}" title="Lien 1">Presentation</a></li>
-                            <li><a href="{{ path('le_club_presentation', {'id': 2}) }}" title="Lien 2">la salle</a></li>
-                            <li><a href="{{ path('le_club_les_horaires') }}" title="Lien 3">Les horaires</a></li>
-                            <li><a href="{{ path('les_membres_du_club') }}" title="Lien 4">Staff</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="dropdown">
-                        <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-
-                            <span class="caret">Le sport</span>
-                        </p>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#" title="Lien 1">Lien 1</a></li>
-                            <li><a href="#" title="Lien 2">Lien 2</a></li>
-                            <li><a href="#" title="Lien 3">Lien 3</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="dropdown">
-                        <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-
-                            <span class="caret">Info Pratique</span>
-                        </p>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="{{ path('location_materiel') }}" title="Lien 1">Location</a></li>
-                            <li><a href="{{ path('licence') }}" title="Lien 2">Licence</a></li>
-                            <li><a href="#" title="Lien 3">Lien 3</a></li>
-
-                        </ul>
-                    </div>
-
-                {#-------------------------menu déroulant------#}
-            </div>
-
-            <div class="d-flex offset-1 col-2 offset-1">
-                {% if app.user %}
-{#-----------------menu déroulant pour le profil -----------------------#}
-                    <div class="dropdown">
-                        <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            {{ app.user.username }}
-                            <span class="caret"></span>
-                        </p>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="{{ path('fos_user_profile_show') }}" title="Profil">Informations perso</a></li>
-                            <li><a href="{{ path('fos_user_profile_edit') }}" title="Profil">Mise a jour</a></li>
-                            <li><a href="{{ path('evenement') }}" title="Lien 2">Tous les evenements</a></li>
-
-                            <li><a href="{{ path('info_type', {'id': 1}) }}" title="Lien 2">les Compétitions</a></li>
-                            <li><a href="{{ path('info_type', {'id': 2}) }}" title="Lien 2">les Soirées</a></li>
-                            <li><a href="{{ path('info_type', {'id': 3}) }}" title="Lien 2">les Réunions</a></li>
-                        </ul>
-                    </div>
-
-{#-----------------menu déroulant pour le profil -----------------------#}
-
-                    <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></div>
-
-                {% else %}
-                    <div class="mx-4"><a href="{{ path('fos_user_registration_register') }}">Inscription</a></div>
-                    <div class="mx-4"><a href="{{ path('fos_user_security_login') }}">Connexion</a></div>
-                {% endif %}
-            </div>
-
+        <div class="row d-flex align-items-center">
+            <div class="col-1 my-3"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" ></a></div>
+            <div class="offset-3 col-4"><h1 class="nomclub">Spuc Escrime</h1></div>
         </div>
     </div>
 </header>
+{#--------------------------------------------------------Barre de navigation---------------------------------------------------#}
+
+<nav class="barrenav">
+    <div class="row d-flex">
+        <div class="offset-4 col-4 d-flex justify-content-center mt-2">
+            {#-----------------------menu déroulant------------------------#}
+
+                <div>
+                    <a href="{{ path('homepage') }}"><img src="{{ asset('img/home.png') }}" alt="symbol-home" class="img-fluid" width="50%"></a>
+                </div>
+
+                <div class="dropdown">
+                    <p class="btn btn-default dropdown-toggle " id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+
+                        <span class="caret">Le club</span>
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="{{ path('le_club_presentation', {'id': 1}) }}" title="Lien 1">Presentation</a></li>
+                        <li><a href="{{ path('le_club_presentation', {'id': 2}) }}" title="Lien 2">la salle</a></li>
+                        <li><a href="{{ path('le_club_les_horaires') }}" title="Lien 3">Les horaires</a></li>
+                        <li><a href="{{ path('les_membres_du_club') }}" title="Lien 4">Staff</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        <span class="caret">Le sport</span>
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#" title="Lien 1">Lien 1</a></li>
+                        <li><a href="#" title="Lien 2">Lien 2</a></li>
+                        <li><a href="#" title="Lien 3">Lien 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        <span class="caret">Info Pratique</span>
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="{{ path('location_materiel') }}" title="Lien 1">Location</a></li>
+                        <li><a href="{{ path('licence') }}" title="Lien 2">Licence</a></li>
+                        <li><a href="#" title="Lien 3">Lien 3</a></li>
+
+                    </ul>
+                </div>
+
+            {#-------------------------menu déroulant----------------------------#}
+        </div>
+
+        <div class="d-flex offset-1 col-2 offset-1 mt-2">
+            {% if app.user %}
+{#-----------------menu déroulant pour le profil -----------------------#}
+                <div class="dropdown">
+                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        {{ app.user.username }}
+                        <span class="caret"></span>
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="{{ path('fos_user_profile_show') }}" title="Profil">Informations perso</a></li>
+                        <li><a href="{{ path('fos_user_profile_edit') }}" title="Profil">Mise a jour</a></li>
+                        <li><a href="{{ path('evenement') }}" title="Lien 2">Tous les evenements</a></li>
+
+                        <li><a href="{{ path('info_type', {'id': 1}) }}" title="Lien 2">les Compétitions</a></li>
+                        <li><a href="{{ path('info_type', {'id': 2}) }}" title="Lien 2">les Soirées</a></li>
+                        <li><a href="{{ path('info_type', {'id': 3}) }}" title="Lien 2">les Réunions</a></li>
+                    </ul>
+                </div>
+
+{#-----------------menu déroulant pour le profil -----------------------#}
+
+                <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></div>
+            {% else %}
+                <div class="mx-4"><a href="{{ path('fos_user_registration_register') }}">Inscription</a></div>
+                <div class="mx-4"><a href="{{ path('fos_user_security_login') }}">Connexion</a></div>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+{#--------------------------------------------------------Barre de navigation---------------------------------------------------#}
 
 
 
 
 
 
-    {% block content %}{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+{% endblock %}
 
 
 

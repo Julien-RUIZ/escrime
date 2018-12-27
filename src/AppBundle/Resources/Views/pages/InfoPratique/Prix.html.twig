@@ -3,17 +3,46 @@
 
 {% block content %}
         <div class="container my-5 texte">
-            <h3>Prix des licences</h3>
-            <p>Prix des licences en fonctions du niveau de l'escrimeur</p>
-
+            <h3>Prix des locations</h3>
+            <p>La location du materiel d'escrime: </p>
 
             {% for tarif in tarifs|slice(0, 3) %}
-
                 <p>{{ tarif.Produit }}: {{ tarif.prix }} euros</p>
-
             {% endfor %}
         </div>
-    {% endblock %}
+
+        <div class="container my-5 texte">
+            <h3>La tenue compléte: </h3>
+                <div class="row mt-5">
+                    <div class="col-3"><img src="{{ asset('img/veste.jpg') }}" alt="veste d'escrime" class="img-fluid" width="50%">
+                    <p>La veste</p></div>
+                    <div class="col-3"><img src="{{ asset('img/pantalon.jpg') }}" alt="pantalon d'escrime" class="img-fluid" width="50%">
+                    <p>Le pantalon</p></div>
+                    <div class="col-3"><img src="{{ asset('img/souscuirasse.jpg') }}" alt="souscuirasse" class="img-fluid" width="50%">
+                    <p>La sous-cuirasse</p></div>
+                    <div class="col-3"><img src="{{ asset('img/protection.jpg') }}" alt="protection pour femme" class="img-fluid" width="50%">
+                    <p>Protection pour femme</p></div>
+                </div>
+        </div>
+
+    <div class="container my-5 texte">
+        <h3>Le masque et le fleuret d'entrainement: </h3>
+        <div class="row mt-5">
+            <div class="col-4"><img src="{{ asset('img/fleuretEntrainement.png') }}" alt="veste d'escrime" class="img-fluid" width="50%">
+                <p>Un fleuret d'entrainement</p></div>
+            <div class="col-4"><img src="{{ asset('img/hommefemme.jpg') }}" alt="veste d'escrime" class="img-fluid" width="30%">
+                <p>Pour garcon et fille</p></div>
+            <div class="col-4"><img src="{{ asset('img/masque.jpg') }}" alt="veste d'escrime" class="img-fluid" width="50%">
+                <p>Le masque d'escrime</p></div>
+
+
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
 
 
 

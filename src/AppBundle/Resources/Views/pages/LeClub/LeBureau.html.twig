@@ -4,14 +4,16 @@
 {% block content %}
 <article>
     <div class="container my-5 texte">
-        <h2>Les membres du bureau</h2>
-        <hr>
+        <h2 class="my-4">Les membres du bureau</h2>
+        <p class=" defbureau">Le bureau est composé en règle générale du président de l'association, d'un trésorier et d'un secrétaire, même si sa taille varie en fonction de l'importance de l'association.
+            Il constitue souvent le véritable exécutif de l'association.</p>
+
         {% for membre in membres %}
             <div class="container">
                 <div>
                     {#cette condition va permettre de limiter au 6 premier id de la base de donnée de role#}
                     {% if membre.role.id<6 %}
-                        <p class="Cat">{{ membre.role.role }} : {{ membre.nom }} </p>
+                        <p class="Cat">{{ membre.role.role }} :{{ membre.civilite.sexe }} {{ membre.nom }} </p>
                     {% endif %}
                 </div>
             </div>
