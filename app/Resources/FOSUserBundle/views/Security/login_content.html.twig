@@ -1,24 +1,44 @@
-{% trans_default_domain 'FOSUserBundle' %}
 
-{% if error %}
-    <div><p>erreur</p></div>
-{% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    {% if csrf_token %}
-        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-    {% endif %}
 
-        <div><label for="username">{{ 'NOM'|trans }}</label></div>
-        <div><input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" /></div>
 
-        <div><label for="password">{{ 'security.login.password'|trans }}</label></div>
-        <div><input type="password" id="password" name="_password" required="required" autocomplete="current-password" /></div>
 
-        <div><input type="checkbox" id="remember_me" name="_remember_me" value="on" /></div>
-        <div><label for="remember_me">{{ 'security.login.remember_me'|trans }}</label></div>
+<div class="container modif">
+    <header>
+        <h3 id="misejourinfo">Connexion a votre compte</h3>
+        {% trans_default_domain 'FOSUserBundle' %}
 
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-</form>
+        {% if error %}
+            <div><p>erreur</p></div>
+        {% endif %}
+    </header>
+    <section>
+        <form action="{{ path("fos_user_security_check") }}" method="post">
+            <div class="row">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
 
-<button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>
+                    <div class="offset-3 col-2 mb-3"><label for="username">{{ 'NOM'|trans }}</label></div>
+                    <div class="col-7"><input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" /></div>
+
+                    <div class="offset-3 col-2 mb-3"><label for="password">{{ 'security.login.password'|trans }}</label></div>
+                    <div class="col-7"><input type="password" id="password" name="_password" required="required" autocomplete="current-password" /></div>
+
+                    <div class="offset-5 mb-3"><input type="checkbox" id="remember_me" name="_remember_me" value="on" /></div>
+                    <div class="col-6"><label for="remember_me">{{ 'security.login.remember_me'|trans }}</label></div>
+
+
+                <div class="offset-5 mb-4"><input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" /></div>
+            </div>
+        </form>
+
+
+        <div class="row">
+            <div class="offset-5 mb-4">
+                <button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>
+            </div>
+        </div>
+    </section>
+
+</div>

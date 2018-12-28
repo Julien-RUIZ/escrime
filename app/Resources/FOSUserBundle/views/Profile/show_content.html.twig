@@ -1,22 +1,44 @@
-{% trans_default_domain 'FOSUserBundle' %}
-
-<div class="fos_user_user_show">
-
-    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
-{# La partie sexe , et la liaison entre les bases user et civilité, en many to one#}
-    <p>{{ 'Sexe' }}: {{ user.civilite.sexe }}</p>
-    <p>{{ 'Nom' }}: {{ user.nom }}</p>
-    <p>{{ 'Prenom' }}: {{ user.Prenom }}</p>
-    <p>{{ 'Adresse' }}: {{ user.adresse }}</p>
-    <p>{{ 'Ville' }}: {{ user.ville }}</p>
-    <p>{{ 'Code postal' }}: {{ user.codepostal }}</p>
-{# La partie Role , et la liaison entre les bases user et role, en many to one#}
-    <p>{{ 'Role' }}: {{ user.role.role }}</p>
 
 
-    <div class="mx-4"><a href="{{ path('fos_user_profile_edit') }}">Modifier infos</a></div>
-    <hr>
-    <button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>
 
+<div class="container modif">
+    <h3 id="misejourinfo">Information personnel</h3>
+    {% trans_default_domain 'FOSUserBundle' %}
+
+    <div class="row fos_user_user_show">
+
+        {# La partie sexe , et la liaison entre les bases user et civilité, en many to one#}
+        <div class="userspan offset-2 col-1"><p>{{ 'Civilité' }}:</p></div>
+        <div class="col-9"><p>{{ user.civilite.sexe }}</p></div>
+
+        <div class="userspan offset-2 col-1"><p>{{ 'Nom' }}:</p></div>
+        <div class="col-2"><p>{{ user.nom }}</p></div>
+
+        <div class="userspan offset-2 col-1"><p>{{ 'Prenom' }}:</p></div>
+        <div class="col-4"><p>{{ user.Prenom }}</p></div>
+
+        <div class="userspan offset-2 col-1"><p>{{ 'profile.show.username'|trans }}:</p></div>
+        <div class="col-2"><p>{{ user.username }}</p></div>
+
+        <div class="userspan offset-2 col-1"><p>{{ 'profile.show.email'|trans }}:</p></div>
+        <div class="col-4"><p>{{ user.email }}</p></div>
+
+        <div class="userspan offset-2 col-1"><p>{{ 'Adresse' }}:</p></div>
+        <div class="col-3"><p>{{ user.adresse }}</p></div>
+
+        <div class="userspan offset-1 col-1"><p>{{ 'Ville' }}:</p></div>
+        <div class="col-4"><p>{{ user.ville }}</p></div>
+
+        <div class="userspan offset-2 col-2"><p>{{ 'Code postal' }}:</p></div>
+        <div class="col-2"><p>{{ user.codepostal }}</p></div>
+
+    {# La partie Role , et la liaison entre les bases user et role, en many to one#}
+        <div class="userspan offset-1 col-1"><p>{{ 'Role' }}:</p></div>
+        <div class="col-4"><p>{{ user.role.role }}</p></div>
+
+        <div class="groupebutton">
+                <div class="mr-2 mb-5 mt-5"><button><a href="{{ path('fos_user_profile_edit') }}">Modifier infos</a></button></div>
+                <div class="mt-5"><button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button></div>
+        </div>
+    </div>
 </div>

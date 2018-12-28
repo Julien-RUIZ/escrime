@@ -3,31 +3,35 @@
 
 
 {% block content %}
-<article>
-    <div class="container-fluid">
-        <div class="row grandeimage">
-            <img src="{{ asset('img/image-entete.jpg') }}" alt="deux escrimeurs" class="img-fluid image" >
-        </div>
-    </div>
-</article>
-
-
-<article>
-    <div>
-        {% for actu in actus  %}
-            <div class="container my-5 texte">
-                <div class="container">
-                    <h2>{{ actu.titre }}</h2>
-                    <p>{{ actu.contenu }}</p>
-                        {% if actu.photo %}
-                            <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite">
-                        {% else %}
-                            <p>pas d'image</p>
-                        {% endif %}
-                </div>
+<section>
+    <article>
+        <div class="container-fluid">
+            <div class="row grandeimage">
+                <img src="{{ asset('img/image-entete.jpg') }}" alt="deux escrimeurs" class="img-fluid image" >
             </div>
+        </div>
+    </article>
 
-        {% endfor %}
-    </div>
-</article>
+
+    <article>
+        <h1 id="titreactus">Actualités du club</h1>
+
+        <div>
+            {% for actu in actus  %}
+                <div class="container my-5 texte">
+                    <div class="container">
+                        <h3>{{ actu.titre }}</h3>
+                        <p>{{ actu.contenu }}</p>
+                            {% if actu.photo %}
+                                <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite">
+                            {% else %}
+                                <p>pas d'image</p>
+                            {% endif %}
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </article>
+</section>
 {% endblock %}

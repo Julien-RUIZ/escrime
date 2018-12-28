@@ -4,14 +4,18 @@
 {% block content %}
     <section>
         <article>
-            <div class="container texte">
-                <div class=" d-flex align-items-center">
-                    <div class="py-5 mr-3">
-                        <h1>{{ infos.titre }} du club</h1>
+            <div class="container ">
+                <h1 class="texte">{{ infos.titre }} du club</h1>
+
+                <div class=" d-flex align-items-center textpresentation">
+                    <div class="offset-1 col-4 py-5 mr-3 ">
                         <p>{{ infos.contenu }}</p>
                     </div>
-                    <div class="mr-3">
-                        <img src="{{ asset('img/ancien.jpeg') }}" alt="">
+                    <div class="offset-2 col-4 mr-3">
+                        <div class="row">
+                        <img src="{{ asset('img/armeEtmasque.jpg') }}" alt="masque et arme">
+                        <img src="{{ asset('img/ancien.jpeg') }}" alt="ancienne photo" class="imagemasuearme">
+                        </div>
                     </div>
                 </div>
         </div>

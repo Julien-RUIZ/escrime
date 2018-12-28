@@ -7,7 +7,7 @@
 $degrade:
 linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
 
-
+$blanc:rgba(255,255,255,0.9);
 
 
 /*--------------------------------------------*/
@@ -25,14 +25,12 @@ linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
 .barrenav{
   @extend .bordure;
   position: sticky;
-  background-color: rgba(255,255,255,0.9);
+  background-color: $blanc;
   top:0;
   z-index: 1;
 
 }
-
-
-
+/*--------Presentation--------------------*/
 .entete{
   @extend .bordure;
   background-image:$degrade;
@@ -43,9 +41,18 @@ linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
   margin-top: 90px;
   margin-bottom: 40px;
   text-align: center;
-
+}
+.textpresentation{
+  @extend .bordure;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.imagemasuearme{
+  margin-top: 30px;
 }
 
+
+/*--------footer--------------------------*/
 .piedDepage{
   @extend .bordure;
   background-image:$degrade;
@@ -83,8 +90,14 @@ linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-
+/*--------------Actus----------------------*/
+#titreactus{
+  text-align: center;
+  @extend .bordure;
+  height: 80px;
+  padding-top: 10px;
+  background-color: rgb(199, 255, 255);
+}
 
 
 /*--------------------------------------------*/
@@ -114,3 +127,86 @@ linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
 .listinscrit{
  text-align: left;
 }
+
+/*--------------------------------------------*/
+/*----------formulaire fos_user---------------*/
+/*--------------------------------------------*/
+
+/*----formulaire mise a jour---*/
+.modif{
+  @extend .bordure;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+#misejourinfo{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+#fos_user_profile_form_current_password, #fos_user_profile_form_email, #fos_user_profile_form_username{
+  width: 350px;
+}
+label{
+  margin-bottom: 0px;
+}
+/*----formulaire inscription---*/
+
+#fos_user_registration_form_nom, #fos_user_registration_form_prenom, #fos_user_registration_form_username,#fos_user_registration_form_email, #fos_user_registration_form_plainPassword_first, #fos_user_registration_form_plainPassword_second, #fos_user_registration_form_adresse, #fos_user_registration_form_ville, #fos_user_registration_form_code_postal{
+  width: 350px;
+}
+
+/*----formulaire connexion---*/
+
+#username, #password{
+  width: 350px;
+}
+/*----Information perso---*/
+
+.userspan{
+  font-weight: bold;
+}
+.groupebutton{
+  display: flex;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
