@@ -3,36 +3,40 @@
 
 
 {% block admin %}
+<section>
+    <header>
+        <h2 class="titreListInfo">Partie qui va mettre a jour les actus de la page principale</h2>
 
-<h2 class="titreListInfo">Partie qui va mettre a jour les actus de la page principale</h2>
+        <div class="ajoutactus"><a href="{{ path('ajout_actualite') }}"><button class="bouton">Ajouter une actualité</button></a></div>
+    </header>
+    <article>
 
-<div class="container">
-    <div><a href="{{ path('ajout_actualite') }}"><button>Ajouter une actualité</button></a></div>
-    <hr>
-    {% for actu in actus %}
-        <h3>{{ actu.titre }}</h3>
-        <p>{{ actu.contenu }}</p>
+        <div class="container mt-3">
+            {% for actu in actus %}
+                <div class="bloclisteactus mb-3">
+                    <div class=" offset-4 col-4 offset-4 titreadmin"><h3>{{ actu.titre }}</h3></div>
+                    {#groupe en flex box avec image et texte#}
+                    <div class="groupeactus">
+                        {#Nous réalisons une partie pour faire apparaitre une photo si il y en a une#}
+                        <div> {% if actu.photo %}
+                            <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image">
+                        {% else %}
+                            <p>pas d'image</p>
+                        {% endif %}
+                        </div>
+                        <div class=""><p>{{ actu.contenu }}</p></div>
+                    </div>
 
-{#Nous réalisons une partie pour faire apparaitre une photo si il y en a une#}
-        {% if actu.photo %}
-            <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image">
-        {% else %}
-            <p>pas d'image</p>
-        {% endif %}
+                    <div class="ajoutactus mb-3 mt-3"><a href="{{ path('mise_a_jour_actus', {'id': actu.id}) }}"><button class="bouton">Modifier l'actualité</button></a></div>
+                    <div class="ajoutactus mb-3"><a href="{{ path('suppr_actus', {'id': actu.id}) }}"><button class="bouton">Suprimer l'actualité</button></a></div>
 
-
-
-
-
-        <hr>
-
-        <div><a href="{{ path('mise_a_jour_actus', {'id': actu.id}) }}"><button>Modifier l'actualité</button></a></div>
-        <div><a href="{{ path('suppr_actus', {'id': actu.id}) }}"><button>Suprimer l'actualité</button></a></div>
-        <hr>
-
-    {% endfor %}
-    <div class="mb-5"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
-</div>
+                </div>
+        {% endfor %}
+        </div>
 
 
+        <div class="mb-5"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
+    </article>
+
+</section>
 {% endblock %}

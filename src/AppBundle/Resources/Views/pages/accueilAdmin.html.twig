@@ -2,15 +2,32 @@
 
 
 {% block admin %}
+<section>
+    <nav>
+        <div class="container my-5 ">
+            <div class="container menuadmin">
+                <div>
+                    <h2 class="titreadmin mb-5 pt-3">Menu pour l'administration du site</h2>
 
-    <div class="container-fluid my-5 texte">
-        <div class="container">
-            <div>
-                <h2>{{ variable }}</h2>
-                <p>Grace a cette partie, vous allez pouvoir modifier certaines partie du site.</p>
-                <p></p>
+                    <div class="row">
+                        <div class="offset-1 col-2"><a href="{{ path('liste_inscrit') }}"><button class="admin">Inscrits</button></a></div>
+                        <div class="offset-1 col-8"><p>Partie pour la gestion des inscrits, nous allons avoir la liste mais pouvoir fire une recherche d'utilisateur et sa suppression.</p></div>
+
+                        <div class="offset-1 col-2"><a href="{{ path('form_ajout_even') }}"><button class="admin">Evenement</button></a></div>
+                        <div class="offset-1 col-8"><p>Partie pour la gestion des evenements qui vont etre affichés sur les profils des inscrits</p></div>
+
+                        <div class="offset-1 col-2"><a href="{{ path('mise_a_jour_prix', {'id': 1}) }}"><button class="admin">Prix</button></a></div>
+                        <div class="offset-1 col-8"><p>Partie pour la mise a jours des différents prix, location du materiel mais aussi licence</p></div>
+
+                        <div class="offset-1 col-2"><a href="{{ path('liste_information') }}"><button class="admin">Information</button></a></div>
+                        <div class="offset-1 col-8"><p>Partie pour la gestion des différentes informations se trouvant dans le site</p></div>
+
+                        <div class="offset-1 col-2 mb-5"><a href="{{ path('liste_actus') }}"><button class="admin">Actualités</button></a></div>
+                        <div class="offset-1 col-8"><p>Partie pour la gestion des actualités, nous permettant la mise a jour.</p></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
+    </nav>
+</section>
 {% endblock %}

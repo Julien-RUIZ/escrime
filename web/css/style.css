@@ -1,7 +1,7 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .barrenav, .entete, .texte, .textpresentation, .piedDepage, .connexion, .defbureau, #titreactus, .formprix, .modif {
+.bordure, .barrenav, .entete, .texte, .titrepresentation, .textpresentation, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .formprix, .modif {
   border: 1px solid black; }
 
 /*--------------------------------------------*/
@@ -30,16 +30,17 @@
   margin-bottom: 40px;
   text-align: center; }
 
+.titrepresentation {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center; }
+
 .textpresentation {
   margin-top: 40px;
   margin-bottom: 40px; }
 
 .imagemasuearme {
   margin-top: 30px; }
-
-/*--------footer--------------------------*/
-.piedDepage {
-  background-image: linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076); }
 
 /*--------adresse de la salle--------------------*/
 .map {
@@ -51,6 +52,17 @@
 .photosalle {
   display: flex;
   justify-content: space-around; }
+
+/*---------horaire-------------------*/
+.titrehoraire {
+  text-align: center;
+  margin-top: 30px; }
+
+/*-------Lien utile----------------*/
+.lien {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center; }
 
 /*--------connexion--------------------*/
 .name {
@@ -65,8 +77,8 @@
 /*--------------Staff----------------------*/
 .defbureau {
   margin-left: 0;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 /*--------------Actus----------------------*/
 #titreactus {
@@ -75,9 +87,58 @@
   padding-top: 10px;
   background-color: #c7ffff; }
 
+/*--------footer--------------------------*/
+.piedDepage {
+  background-image: linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076); }
+
 /*--------------------------------------------*/
 /*----------partie admin----------------------*/
 /*--------------------------------------------*/
+/*--------accueil admin--------*/
+.menuadmin {
+  margin-top: 70px;
+  margin-bottom: 40px; }
+
+.titreadmin {
+  text-align: center; }
+
+.admin {
+  width: 150px; }
+
+.navadmin {
+  background-color: #dddbdb; }
+
+/*--------liste actus--------*/
+.ajoutactus {
+  width: 168px;
+  margin: auto; }
+
+.titreadmin {
+  text-align: center; }
+
+.groupeactus {
+  display: flex;
+  justify-content: space-around; }
+
+.bouton {
+  width: 170px; }
+
+/*--------formulaire ajout actus--------*/
+.formajoutactu {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.titreformactus {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+#appbundle_actualites_titre, #appbundle_actualites_contenu {
+  width: 350px; }
+
+#appbundle_actualites_contenu {
+  height: 200px; }
+
 /*--------formulaire prix--------*/
 .formtitreprix {
   text-align: center;

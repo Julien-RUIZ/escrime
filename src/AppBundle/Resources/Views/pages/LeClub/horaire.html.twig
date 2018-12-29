@@ -3,18 +3,19 @@
 
 {% block content %}
 
-    <div class="container my-5 texte">
-        <h3>Les horaires d'ouverture de la salle</h3>
+<article>
+    <h2 class="titrehoraire">Les horaires d'ouverture de la salle</h2>
 
-        {% for horaire in horaires  %}
+    {% for horaire in horaires  %}
+        <div class="container my-5 texte">
             <div class="container">
                 <div>
                     <h5 class="Cat">{{ horaire.categorie }}:</h5>
                     <p class="Per">{{ horaire.periode }}</p>
                 </div>
             </div>
-        {% endfor %}
-    </div>
-
+        </div>
+    {% endfor %}
+</article>
 
 {% endblock %}

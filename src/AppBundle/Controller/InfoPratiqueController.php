@@ -28,7 +28,6 @@ class InfoPratiqueController extends Controller
 //la variable info aura pour répository toutes les données de la base de donnée Information
             $tarifs = $repository->findAll();
 
-
             return $this->render("@App/pages/InfoPratique/Prix.html.twig",
                 [
                     'tarifs' => $tarifs
@@ -38,9 +37,11 @@ class InfoPratiqueController extends Controller
 
         }
 
-
+//---------------------------------------------------------------------------------------
 
     /**
+     * Création d'une route nous permettant d'afficher les informations de la base de donnée
+     * des tarifs, la en l occurrence pour l affichage des licences
      * @Route("/licence", name="licence")
      */
 
@@ -62,10 +63,67 @@ class InfoPratiqueController extends Controller
         );
 
     }
+//--------------------------------------------------------------------------------------
 
+    /**
+     * Réalisation un tableau associatif, qui va nous permettre d'afficher, le nom du site et son adresse
+     * tout cela en faisant un renvoi avec la variable $liens, a la page twig pour traiter
+     * les informations.
+     * @Route("/lienUtile", name="lien_utile")
+     */
 
+    public function LienUtileAction(){
 
+        $liens =
+            [
+                1 =>
+                    [
+                        'nom' => "La Fédération Française d'escrime",
+                        'adresse'=>'www.escrime-ffe.fr'
+                    ],
+                2 =>
+                    [
+                        'nom' => "La ligue d'Aquitaine d'escrime",
+                        'adresse'=>'www.escrimeaquitaine.free.fr'
+                    ],
+                3 =>
+                    [
+                        'nom' => "Le Comité Départemental d'escrime de la Gironde",
+                        'adresse'=>'www.escrime33.com'
+                    ],
+                4 =>
+                    [
+                        'nom' => "La Fédération Française d'escrime",
+                        'adresse'=>'www.handisport.org'
+                    ],
+                5 =>
+                    [
+                        'nom' => "Confédération européenne d'escrime",
+                        'adresse'=>'www.eurofencing.info'
+                    ],
+                6 =>
+                    [
+                        'nom' => "Toute l'info sur l'escrime française et internationale",
+                        'adresse'=>'www.escrime-info.com'
+                    ],
+                7 =>
+                    [
+                        'nom' => "Équipement",
+                        'adresse'=>'www.escrime-diffusion.com '
+                    ],
+                8 =>
+                    [
+                        'nom' => "Site réalisé par Julien RUIZ",
+                        'adresse'=>'www.julien-ruiz.fr'
+                    ]
+            ];
+        return $this->render("@App/pages/InfoPratique/LienUtile.html.twig",
+            [
+                'liens' => $liens
+            ]
 
+            );
+    }
 
 
 

@@ -35,10 +35,15 @@ $blanc:rgba(255,255,255,0.9);
   @extend .bordure;
   background-image:$degrade;
 }
-
 .texte{
   @extend .bordure;
   margin-top: 90px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.titrepresentation{
+  @extend .bordure;
+  margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -51,12 +56,6 @@ $blanc:rgba(255,255,255,0.9);
   margin-top: 30px;
 }
 
-
-/*--------footer--------------------------*/
-.piedDepage{
-  @extend .bordure;
-  background-image:$degrade;
-}
 /*--------adresse de la salle--------------------*/
 .map{
   margin-left: 100px;
@@ -68,6 +67,22 @@ $blanc:rgba(255,255,255,0.9);
   display: flex;
   justify-content: space-around;
 }
+/*---------horaire-------------------*/
+.titrehoraire{
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*-------Lien utile----------------*/
+
+.lien{
+  @extend .bordure;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
 
 /*--------connexion--------------------*/
 .connexion{
@@ -87,8 +102,8 @@ $blanc:rgba(255,255,255,0.9);
 .defbureau{
   @extend .bordure;
   margin-left: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*--------------Actus----------------------*/
 #titreactus{
@@ -99,10 +114,78 @@ $blanc:rgba(255,255,255,0.9);
   background-color: rgb(199, 255, 255);
 }
 
+/*--------footer--------------------------*/
+.piedDepage{
+  @extend .bordure;
+  background-image:$degrade;
+}
+
 
 /*--------------------------------------------*/
 /*----------partie admin----------------------*/
 /*--------------------------------------------*/
+
+/*--------accueil admin--------*/
+
+.menuadmin{
+  @extend .bordure;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.titreadmin{
+  text-align: center;
+}
+.admin{
+  width: 150px;
+}
+.navadmin{
+  @extend .bordure;
+  background-color: rgb(221, 219, 219);
+}
+/*--------liste actus--------*/
+
+.bloclisteactus{
+  @extend .bordure;
+}
+.ajoutactus{
+  width: 168px;
+  margin: auto;
+}
+
+.titreadmin{
+  text-align: center;
+}
+.groupeactus{
+  display: flex;
+  justify-content: space-around;
+
+}
+.bouton{
+  width: 170px;
+}
+/*--------formulaire ajout actus--------*/
+.formajoutactu{
+  @extend .bordure;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.titreformactus{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#appbundle_actualites_titre, #appbundle_actualites_contenu{
+  width: 350px;
+}
+#appbundle_actualites_contenu{
+  height: 200px;
+}
+
+
+
+
+
 
 
 /*--------formulaire prix--------*/

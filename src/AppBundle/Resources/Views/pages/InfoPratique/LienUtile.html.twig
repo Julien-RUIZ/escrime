@@ -1,0 +1,23 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+<section>
+    <article>
+        <div class="container">
+            <div>
+                {% for lien in liens %}
+                    <div class="lien">
+                        <p>{{ lien.nom }}</p>
+                        <a href="http://{{ lien.adresse }}/" target="_blank"><p>{{ lien.adresse }}</p></a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </article>
+</section>
+
+
+
+
+{% endblock %}

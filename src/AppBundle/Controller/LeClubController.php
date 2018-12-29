@@ -12,6 +12,7 @@ use AppBundle\Entity\horaire;
 use AppBundle\Entity\Information;
 use AppBundle\Entity\Role;
 use AppBundle\Entity\User;
+use AppBundle\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -155,7 +156,22 @@ class LeClubController extends Controller
 
         return $this->redirectToRoute('liste_inscrit');
 
-
-
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

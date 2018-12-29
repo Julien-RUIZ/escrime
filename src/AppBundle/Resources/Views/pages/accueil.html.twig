@@ -14,11 +14,12 @@
 
 
     <article>
-        <h1 id="titreactus">Actualités du club</h1>
-
+        <div class="container my-5 texte">
+        <h1>Actualités du club</h1>
+        </div>
         <div>
             {% for actu in actus  %}
-                <div class="container my-5 texte">
+                <div class="container my-5 pb-3 texte">
                     <div class="container">
                         <h3>{{ actu.titre }}</h3>
                         <p>{{ actu.contenu }}</p>
