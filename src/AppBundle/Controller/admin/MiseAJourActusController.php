@@ -109,7 +109,7 @@ class MiseAJourActusController extends Controller
      * Partie admin qui nous servira pour supprimer une actualitée, bouton présent en dessous de l'actu, seulement visible en admin
      * @Route("/admin/suppractus/{id}", name="suppr_actus")
      */
-    public function supprLivreAction($id){
+    public function supprActusAction($id){
 
         //on a besoin du repository Livre pour récupérer le contenu de la table Auteur
         // pour récupérer ce repository :

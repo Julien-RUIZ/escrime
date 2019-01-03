@@ -4,16 +4,23 @@
 {% block content %}
     {#Ici nous allons avoir la liste des evenements réalisé grace au formulaire en partie admin, mais la
     liste est réalisé par la 1ere route de l'EvenementController#}
-<h1>juste pour voir</h1>
-    <ul>
-        {% for even in evens %}
-            <H4>{{ even.type.nom }}</H4>
-            <p>{{ even.titre }}</p>
-            <p>{{ even.contenu }}</p>
-            <p>{{ even.date | date("d/m/y") }}</p>
-        {% endfor %}
-    </ul>
 
+    <section>
+        <header>
+        <h2 class="titreeven">La liste des évenements a venir</h2>
+        </header>
 
-
+        <article>
+            {% for even in evens %}
+                <div class="container my-5 texteeven ">
+                    <div>
+                        <h4 class="my-3">Categorie : {{ even.type.nom }}</h4>
+                        <h5>{{ even.titre }}</h5>
+                        <p>{{ even.contenu }}</p>
+                        <p>{{ even.date | date("d/m/y") }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </article>
+    </section>
 {% endblock %}

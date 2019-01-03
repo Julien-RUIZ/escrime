@@ -5,26 +5,40 @@
 
     {% block admin %}
 
+<div class="container bloceven">
+    <header>
+
+        <h2 class="titreListInfo">Formulaire pour ajouter un événement</h2>
+
+    </header>
+    <section>
         {{ form_start(formeven) }}
 
-        <div>{{ form_label(formeven.type) }}</div>
-        <div>{{ form_widget(formeven.type) }}</div>
 
-        <div>{{ form_label(formeven.titre) }}</div>
-        <div>{{ form_widget(formeven.titre) }}</div>
+                <div class="row">
 
-        <div>{{ form_label(formeven.contenu) }}</div>
-        <div>{{ form_widget(formeven.contenu) }}</div>
+                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.type) }} :</div>
+                    <div class="col-7">{{ form_widget(formeven.type) }}</div>
 
-        <div>{{ form_label(formeven.date) }}</div>
-        <div>{{ form_widget(formeven.date) }}</div>
+                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.titre) }} :</div>
+                    <div class="col-7">{{ form_widget(formeven.titre) }}</div>
 
-        <div>{{ form_widget(formeven.save) }}</div>
+                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.contenu) }} :</div>
+                    <div class="col-7">{{ form_widget(formeven.contenu) }}</div>
+
+                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.date) }} :</div>
+                    <div class="col-7">{{ form_widget(formeven.date) }}</div>
+
+                    <div class="boutonvalideven mb-3">{{ form_widget(formeven.save) }}</div>
+
+                </div>
 
         {{ form_end(formeven) }}
 
 
-
+        <div class="boutonevenform mb-4"><a href="{{ path('liste_even') }}"><button class="boutonformenven">Retour a la liste</button></a></div>
+    </section>
+</div>
 
 
     {% endblock %}

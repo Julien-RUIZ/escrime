@@ -1,7 +1,7 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .barrenav, .entete, .texte, .titrepresentation, .textpresentation, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .formprix, .modif {
+.bordure, .barrenav, .entete, .texte, .titrepresentation, .textpresentation, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .texteeven, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .bloclisteeven, .bloceven, .formprix, .blocinfos, .modif {
   border: 1px solid black; }
 
 /*--------------------------------------------*/
@@ -91,13 +91,23 @@
 .piedDepage {
   background-image: linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076); }
 
+/*-------evenement------------------------*/
+.texteeven {
+  margin-top: 90px;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.titreeven {
+  text-align: center;
+  margin-top: 30px; }
+
 /*--------------------------------------------*/
 /*----------partie admin----------------------*/
 /*--------------------------------------------*/
 /*--------accueil admin--------*/
 .menuadmin {
-  margin-top: 70px;
-  margin-bottom: 40px; }
+  margin-top: 80px;
+  margin-bottom: 80px; }
 
 .titreadmin {
   text-align: center; }
@@ -115,10 +125,6 @@
 
 .titreadmin {
   text-align: center; }
-
-.groupeactus {
-  display: flex;
-  justify-content: space-around; }
 
 .bouton {
   width: 170px; }
@@ -139,19 +145,84 @@
 #appbundle_actualites_contenu {
   height: 200px; }
 
+/*--------liste evenements-------------*/
+.ajouteven {
+  width: 200px;
+  margin: auto; }
+
+.boutoneven {
+  width: 200px; }
+
+.liaisontypenom {
+  color: #560379;
+  text-decoration: underline; }
+
+/*--------Formulaire evenements-------------*/
+#appbundle_evenement_titre, #appbundle_evenement_contenu, #appbundle_evenement_date {
+  width: 350px; }
+
+#appbundle_evenement_contenu {
+  height: 300px; }
+
+.bloceven {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.boutonvalideven {
+  width: 160px;
+  margin: auto; }
+
+#appbundle_evenement_save {
+  width: 160px; }
+
+.boutonformenven {
+  width: 160px; }
+
+.boutonevenform {
+  width: 160px;
+  margin: auto; }
+
 /*--------formulaire prix--------*/
 .formtitreprix {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   margin-top: 20px; }
 
 .formprix {
   padding-top: 20px; }
 
+.boutonprix {
+  width: 170px; }
+
+.boutonformprix {
+  width: 170px;
+  margin: auto; }
+
+#appbundle_tarif_nom, #appbundle_tarif_produit, #appbundle_tarif_prix {
+  width: 170px; }
+
+.prixalign {
+  text-align: center;
+  margin-top: 10px; }
+
+#appbundle_tarif_save {
+  width: 170px; }
+
 /*----formulaire information------*/
 .titreListInfo {
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 20px; }
+
+.blocinfos {
+  margin-bottom: 10px; }
+
+.boutonMiseAjour {
+  width: 190px;
+  margin: auto; }
+
+.titreInfo {
+  text-align: center;
   margin-top: 20px; }
 
 /*----liste inscrit------*/

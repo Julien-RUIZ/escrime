@@ -5,7 +5,7 @@
 {% block admin %}
 <section>
     <header>
-        <h2 class="titreListInfo">Partie qui va mettre a jour les actus de la page principale</h2>
+        <h2 class="titreListInfo" id="titreactus">Partie qui va mettre a jour les actus de la page principale</h2>
 
         <div class="ajoutactus"><a href="{{ path('ajout_actualite') }}"><button class="bouton">Ajouter une actualité</button></a></div>
     </header>
@@ -13,10 +13,10 @@
 
         <div class="container mt-3">
             {% for actu in actus %}
-                <div class="bloclisteactus mb-3">
-                    <div class=" offset-4 col-4 offset-4 titreadmin"><h3>{{ actu.titre }}</h3></div>
+                <div class="bloclisteactus titreadmin mb-3">
+                    <div class=" offset-4 col-4 offset-4 "><h3>{{ actu.titre }}</h3></div>
                     {#groupe en flex box avec image et texte#}
-                    <div class="groupeactus">
+
                         {#Nous réalisons une partie pour faire apparaitre une photo si il y en a une#}
                         <div> {% if actu.photo %}
                             <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image">
@@ -25,7 +25,7 @@
                         {% endif %}
                         </div>
                         <div class=""><p>{{ actu.contenu }}</p></div>
-                    </div>
+
 
                     <div class="ajoutactus mb-3 mt-3"><a href="{{ path('mise_a_jour_actus', {'id': actu.id}) }}"><button class="bouton">Modifier l'actualité</button></a></div>
                     <div class="ajoutactus mb-3"><a href="{{ path('suppr_actus', {'id': actu.id}) }}"><button class="bouton">Suprimer l'actualité</button></a></div>
@@ -35,7 +35,8 @@
         </div>
 
 
-        <div class="mb-5"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
+        <div class="ajouteven mb-3"><a href="{{ path('homepage_admin') }}"><button class="boutoneven">Accueil admin</button></a></div>
+        <div class="ajouteven mb-5"><a href="#titreactus"><button class="boutoneven">Haut de page</button></a></div>
     </article>
 
 </section>

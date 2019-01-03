@@ -38,7 +38,7 @@ class MiseAJourInformationController extends Controller
 //--------------partie pour la mise a jour des informations-------------------------------------
 
     /**
-     * @Route("/admin/miseajourlivre/{id}", name="mise_a_jour_information")
+     * @Route("/admin/miseajourinfo/{id}", name="mise_a_jour_information")
      */
 
     public function MiseajourLivreAction(Request $request, $id)

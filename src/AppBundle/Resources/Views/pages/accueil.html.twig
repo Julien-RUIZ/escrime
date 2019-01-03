@@ -7,7 +7,7 @@
     <article>
         <div class="container-fluid">
             <div class="row grandeimage">
-                <img src="{{ asset('img/image-entete.jpg') }}" alt="deux escrimeurs" class="img-fluid image" >
+                <img src="{{ asset('img/image-entete.jpg') }}" alt="deux escrimeurs" class="img-fluid image">
             </div>
         </div>
     </article>
@@ -22,12 +22,12 @@
                 <div class="container my-5 pb-3 texte">
                     <div class="container">
                         <h3>{{ actu.titre }}</h3>
-                        <p>{{ actu.contenu }}</p>
                             {% if actu.photo %}
                                 <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite">
                             {% else %}
                                 <p>pas d'image</p>
                             {% endif %}
+                        <p>{{ actu.contenu }}</p>
                     </div>
                 </div>
 

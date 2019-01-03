@@ -3,35 +3,40 @@
 
 {% block admin %}
 
-<h4 class="formtitreprix">Formulaire pour mise a jour prix</h4>
+<h4 class="formtitreprix">Formulaire pour mise a jour des tarifs</h4>
 
 <div class="container">
     <div class="d-flex ">
-        <div class="offset-3 col-3 formprix">
-            {{ form_start(formprix) }}
-            <div>{{ form_label(formprix.nom) }}</div>
-            <div>{{ form_widget(formprix.nom) }}</div>
+        <div class="offset-2 col-3 formprix">
 
-            <div>{{ form_label(formprix.produit) }}</div>
-            <div>{{ form_widget(formprix.produit) }}</div>
-            <div>{{ form_label(formprix.prix) }}</div>
-            <div>{{ form_widget(formprix.prix) }}</div>
-            <div class="mt-3">{{ form_widget(formprix.save) }}</div>
+            {{ form_start(formprix) }}
+            <div>{{ form_errors(formprix.nom) }}</div>
+            <div class="prixalign">{{ form_label(formprix.nom) }}</div>
+            <div class="prixalign">{{ form_widget(formprix.nom) }}</div>
+
+            <div>{{ form_errors(formprix.produit) }}</div>
+            <div class="prixalign">{{ form_label(formprix.produit) }}</div>
+            <div class="prixalign">{{ form_widget(formprix.produit) }}</div>
+
+            <div>{{ form_errors(formprix.prix) }}</div>
+            <div class="prixalign">{{ form_label(formprix.prix) }}</div>
+            <div class="prixalign">{{ form_widget(formprix.prix) }}</div>
+            <div class="boutonformprix mt-3">{{ form_widget(formprix.save) }}</div>
             {{ form_end(formprix) }}
         </div>
 
 
-        <div class=" offset-1 col-3 formprix">
-            <div class="my-2"><a href="{{ path('mise_a_jour_prix', {'id': 1}) }}"><button>Location masque</button></a></div>
-            <div class="my-2"><a href="{{ path('mise_a_jour_prix', {'id': 2}) }}"><button>Location tenue</button></a></div>
-            <div class="mb-2"><a href="{{ path('mise_a_jour_prix', {'id': 3}) }}"><button>Location armes</button></a></div>
+        <div class=" offset-2 col-3 formprix">
+            <div class="boutonformprix my-2"><a href="{{ path('mise_a_jour_prix', {'id': 1}) }}"><button class="boutonprix">Location masque</button></a></div>
+            <div class="boutonformprix my-2"><a href="{{ path('mise_a_jour_prix', {'id': 2}) }}"><button class="boutonprix">Location tenue</button></a></div>
+            <div class="boutonformprix mb-2"><a href="{{ path('mise_a_jour_prix', {'id': 3}) }}"><button class="boutonprix">Location armes</button></a></div>
             <hr>
-            <div class="my-2"><a href="{{ path('mise_a_jour_prix', {'id': 4}) }}"><button>Licence compétition</button></a></div>
-            <div class="my-2"><a href="{{ path('mise_a_jour_prix', {'id': 5}) }}"><button>licence débutant</button></a></div>
-            <div class="mb-5"><a href="{{ path('mise_a_jour_prix', {'id': 6}) }}"><button>Licence loisir</button></a></div>
+            <div class="boutonformprix my-2"><a href="{{ path('mise_a_jour_prix', {'id': 4}) }}"><button class="boutonprix">Licence compétition</button></a></div>
+            <div class="boutonformprix my-2"><a href="{{ path('mise_a_jour_prix', {'id': 5}) }}"><button class="boutonprix">licence débutant</button></a></div>
+            <div class="boutonformprix mb-5"><a href="{{ path('mise_a_jour_prix', {'id': 6}) }}"><button class="boutonprix">Licence loisir</button></a></div>
         </div>
     </div>
-    <div class="my-3"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
+    <div class="boutonformprix my-3"><a href="{{ path('homepage_admin') }}"><button class="boutonprix">Accueil admin</button></a></div>
 </div>
 
 
