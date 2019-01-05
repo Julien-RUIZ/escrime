@@ -11,25 +11,19 @@
     <title>Document</title>
 </head>
 <body>
-{#------------------------ partie header-----------------------------#}
 
-<header>
-    <div class="container-fluid entete">
-        <div class="row d-flex align-items-center">
-            <div class="col-1 my-3"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" ></a></div>
-            <div class="offset-3 col-4"><h1 class="nomclub">Spuc Escrime</h1></div>
-            <div class="offset-3 col-1 my-3"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/MMFichier_14.png') }}" alt="logo" class="img-fluid" ></a></div>
-        </div>
-    </div>
-</header>
-{#--------------------------------------------------------Barre de navigation---------------------------------------------------#}
+
+
+{#--------------------------------------------------------Barre de navigation en sticky---------------------------------------------------#}
 
 <nav class="barrenav">
     <div class="row d-flex">
-        <div class="offset-4 col-4 d-flex justify-content-center mt-2">
+        <div class="col-1 my-1 bob"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" width="80%"></a></div>
+
+        <div class="offset-3 col-4 groupenavstick">
             {#-----------------------menu déroulant------------------------#}
 
-                <div>
+                <div class="homelogo">
                     <a href="{{ path('homepage') }}"><img src="{{ asset('img/home.png') }}" alt="symbol-home" class="img-fluid" width="50%"></a>
                 </div>
 
@@ -49,12 +43,12 @@
                 <div class="dropdown">
                     <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 
-                        <span class="caret">Le sport</span>
+                        <span class="caret">L'escrime</span>
                     </p>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#" title="Lien 1">Lien 1</a></li>
-                        <li><a href="#" title="Lien 2">Lien 2</a></li>
-                        <li><a href="#" title="Lien 3">Lien 3</a></li>
+                        <li><a href="{{ path('le_sport') }}">Description</a></li>
+                        <li><a href="{{ path('les_trois_armes') }}">Les trois armes</a></li>
+                        <li><a href="#">Lien 3</a></li>
                     </ul>
                 </div>
 
@@ -74,7 +68,7 @@
             {#-------------------------menu déroulant----------------------------#}
         </div>
 
-        <div class="d-flex offset-1 col-2 offset-1 mt-2">
+        <div class="d-flex offset-1 col-2 offset-1 groupeconnex">
             {% if app.user %}
 {#-----------------menu déroulant pour le profil -----------------------#}
                 <div class="dropdown">
@@ -97,15 +91,23 @@
 
                 <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></div>
             {% else %}
-                <div class="mx-4 mt-2"><a href="{{ path('fos_user_registration_register') }}">Inscription</a></div>
-                <div class="mx-4 mt-2"><a href="{{ path('fos_user_security_login') }}">Connexion</a></div>
+                <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_registration_register') }}">Inscription</a></div>
+                <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_security_login') }}">Connexion</a></div>
             {% endif %}
         </div>
     </div>
 </nav>
-{#--------------------------------------------------------Barre de navigation---------------------------------------------------#}
+{#--------------------------------------------------------Header avec nom du club---------------------------------------------------#}
 
+<header>
+    <div class="container-fluid entete">
+        <div class="row d-flex align-items-center pt-3">
 
+            <div class="offset-4 col-4"><h1 class="nomclub">Spuc Escrime</h1></div>
+            <div class="offset-3 col-1 my-3"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/MMFichier_14.png') }}" alt="logo" class="img-fluid" ></a></div>
+        </div>
+    </div>
+</header>
 
 
 
@@ -128,7 +130,7 @@
 <footer>
     <div class="container-fluid piedDepage">
         <div class="row d-flex">
-            <div class="col-1"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" ></div>
+
 
             <div class="offset-6 col-5 mt-2 d-flex justify-content-center  groupeTrois ">
                 <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 3}) }}">Mention légal</a></div>

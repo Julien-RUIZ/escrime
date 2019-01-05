@@ -1,29 +1,105 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .barrenav, .entete, .texte, .titrepresentation, .textpresentation, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .texteeven, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .bloclisteeven, .bloceven, .formprix, .blocinfos, .modif {
+.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .entete, .texte, .titrepresentation, .textpresentation, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .texteeven, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .bloclisteeven, .bloceven, .formprix, .blocinfos, .modif {
   border: 1px solid black; }
+
+.bouton, .boutonescrime {
+  width: 170px; }
 
 /*--------------------------------------------*/
 /*---------partie public----------------------*/
 /*--------------------------------------------*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
 .nomclub {
   font-family: 'Dancing Script', cursive;
   font-size: 60px;
-  text-align: center; }
+  text-align: center;
+  color: white;
+  text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0, 0, 0, 0.8) 0 30px 25px; }
+
+.dropdown, a {
+  color: black; }
+
+.bob {
+  text-align: end; }
 
 .menuderoul {
   text-align: center; }
 
 .barrenav {
   position: sticky;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("../img/metal4.jpg");
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  max-width: 100vw;
+  opacity: 0.9; }
+
+.groupenavstick {
+  display: flex;
+  align-items: flex-end; }
+
+.homelogo {
+  padding-bottom: 25px; }
+
+.groupeconnex {
+  display: flex;
+  align-items: flex-end; }
+
+/*------l'escrime description----------*/
+.titreEscrime {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.titrearme {
+  text-align: center;
+  width: 80%;
+  margin: auto; }
+
+.GroupeBoutonEscrime {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 600px;
+  margin: auto;
+  background-color: #560379; }
+
+.premierePhotoEscrime {
+  width: 40%; }
+
+.photoTexte {
+  display: flex;
+  justify-content: space-around; }
+
+.texteEscrime {
+  width: 442px;
+  height: 219px; }
+
+/*FLEURET*/
+.photofleuret {
+  width: 100%; }
+
+.photofleuret1 {
+  width: 30%;
+  margin: auto; }
+
+/*EPEE*/
+.photofepee {
+  width: 100%; }
+
+/*PISTE*/
+.photopiste {
+  width: 60%;
+  margin: auto; }
 
 /*--------Presentation--------------------*/
 .entete {
-  background-image: linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076); }
+  background-color: #560379;
+  height: 120px; }
 
 .texte {
   margin-top: 90px;
@@ -42,9 +118,17 @@
 .imagemasuearme {
   margin-top: 30px; }
 
+.imagePresentation {
+  width: 80%; }
+
+.photosalle {
+  width: 100%; }
+
 /*--------adresse de la salle--------------------*/
 .map {
-  margin-left: 100px; }
+  margin-left: 100px;
+  width: 100%;
+  padding: 5px; }
 
 .salle {
   margin-left: 50px; }
@@ -72,7 +156,9 @@
   font-size: 20px; }
 
 .deconn {
-  font-size: 20px; }
+  font-size: 20px;
+  padding-bottom: 23px;
+  text-decoration: none; }
 
 /*--------------Staff----------------------*/
 .defbureau {
@@ -87,9 +173,16 @@
   padding-top: 10px;
   background-color: #c7ffff; }
 
+.grandeimage {
+  width: 100%; }
+
+.imageactus {
+  width: 50%;
+  margin: auto; }
+
 /*--------footer--------------------------*/
 .piedDepage {
-  background-image: linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076); }
+  background-color: #560379; }
 
 /*-------evenement------------------------*/
 .texteeven {
@@ -118,6 +211,9 @@
 .navadmin {
   background-color: #dddbdb; }
 
+.groupedeux {
+  padding-bottom: 30px; }
+
 /*--------liste actus--------*/
 .ajoutactus {
   width: 168px;
@@ -125,9 +221,6 @@
 
 .titreadmin {
   text-align: center; }
-
-.bouton {
-  width: 170px; }
 
 /*--------formulaire ajout actus--------*/
 .formajoutactu {
@@ -215,7 +308,8 @@
   margin-top: 20px; }
 
 .blocinfos {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding: 10px; }
 
 .boutonMiseAjour {
   width: 190px;

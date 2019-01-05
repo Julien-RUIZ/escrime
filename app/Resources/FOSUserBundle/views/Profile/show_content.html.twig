@@ -37,8 +37,9 @@
         <div class="col-4"><p>{{ user.role.role }}</p></div>
 
         <div class="groupebutton">
-                <div class="mr-2 mb-5 mt-5"><button><a href="{{ path('fos_user_profile_edit') }}">Modifier infos</a></button></div>
-                <div class="mt-5"><button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button></div>
+                <div class="mt-5 "><a href="{{ path('suppr_membre_manuel', {'id': user.id}) }}"><button>Supprimer</button></a></div>
+                <div class="mx-2 mb-5 mt-5"><a href="{{ path('fos_user_profile_edit') }}"><button>Modifier infos</button></a></div>
+                <div class="mt-5"><a href="{{ path('homepage') }}"><button>Retour page d'accueil</button></a></div>
         </div>
     </div>
 </div>

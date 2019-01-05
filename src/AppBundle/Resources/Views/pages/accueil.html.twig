@@ -5,10 +5,8 @@
 {% block content %}
 <section>
     <article>
-        <div class="container-fluid">
-            <div class="row grandeimage">
-                <img src="{{ asset('img/image-entete.jpg') }}" alt="deux escrimeurs" class="img-fluid image">
-            </div>
+        <div class="grandeimage">
+            <img src="{{ asset('img/image-entete.jpg') }}" alt="deux escrimeurs" class="image" width="100%">
         </div>
     </article>
 
@@ -23,7 +21,7 @@
                     <div class="container">
                         <h3>{{ actu.titre }}</h3>
                             {% if actu.photo %}
-                                <img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite">
+                                <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite"  width="100%"></div>
                             {% else %}
                                 <p>pas d'image</p>
                             {% endif %}

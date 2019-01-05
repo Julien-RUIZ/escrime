@@ -1,0 +1,184 @@
+{% extends '@App/base/base.html.twig' %}
+
+{% block content %}
+    {#-----------------------Groupe photo et texte-----------------------------------------------------#}
+
+
+    <div class="GroupeBoutonEscrime mt-5">
+        <div><button class="boutonescrime">Fleuret</button></div>
+        <div><button class="boutonescrime mx-3">Epée</button></div>
+        <div><button class="boutonescrime">Sabre</button></div>
+    </div>
+
+    <hr>
+
+
+    {#-----------------------------------FLEURET-------------------------------------------------------#}
+    <section>
+        <article>
+            <div class="container my-5">
+                <header>
+                    <h3 class="titrearme mb-3">Le Fleuret</h3>
+                </header>
+                <div class="photofleuret1 my-3"><img src="{{ asset('img/Fleuret.jpg') }}" alt="fleuret" width="100%"></div>
+
+                <div>
+                    <p>Le fleuret a été créé au xviie siècle pour servir d'arme d'entraînement et d'étude.
+                        C'est la seule arme qui ne soit jamais sortie des salles d'escrime (contrairement au
+                        sabre qui a servi sur les champs de bataille et l'épée qui a été utilisée pour le duel).</p>
+
+                    <p>C'est une arme légère — 500 grammes pour une longueur de 110 cm — et flexible dont la
+                        section de lame est rectangulaire. La touche se fait avec la pointe uniquement.</p>
+
+                    <div class="photofleuret my-3"><img src="{{ asset('img/JO-de-Rio-2016-une-combinaison-d-escrime-protege-t-elle-vraiment.jpg') }}" alt="fleuret" width="100%"></div>
+
+
+                    <p>Le fleuret est une arme d'étude, il est en général la première arme enseignée aux
+                        débutants, bien qu'elle soit aussi pratiquée en compétition. En fait, le choix de
+                        la première arme enseignée dépend du club et du maître d'armes. Son nom vient de la
+                        fleur de laine, autrefois enroulée au bout de la lame pour éviter les blessures.
+                        Dans le passé, les femmes n'étaient autorisées à tirer qu'au fleuret et la légèreté de
+                        l'arme en rendait son maniement aisé pour les enfants. De nos jours, bien qu'il soit
+                        conseillé d'apprendre au moins les principes fondamentaux du fleuret, les escrimeurs
+                        peuvent commencer avec n'importe laquelle des trois armes.</p>
+
+
+                    <p>L'aire de touche au fleuret est restreinte, c'est un héritage du temps où les
+                        équipements de sécurité étaient limités. Les coups au visage étant auparavant dangereux
+                        faute de masque, la tête n'est pas une cible valide. L'aire fut réduite au tronc seul,
+                        zone où les coups portés seraient potentiellement les plus dangereux si les armes
+                        n'étaient pas, fort heureusement, neutralisées. Au fleuret, comme au sabre, il est
+                        strictement interdit de "substituer"5 une surface valable (tronc) par une surface non
+                        valable (ex. bras ou tête).
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    {#-----------------------------------Epée-------------------------------------------------------#}
+
+    <section>
+        <article>
+            <div class="container my-5">
+                <header>
+                    <h3 class="titrearme mb-3">L'Epée</h3>
+                </header>
+                <div class="photofleuret1 my-3"><img src="{{ asset('img/armeepee.jpg') }}" alt="epee" width="100%"></div>
+
+                <p>L’épée moderne a été inventée au xixe siècle afin de se battre en duel. C’est une arme d’estoc
+                    uniquement. On utilisa auparavant, à partir du xvie siècle, la rapière, qui a ensuite évolué
+                    en épée de cour sous Louis XIV.</p>
+
+                <p>
+                    L'action offensive de cette arme s’exerce donc par la pointe et par la pointe seule.
+                    C'est une arme plus lourde — 750 g pour une longueur de 110 cm maximum (poignée d'une
+                    longueur de 20 cm maximum) — et moins flexible que le fleuret, et sa lame est de section
+                    triangulaire. La surface valable comprend tout le corps du tireur, y compris ses vêtements
+                    et son équipement.</p>
+
+                <div class="photofepee my-3"><img src="{{ asset('img/epee.jpg') }}" alt="epée" width="100%"></div>
+
+                <p>Lorsque les deux tireurs sont touchés simultanément, et que l'appareil enregistre valablement
+                    ces deux touches (pas plus de 0,25 seconde d’écart entre les deux touches), il y a « coup
+                    double », c’est-à-dire un point pour chacun.
+                    L’épée possède deux fils électriques, tous les deux collés à la lame, qui connectent le bouton
+                    à l’extrémité de l’épée aux deux des trois prises qui se trouvent à l’intérieur de la coque.</p>
+
+                <p>Cette arme est dite « non conventionnelle » car elle n’obéit pas à des règles de priorité comme
+                    le fleuret et le sabre : les conditions et les règles du combat sont donc très similaires à
+                    celles des anciens duels.</p>
+            </div>
+            </div>
+        </article>
+    </section>
+{#-----------------------------------SABRE-------------------------------------------------------#}
+
+    <section>
+        <article>
+            <div class="container my-5">
+                <header>
+                    <h3 class="titrearme mb-3">Le Sabre</h3>
+                </header>
+                <div class="photofleuret1 my-3"><img src="{{ asset('img/sabre-escrime.gif') }}" alt="sabre" width="100%"></div>
+
+                <p>Le sabre est une arme d'estoc, de taille (coup porté avec le tranchant de la lame) et de
+                    contre-taille (coup porté avec le dos de la lame); les coups du plat de la lame sont aussi
+                    valables. C'est une arme conventionnelle comme le fleuret8 : le sabre répond aux mêmes
+                    règles d'engagement (conventions) que le fleuret, donnant la priorité à l'attaquant, et
+                    de même légèreté — 500 g pour une longueur totale de 105 cm maximum</p>
+
+                <p>En cas de touches simultanées, l'arbitre décide d'accorder la priorité à un des tireurs, ou
+                    à aucun des deux. Cette priorité dépend de la « phrase d'armes » et des conventions du
+                    sabre. La surface valable pour le sabre est tout ce qui se trouve au-dessus de la taille
+                    (à l'exception des 2 mains), car cette arme nous vient de la cavalerie, et qu'il était
+                    dans ce cas très difficile de toucher en dessous de la taille.</p>
+
+                <div class="photofepee my-3"><img src="{{ asset('img/banner1.png') }}" alt="sabre" width="100%"></div>
+
+                <p>Contrairement au fleuret et à l'épée, les passes avant (croisement des jambes en un rapide
+                    mouvement vers l'avant) sont interdites (elles étaient autorisées mais ont été supprimées
+                    du fait que les déplacements des sabreurs se rapprochaient trop de la course).</p>
+
+                <p>Le sabre est une arme dont les assauts sont très difficiles à effectuer par des néophytes,
+                    la priorité donnée à l'attaque associée à la relative facilité pour toucher son adversaire
+                    rendant les combats très rapides.</p>
+
+                <p></p>
+            </div>
+            </div>
+        </article>
+    </section>
+{#-------------------------------PISTE D'ESCRIME----------------------------------------------#}
+    <section>
+        <article>
+            <div class="container my-5">
+                <header>
+                    <h3 class="titrearme mb-3">La piste</h3>
+                </header>
+                <div class="photopiste my-3"><img src="{{ asset('img/piste-35020.jpg') }}" alt="sabre" width="100%"></div>
+
+                <p>Une piste d'escrime mesure 14 mètres de long sur 1,5 à 2 mètres de large. Elle est marquée par
+                    des lignes perpendiculaires en divers endroits (centre de la piste, ligne de mise en
+                    garde, et limite arrière, outre les 2 derniers mètres doivent être clairement identifiés).
+                    Si un tireur sort par l'un des bords latéraux de la piste, l'action est interrompue et
+                    les tireurs se remettent en garde en ayant néanmoins fait avancer d'un mètre l'adversaire
+                    du tireur qui est sorti ; ce dernier devant donc reculer et se remettre à distance.
+                    Si un tireur sort des deux pieds par le bout arrière de la piste, il est considéré comme
+                    touché.</p>
+
+                <p>Au bord de la piste, un dispositif électrique complexe assure le décompte des touches
+                    au cours de l'assaut. Ce dispositif se compose d'un appareil central, de deux enrouleurs
+                    (un par tireur) et de fils conducteurs. L'appareil central est relié aux enrouleurs,
+                    situés de part et d'autre de la piste, eux-mêmes reliés aux tireurs. Le système
+                    d'enroulement du fil conducteur permet de ne pas encombrer la piste car le fil
+                    reste tendu en permanence, sans pour autant réduire la mobilité du tireur vers
+                    l'avant. Le circuit électrique est complété par un fil de corps qui passe sous
+                    la veste du tireur, contre son flanc et par la manche du bras armé, branché dans
+                    une prise située derrière la coquille de l'arme. Au fleuret et à l'épée, le bouton
+                    situé à l'extrémité de la lame (la tête de pointe) a un rôle d'interrupteur qui permet
+                    de compléter le circuit électrique. Au sabre, dans les épreuves de haut niveau, le fil
+                    est remplacé par un boîtier électronique qui transmet à travers les airs le signal à
+                    l'appareil d'enregistrement des touches.</p>
+
+                <div class="photofepee my-3"><img src="{{ asset('img/piste-png') }}" alt="piste" width="100%"></div>
+
+                <p>L'appareil électrique dispose de quatre lumières ; la lumière s'allume du côté du
+                    tireur qui touche. La lumière verte ou la lumière rouge (chaque tireur a sa couleur)
+                    indique qu'une touche valable a été portée. Les lumières blanches (une pour chaque tireur)
+                    indique qu'une touche a été porté mais sur une zone non valable (exclusivement pour le
+                    fleuret). Pour l'épée, aucune lumière blanche ne s'allume. Les escrimeurs sont eux-mêmes
+                    reliés au système par le fil tendu grâce aux enrouleurs. Pour juger la matérialité de
+                    la touche, seule l'indication de l'appareil de contrôle fait foi. En aucun cas l'arbitre
+                    ne peut déclarer un tireur touché sans que l'appareil ait régulièrement enregistré la
+                    touche, sauf dans les cas de sanctions (sortie arrière de la piste des deux pieds ou
+                    carton rouge pour une faute, (cf. Règlement technique FIE)).</p>
+
+                <p>La piste sur laquelle les tireurs évoluent est conductrice et reliée à l'appareil
+                    comptant les points, il est donc impossible de porter une touche au sol à moins de
+                    toucher en dehors de la piste. Les tireurs ont interdiction formelle de laisser traîner
+                    la pointe de leur arme sur la piste durant l'assaut.</p>
+            </div>
+        </article>
+    </section>
+
+{% endblock %}
