@@ -2,22 +2,19 @@
 
 
 {% block content %}
-<section>
-    <article>
-        <div class="container">
-            <div>
-                {% for lien in liens %}
-                    <div class="lien">
-                        <p>{{ lien.nom }}</p>
-                        <a href="http://{{ lien.adresse }}/" target="_blank"><p>{{ lien.adresse }}</p></a>
-                    </div>
-                {% endfor %}
+    <section>
+        <header>
+            <div class="container titrelien">
+                <h2>Liens utiles</h2>
             </div>
-        </div>
-    </article>
-</section>
-
-
-
-
+        </header>
+        <article>
+            {% for lien in liens %}
+                <div class="container lien">
+                    <p><strong>{{ lien.nom }} :</strong></p>
+                    <a href="http://{{ lien.adresse }}/" target="_blank"><p>{{ lien.adresse }}</p></a>
+                </div>
+            {% endfor %}
+        </article>
+    </section>
 {% endblock %}

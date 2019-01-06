@@ -19,7 +19,7 @@
             {% for actu in actus  %}
                 <div class="container my-5 pb-3 texte">
                     <div class="container">
-                        <h3>{{ actu.titre }}</h3>
+                        <h3 class="my-3">{{ actu.titre }}</h3>
                             {% if actu.photo %}
                                 <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite"  width="100%"></div>
                             {% else %}

@@ -14,6 +14,34 @@ $mauve:rgb(86,3,121);
 .bouton{
   width: 170px;
 }
+.marginTopBottom40{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.marginTopBottom80{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.marginTopBottom30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.paddingTopBottom10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.marginBottom50Top20{
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.marginTop90Bottom40{
+margin-top: 90px;
+margin-bottom: 40px;
+}
 /*--------------------------------------------*/
 /*---------partie public----------------------*/
 /*--------------------------------------------*/
@@ -32,12 +60,9 @@ html, body{
 .dropdown, a{
   color: black;
 }
-
 .bob{
   text-align: end;
 }
-
-
 .menuderoul{
   text-align: center;
 }
@@ -84,8 +109,7 @@ html, body{
   display: flex;
   justify-content: center;
   @extend .bordure;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @extend .paddingTopBottom10;
   width: 600px;
   margin: auto;
   background-color: $mauve;
@@ -100,27 +124,28 @@ html, body{
 .texteEscrime{
   width: 442px;
   height: 219px;
-
+}
+.phototroisarmes{
+  width: 10%;
+  margin: auto;
 }
 /*FLEURET*/
-.photofleuret{
+.photofleuret, .photohandi, .photofepee{
   width: 100%;
+}
+.photohandi1{
+  width: 80%;
+  margin: auto;
 }
 .photofleuret1{
   width: 30%;
   margin: auto;
-}
-/*EPEE*/
-.photofepee{
-  width: 100%;
 }
 /*PISTE*/
 .photopiste{
   width: 60%;
   margin: auto;
 }
-
-
 /*--------Presentation--------------------*/
 .entete{
   @extend .bordure;
@@ -130,20 +155,17 @@ html, body{
 }
 .texte{
   @extend .bordure;
-  margin-top: 90px;
-  margin-bottom: 40px;
+  @extend .marginTop90Bottom40;
   text-align: center;
 }
-.titrepresentation{
+.titrepresentation, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes{
   @extend .bordure;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  @extend .marginTopBottom40;
   text-align: center;
 }
 .textpresentation{
   @extend .bordure;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  @extend .marginTopBottom40;
 }
 .imagemasuearme{
   margin-top: 30px;
@@ -153,6 +175,15 @@ html, body{
 }
 .photosalle{
   width: 100%;
+}
+/*---------Prix---------------------------*/
+.paralocation{
+  text-align: left;
+}
+.textePrix{
+  @extend .bordure;
+  @extend .marginTop90Bottom40;
+  text-align: center;
 }
 
 /*--------adresse de la salle--------------------*/
@@ -179,11 +210,9 @@ html, body{
 
 .lien{
   @extend .bordure;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  @extend .marginTopBottom40;
   text-align: center;
 }
-
 /*--------connexion--------------------*/
 .connexion{
   @extend .bordure;
@@ -242,7 +271,6 @@ html, body{
   margin-top: 30px;
 }
 
-
 /*--------------------------------------------*/
 /*----------partie admin----------------------*/
 /*--------------------------------------------*/
@@ -251,8 +279,7 @@ html, body{
 
 .menuadmin{
   @extend .bordure;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  @extend .marginTopBottom80;
 }
 .titreadmin{
   text-align: center;
@@ -289,13 +316,11 @@ html, body{
 /*--------formulaire ajout actus--------*/
 .formajoutactu{
   @extend .bordure;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  @extend .marginTopBottom40;
 }
 .titreformactus{
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  @extend .marginTopBottom30;
 }
 
 #appbundle_actualites_titre, #appbundle_actualites_contenu{
@@ -330,33 +355,22 @@ html, body{
 }
 .bloceven{
   @extend .bordure;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  @extend .marginTopBottom30;
 }
-.boutonvalideven{
+.boutonvalideven, .boutonevenform{
   width: 160px;
   margin: auto;
 }
-
 #appbundle_evenement_save{
   width: 160px;
 }
 .boutonformenven{
   width: 160px;
 }
-
-.boutonevenform{
-  width: 160px;
-  margin: auto;
-}
-
-
-
 /*--------formulaire prix--------*/
 .formtitreprix{
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  @extend .marginBottom50Top20;
 }
 
 .formprix{
@@ -370,7 +384,7 @@ html, body{
   width: 170px;
   margin:auto;
 }
-#appbundle_tarif_nom, #appbundle_tarif_produit, #appbundle_tarif_prix{
+#appbundle_tarif_nom, #appbundle_tarif_save, #appbundle_tarif_produit, #appbundle_tarif_prix{
   width: 170px;
 }
 
@@ -378,15 +392,10 @@ html, body{
   text-align: center;
   margin-top: 10px;
 }
-#appbundle_tarif_save{
-  width: 170px;
-}
-
 /*----formulaire information------*/
 .titreListInfo{
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  @extend .marginBottom50Top20;
 }
 
 .blocinfos{
@@ -404,14 +413,6 @@ html, body{
   text-align: center;
   margin-top: 20px;
 }
-
-
-
-
-
-
-
-
 /*----liste inscrit------*/
 .listinscrit{
  text-align: left;
@@ -424,8 +425,7 @@ html, body{
 /*----formulaire mise a jour---*/
 .modif{
   @extend .bordure;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  @extend .marginTopBottom80;
 }
 #misejourinfo{
   text-align: center;
@@ -444,6 +444,14 @@ label{
   width: 350px;
 }
 
+/*----Confirmation enregistrement*/
+
+.confirmEnregistr{
+  height: 65vh;
+  @extend .bordure;
+  text-align: center;
+  padding-top: 10%;
+}
 /*----formulaire connexion---*/
 
 #username, #password{

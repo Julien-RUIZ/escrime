@@ -1,0 +1,54 @@
+{% extends '@App/base/base.html.twig' %}
+
+
+{% block content %}
+
+    <div class="container">
+        <div class=" titrehandisport">
+            <h2>L'escrime handisport</h2>
+        </div>
+
+        <p>L'escrime handisport est une discipline sportive paralympique, ouverte aux
+            handicapés moteurs depuis 1960 et pratiquée en fauteuil. Il existe une variante,
+            qui n'est pas une discipline paralympique : l'escrime pour mal-voyants</p>
+
+        <p>Aujourd'hui l'escrime handisport est une escrime à part entière qui
+            s'adapte bien à sa pratique en fauteuil roulant. Les échanges sont très
+            rapides et les règlements sont proches de l'escrime traditionnelle. La
+            technique fondamentale reste la même, mais des règles particulières sont
+            appliquées.</p>
+
+        <p>De plus en plus d'entraînements communs handicapés/valides sont organisés.
+            De plus en plus de compétitions ont lieu en commun (sur un même site)
+            permettant ainsi d'intégrer de façon plus concrète les sportifs handicapés
+            à la communauté des escrimeurs.</p>
+
+        <div class="photohandi my-5"><img src="{{ asset('img/Handi.jpg') }}" alt="escrime handisport" width="100%"></div>
+
+        <p>Dans cette variante statique de l'escrime, les deux athlètes sont installés face
+            à face dans un fauteuil roulant qui est fixé sur le sol. La distance qui les
+            sépare est déterminée par celui qui possède le bras le plus court.</p>
+
+        <p>Les fauteuils sont fixés en formant un angle de 110° avec la ligne de
+            séparation centrale. Les compétiteurs tiennent d'une main leur arme (fleuret,
+            épée ou sabre), et de l'autre se cramponnent à leur fauteuil. Durant la
+            rencontre, ils doivent rester assis, et ne peuvent se servir de leurs jambes.
+            Les fauteuils ne doivent pas être soulevés.</p>
+
+        <p>Les athlètes ont un équipement d'escrime standard, plus des protections
+            supplémentaires pour les jambes. Ceux qui manquent de prise sur leur arme
+            peuvent la fixer avec une bande ou un dispositif similaire.</p>
+
+        <div class="photohandi1 my-5"><img src="{{ asset('img/handi2.jpg') }}" alt="escrime handisport" width="100%"></div>
+
+        <p>En épreuve individuelle, les tireurs s'affrontent pendant 3 périodes de 3 minutes,
+            le premier totalisant 15 touches remportant la victoire (ou celui ayant obtenu le
+            plus grand nombre de touches). Il existe une période supplémentaire d'une minute
+            pour départager les adversaires en cas d'égalité. Pour les tours préliminaires,
+            on se contente d'une seule période de 4 minutes avec 5 touches pour être vainqueur.</p>
+
+        <p class="mb-5">En épreuve collective, les équipes sont composées de trois joueurs. La première à
+            totaliser 45 touches est victorieuse.</p>
+    </div>
+
+{% endblock %}

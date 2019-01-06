@@ -36,7 +36,7 @@ class Evenement
     /**
      * @var string
      *
-     * @ORM\Column(name="contenu", type="string", length=5000)
+     * @ORM\Column(name="contenu", type="string", length=10000)
      */
     private $contenu;
 

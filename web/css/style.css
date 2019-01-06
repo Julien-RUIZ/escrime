@@ -1,11 +1,35 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .entete, .texte, .titrepresentation, .textpresentation, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .texteeven, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .bloclisteeven, .bloceven, .formprix, .blocinfos, .modif {
+.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .entete, .texte, .titrepresentation, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .texteeven, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .bloclisteeven, .bloceven, .formprix, .blocinfos, .modif, .confirmEnregistr {
   border: 1px solid black; }
 
 .bouton, .boutonescrime {
   width: 170px; }
+
+.marginTopBottom40, .titrepresentation, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .lien, .formajoutactu {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.marginTopBottom80, .menuadmin, .modif {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+.marginTopBottom30, .titreformactus, .bloceven {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.paddingTopBottom10, .GroupeBoutonEscrime {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.marginBottom50Top20, .formtitreprix, .titreListInfo {
+  margin-bottom: 50px;
+  margin-top: 20px; }
+
+.marginTop90Bottom40, .texte, .textePrix {
+  margin-top: 90px;
+  margin-bottom: 40px; }
 
 /*--------------------------------------------*/
 /*---------partie public----------------------*/
@@ -62,8 +86,6 @@ html, body {
 .GroupeBoutonEscrime {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   width: 600px;
   margin: auto;
   background-color: #560379; }
@@ -79,17 +101,21 @@ html, body {
   width: 442px;
   height: 219px; }
 
+.phototroisarmes {
+  width: 10%;
+  margin: auto; }
+
 /*FLEURET*/
-.photofleuret {
+.photofleuret, .photohandi, .photofepee {
   width: 100%; }
+
+.photohandi1 {
+  width: 80%;
+  margin: auto; }
 
 .photofleuret1 {
   width: 30%;
   margin: auto; }
-
-/*EPEE*/
-.photofepee {
-  width: 100%; }
 
 /*PISTE*/
 .photopiste {
@@ -102,18 +128,10 @@ html, body {
   height: 120px; }
 
 .texte {
-  margin-top: 90px;
-  margin-bottom: 40px;
   text-align: center; }
 
-.titrepresentation {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.titrepresentation, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes {
   text-align: center; }
-
-.textpresentation {
-  margin-top: 40px;
-  margin-bottom: 40px; }
 
 .imagemasuearme {
   margin-top: 30px; }
@@ -123,6 +141,13 @@ html, body {
 
 .photosalle {
   width: 100%; }
+
+/*---------Prix---------------------------*/
+.paralocation {
+  text-align: left; }
+
+.textePrix {
+  text-align: center; }
 
 /*--------adresse de la salle--------------------*/
 .map {
@@ -144,8 +169,6 @@ html, body {
 
 /*-------Lien utile----------------*/
 .lien {
-  margin-bottom: 30px;
-  margin-top: 30px;
   text-align: center; }
 
 /*--------connexion--------------------*/
@@ -198,10 +221,6 @@ html, body {
 /*----------partie admin----------------------*/
 /*--------------------------------------------*/
 /*--------accueil admin--------*/
-.menuadmin {
-  margin-top: 80px;
-  margin-bottom: 80px; }
-
 .titreadmin {
   text-align: center; }
 
@@ -223,14 +242,8 @@ html, body {
   text-align: center; }
 
 /*--------formulaire ajout actus--------*/
-.formajoutactu {
-  margin-top: 40px;
-  margin-bottom: 40px; }
-
 .titreformactus {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px; }
+  text-align: center; }
 
 #appbundle_actualites_titre, #appbundle_actualites_contenu {
   width: 350px; }
@@ -257,11 +270,7 @@ html, body {
 #appbundle_evenement_contenu {
   height: 300px; }
 
-.bloceven {
-  margin-top: 30px;
-  margin-bottom: 30px; }
-
-.boutonvalideven {
+.boutonvalideven, .boutonevenform {
   width: 160px;
   margin: auto; }
 
@@ -271,15 +280,9 @@ html, body {
 .boutonformenven {
   width: 160px; }
 
-.boutonevenform {
-  width: 160px;
-  margin: auto; }
-
 /*--------formulaire prix--------*/
 .formtitreprix {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 20px; }
+  text-align: center; }
 
 .formprix {
   padding-top: 20px; }
@@ -291,21 +294,16 @@ html, body {
   width: 170px;
   margin: auto; }
 
-#appbundle_tarif_nom, #appbundle_tarif_produit, #appbundle_tarif_prix {
+#appbundle_tarif_nom, #appbundle_tarif_save, #appbundle_tarif_produit, #appbundle_tarif_prix {
   width: 170px; }
 
 .prixalign {
   text-align: center;
   margin-top: 10px; }
 
-#appbundle_tarif_save {
-  width: 170px; }
-
 /*----formulaire information------*/
 .titreListInfo {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 20px; }
+  text-align: center; }
 
 .blocinfos {
   margin-bottom: 10px;
@@ -327,10 +325,6 @@ html, body {
 /*----------formulaire fos_user---------------*/
 /*--------------------------------------------*/
 /*----formulaire mise a jour---*/
-.modif {
-  margin-top: 70px;
-  margin-bottom: 70px; }
-
 #misejourinfo {
   text-align: center;
   margin-top: 20px;
@@ -345,6 +339,12 @@ label {
 /*----formulaire inscription---*/
 #fos_user_registration_form_nom, #fos_user_registration_form_prenom, #fos_user_registration_form_username, #fos_user_registration_form_email, #fos_user_registration_form_plainPassword_first, #fos_user_registration_form_plainPassword_second, #fos_user_registration_form_adresse, #fos_user_registration_form_ville, #fos_user_registration_form_code_postal {
   width: 350px; }
+
+/*----Confirmation enregistrement*/
+.confirmEnregistr {
+  height: 65vh;
+  text-align: center;
+  padding-top: 10%; }
 
 /*----formulaire connexion---*/
 #username, #password {

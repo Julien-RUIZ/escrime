@@ -17,6 +17,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -33,9 +34,9 @@ class RegistrationType extends AbstractType
         $builder
             ->add('nom')
             ->add('prenom')
-            ->add('adresse')
-            ->add('code_postal')
-            ->add('ville')
+            ->add('adresse',TextType::class, array('required'=> false))
+            ->add('code_postal',TextType::class, array('required'=> false))
+            ->add('ville',TextType::class, array('required'=> false))
             ->add('civilite',EntityType::class, [
         'class' => 'AppBundle\Entity\civilite',
         'choice_label' => 'sexe',

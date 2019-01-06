@@ -3,18 +3,44 @@
 
 {% block content %}
     <section>
-        <header>
-        <div class="container my-5 texte">
-            <h3>Prix des locations</h3>
-            <p>La location du materiel d'escrime: </p>
+        <div class="container titreprix">
+            <h2>La location du materiel d'escrime</h2>
+        </div>
 
+
+        <article>
+        <div class="container my-5 textePrix">
+
+
+            <h5 class="my-3">Équipement du tireur</h5>
+
+            <div class="paralocation">
+                <p>
+                    L'équipement porté par le tireur à l'exception des chaussettes et chaussures
+                    L'habillement des tireurs en compétition ou lors d'entrainement est assujetti au
+                    règlement FFE en France et FIE lors des compétitions internationales. Le règlement
+                    FFE dispose que le tireur doit être équipé d'une tenue adaptée à sa catégorie
+                    (M13, M15, M17, sénior...) pour les entraînements. En compétition, le règlement
+                    français impose le port de matériel estampillé CE quelle que soit la catégorie.
+                    En revanche la classe de matériel (350N ou 800N) dépend bien évidemment de la
+                    catégorie ainsi que du type de compétition. Typiquement la norme pour les compétitions
+                    internationales sénior impose une tenue complète (veste, sous cuirasse et pantalon) à
+                    800N (newtons).
+                </p>
+                <p>
+                    Pour donner un ordre d'idée une tenue 800N est une tenue qui résiste à une force de 800 newtons appliquée n'importe où sur la tenue. 800N correspond approximativement à un poids de 85 kg.
+                </p>
+
+                <p>L'habillement des tireurs doit être blanc, sauf chaussettes.</p>
+            </div>
+            <hr>
             {% for tarif in tarifs|slice(0, 3) %}
                 <p>{{ tarif.Produit }}: {{ tarif.prix }} euros</p>
             {% endfor %}
         </div>
-        </header>
+        </article>
         <article>
-            <div class="container my-5 texte">
+            <div class="container my-5 textePrix">
                 <h3>La tenue compléte: </h3>
                     <div class="row mt-5">
                         <div class="col-3"><img src="{{ asset('img/veste.jpg') }}" alt="veste d'escrime" class="img-fluid" width="50%">

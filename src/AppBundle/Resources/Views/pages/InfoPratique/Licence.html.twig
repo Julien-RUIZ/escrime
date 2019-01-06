@@ -4,21 +4,25 @@
 {% block content %}
 <section>
     <article>
+        <div class="container titrelicence">
+            <h2>Prix des licences</h2>
+        </div>
+
         <div class="container my-5 texte">
-            <h3>Prix des licences</h3>
-            <p>Prix des licences en fonctions du niveau de l'escrimeur</p>
-                {% for licence in licences|slice(3, 6) %}
-                    <p>{{ licence.Produit }}, {{ licence.prix }} euros </p>
-                {% endfor %}
+                <p>Prix des licences en fonctions du niveau de l'escrimeur</p>
+                    {% for licence in licences|slice(3, 6) %}
+                        <p>{{ licence.Produit }}, {{ licence.prix }} euros </p>
+                    {% endfor %}
         </div>
 
 
         <div class="container my-5 texte">
             <h3>Documents licences 2018</h3>
             <p>Par ce lien vous pourrez trouver le document pdf des tarifs des licences </p>
-            <a href="{{ asset('img/tarifs_licences_2018.pdf.pdf') }}"><p>Licence 2018</p></a>
-            <a href="{{ asset('img/tarifs licences 2019.pdf.pdf') }}"><p>Licence 2019</p></a>
+            <a href="{{ asset('img/tarifs_licences_2018.pdf.pdf') }}"><p>- Licence en PDF 2018</p></a>
+            <a href="{{ asset('img/tarifs licences 2019.pdf.pdf') }}"><p>- Licence en PDF 2019</p></a>
         </div>
+
     </article>
 </section>
 

@@ -1,20 +1,17 @@
 {% extends '@App/base/base.html.twig' %}
 
 {% block content %}
-    {#-----------------------Groupe photo et texte-----------------------------------------------------#}
-
-
-    <div class="GroupeBoutonEscrime mt-5">
-        <div><button class="boutonescrime">Fleuret</button></div>
-        <div><button class="boutonescrime mx-3">Epée</button></div>
-        <div><button class="boutonescrime">Sabre</button></div>
-    </div>
-
-    <hr>
-
+    <section>
+        <div class="container">
+            <div class=" titre3armes">
+                <h2>Les Trois Armes</h2>
+            </div>
+            <div class="phototroisarmes mb-5"><a href="{{ asset('img/materiel.png')}}" target="_blank"><img src="{{ asset('img/troisArmes.jpg') }}" alt="les trois armes" width="100%"></a></div>
+        </div>
+        <hr>
 
     {#-----------------------------------FLEURET-------------------------------------------------------#}
-    <section>
+
         <article>
             <div class="container my-5">
                 <header>

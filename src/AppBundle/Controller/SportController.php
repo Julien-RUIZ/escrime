@@ -45,6 +45,20 @@ class SportController extends Controller
     }
 
 
+    /**
+     * @Route("/handisport", name="handisport")
+     */
+    public function affichagehandisportAction()
+    {
+        $var='Handisport';
+
+        //Redirection pour l'affichage sur la page html.twig
+        return $this->render("@App/pages/LeSport/handisport.html.twig",
+            [
+                'var' => $var
+            ]
+        );
+    }
 
 
 
