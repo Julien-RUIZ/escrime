@@ -5,8 +5,9 @@
 {% block admin %}
     <section>
         <header>
-            <h2 class="titreListInfo" id="titreeven">Partie qui va mettre a jour les evenements de la page principale</h2>
-
+            <div class="container ">
+            <h2 class="titreListInfo my-5">Partie qui va mettre a jour les evenements de la page principale</h2>
+            </div>
             <div class="ajouteven"><a href="{{ path('form_ajout_even') }}"><button class="boutoneven">Ajouter un évenement</button></a></div>
 
         </header>
@@ -15,8 +16,8 @@
             <div class="container mt-3">
                 {% for even in evens %}
 
-                    <div class="bloclisteeven titreadmin mb-3">
-                        <div class=" titreadmin my-4"><h3>{{ even.titre }}</h3></div>
+                    <div class="bloclisteeven bouclelisteeven mb-3">
+                        <div class=" my-4"><h3>{{ even.titre }}</h3></div>
 
                         <h5 class="liaisontypenom">Type : {{ even.type.nom }}</h5>
                         <p>Contenu : {{ even.contenu }}</p>

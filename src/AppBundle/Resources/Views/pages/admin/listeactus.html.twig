@@ -5,15 +5,19 @@
 {% block admin %}
 <section>
     <header>
-        <h2 class="titreListInfo" id="titreactus">Partie qui va mettre a jour les actus de la page principale</h2>
-
+        <div class="container my-5 titreadmin">
+            <div>
+                <h2>Partie qui va mettre a jour les actus de la page principale</h2>
+            </div>
+        </div>
         <div class="ajoutactus"><a href="{{ path('ajout_actualite') }}"><button class="bouton">Ajouter une actualité</button></a></div>
     </header>
     <article>
 
-        <div class="container mt-3">
+
             {% for actu in actus %}
-                <div class="bloclisteactus titreadmin mb-3">
+        <div class="container bloclisteactus mt-3">
+                <div class="  mb-3">
                     <div class=" offset-4 col-4 offset-4 "><h3>{{ actu.titre }}</h3></div>
                     {#groupe en flex box avec image et texte#}
 
@@ -31,8 +35,9 @@
                     <div class="ajoutactus mb-3"><a href="{{ path('suppr_actus', {'id': actu.id}) }}"><button class="bouton">Suprimer l'actualité</button></a></div>
 
                 </div>
-        {% endfor %}
         </div>
+        {% endfor %}
+
 
 
         <div class="ajouteven mb-3"><a href="{{ path('homepage_admin') }}"><button class="boutoneven">Accueil admin</button></a></div>

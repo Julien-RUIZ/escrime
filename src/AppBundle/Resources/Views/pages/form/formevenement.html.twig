@@ -7,9 +7,9 @@
 
 <div class="container bloceven">
     <header>
-
-        <h2 class="titreListInfo">Formulaire pour ajouter un événement</h2>
-
+        <div class="titreajouteven">
+            <h2 class="titreListInfo">Formulaire pour ajouter un événement</h2>
+        </div>
     </header>
     <section>
         {{ form_start(formeven) }}
@@ -17,17 +17,17 @@
 
                 <div class="row">
 
-                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.type) }} :</div>
-                    <div class="col-7">{{ form_widget(formeven.type) }}</div>
+                    <div class="offset-md-3 col-md-2 mb-3">{{ form_label(formeven.type) }} :</div>
+                    <div class="col-md-7">{{ form_widget(formeven.type) }}</div>
 
-                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.titre) }} :</div>
-                    <div class="col-7">{{ form_widget(formeven.titre) }}</div>
+                    <div class="offset-md-3 col-md-2 mb-3">{{ form_label(formeven.titre) }} :</div>
+                    <div class="col-md-7">{{ form_widget(formeven.titre) }}</div>
 
-                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.contenu) }} :</div>
-                    <div class="col-7">{{ form_widget(formeven.contenu) }}</div>
+                    <div class="offset-md-3 col-md-2 mb-3">{{ form_label(formeven.contenu) }} :</div>
+                    <div class="col-md-7">{{ form_widget(formeven.contenu) }}</div>
 
-                    <div class="offset-3 col-2 mb-3">{{ form_label(formeven.date) }} :</div>
-                    <div class="col-7">{{ form_widget(formeven.date) }}</div>
+                    <div class="offset-md-3 col-md-2 mb-3">{{ form_label(formeven.date) }} :</div>
+                    <div class="col-md-7">{{ form_widget(formeven.date) }}</div>
 
                     <div class="boutonvalideven mb-3">{{ form_widget(formeven.save) }}</div>
 

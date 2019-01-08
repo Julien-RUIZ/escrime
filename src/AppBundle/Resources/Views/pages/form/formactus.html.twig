@@ -7,7 +7,11 @@
 <div class="container">
     <div class="formajoutactu">
 
-        <h2 class="titreformactus">Formulaire d'ajout d'actus</h2>
+        <div class="container ajoutactusform my-5 ">
+            <div>
+                <h2>Formulaire d'ajout d'actus</h2>
+            </div>
+        </div>
 
 
             {{ form_start(formactus) }}
@@ -30,7 +34,7 @@
             {{ form_end(formactus) }}
 
 
-        <div class="offset-5 mb-4"><a href="{{ path('liste_actus') }}"><button>Retour su la liste actus</button></a></div>
+        <div class="offset-5 col-5 mb-4"><a href="{{ path('liste_actus') }}"><button>Retour sur la liste actus</button></a></div>
 
     </div>
 </div>

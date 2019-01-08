@@ -1,7 +1,9 @@
 
 
 <div class="container modif">
-    <h3 id="misejourinfo">Mise a jour des informations principales</h3>
+    <div class="titremiseajour">
+        <h2>Mise a jour des informations principales</h2>
+    </div>
     {% trans_default_domain 'FOSUserBundle' %}
 
     {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
@@ -20,14 +22,14 @@
         <div class="offset-3 col-2 mb-3">{{ "Password actuel"}}</div>
         <div class="col-7">{{ form_widget(form.current_password) }}</div>
 
-        <div class="offset-5 my-3"><input type="submit" value="{{ 'profile.edit.submit'|trans }}" /></div>
+        <div class="offset-5 col-7 my-3"><input type="submit" value="{{ 'profile.edit.submit'|trans }}" /></div>
 
     </div>
         {{ form_end(form) }}
 
     <div class="row">
-        <div class="offset-5 mb-4">
-        <button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>
+        <div class="offset-5 col-7 mb-4">
+        <a href="{{ path('homepage') }}"><button>Retour page d'accueil</button></a>
         </div>
     </div>
 </div>

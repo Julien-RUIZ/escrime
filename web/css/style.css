@@ -1,13 +1,37 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .entete, .texte, .titrepresentation, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .lien, .connexion, .defbureau, #titreactus, .piedDepage, .texteeven, .menuadmin, .navadmin, .bloclisteactus, .formajoutactu, .bloclisteeven, .bloceven, .formprix, .blocinfos, .modif, .confirmEnregistr {
+.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .lien, .connexion, .defbureau, #titreactus, .texteeven, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75); }
+
+.bordure1, .entete, .piedDepage, .navadmin {
   border: 1px solid black; }
+
+.bordure2, .titreadminAccueil, .ajoutactusform, .titreinscription, .titreListactus, .titreajouteven, .titremiseajour, .titreconnexion, .titreinfoperso {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px; }
+
+button {
+  padding: 6px 0 6px 0;
+  font: bold 13px Arial;
+  background: #f5f5f5;
+  color: #555;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px #999;
+  width: 170px; }
 
 .bouton, .boutonescrime {
   width: 170px; }
 
-.marginTopBottom40, .titrepresentation, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .lien, .formajoutactu {
+.marginTopBottom40, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .lien, .formajoutactu, .titreListeInfoAdmin {
   margin-top: 40px;
   margin-bottom: 40px; }
 
@@ -23,13 +47,18 @@
   padding-top: 10px;
   padding-bottom: 10px; }
 
-.marginBottom50Top20, .formtitreprix, .titreListInfo {
+.marginBottom50Top20, .formtitreprix {
   margin-bottom: 50px;
   margin-top: 20px; }
 
 .marginTop90Bottom40, .texte, .textePrix {
   margin-top: 90px;
   margin-bottom: 40px; }
+
+.boxshadow, .barrenav {
+  -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75); }
 
 /*--------------------------------------------*/
 /*---------partie public----------------------*/
@@ -130,7 +159,7 @@ html, body {
 .texte {
   text-align: center; }
 
-.titrepresentation, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes {
+.titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes {
   text-align: center; }
 
 .imagemasuearme {
@@ -149,7 +178,7 @@ html, body {
 .textePrix {
   text-align: center; }
 
-/*--------adresse de la salle--------------------*/
+/*--------Adresse de la salle--------------------*/
 .map {
   margin-left: 100px;
   width: 100%;
@@ -162,7 +191,7 @@ html, body {
   display: flex;
   justify-content: space-around; }
 
-/*---------horaire-------------------*/
+/*---------Horaire-------------------*/
 .titrehoraire {
   text-align: center;
   margin-top: 30px; }
@@ -171,7 +200,7 @@ html, body {
 .lien {
   text-align: center; }
 
-/*--------connexion--------------------*/
+/*--------Connexion--------------------*/
 .name {
   text-align: center; }
 
@@ -196,16 +225,17 @@ html, body {
   padding-top: 10px;
   background-color: #c7ffff; }
 
+.imagedeuxSabreurs {
+  width: 75%;
+  margin-left: 25%;
+  border-color: black; }
+
 .grandeimage {
-  width: 100%; }
+  background-color: black; }
 
 .imageactus {
   width: 50%;
   margin: auto; }
-
-/*--------footer--------------------------*/
-.piedDepage {
-  background-color: #560379; }
 
 /*-------evenement------------------------*/
 .texteeven {
@@ -216,6 +246,10 @@ html, body {
 .titreeven {
   text-align: center;
   margin-top: 30px; }
+
+/*--------footer--------------------------*/
+.piedDepage {
+  background-color: #560379; }
 
 /*--------------------------------------------*/
 /*----------partie admin----------------------*/
@@ -234,6 +268,9 @@ html, body {
   padding-bottom: 30px; }
 
 /*--------liste actus--------*/
+.bloclisteactus {
+  text-align: center; }
+
 .ajoutactus {
   width: 168px;
   margin: auto; }
@@ -241,17 +278,24 @@ html, body {
 .titreadmin {
   text-align: center; }
 
+.ajoutactusform {
+  text-align: center;
+  width: 800px; }
+
 /*--------formulaire ajout actus--------*/
 .titreformactus {
   text-align: center; }
 
-#appbundle_actualites_titre, #appbundle_actualites_contenu {
+#appbundle_actualites_titre, #appbundle_information_contenu, #appbundle_information_titre, #appbundle_actualites_contenu {
   width: 350px; }
 
-#appbundle_actualites_contenu {
+#appbundle_actualites_contenu, #appbundle_information_contenu {
   height: 200px; }
 
 /*--------liste evenements-------------*/
+.bouclelisteeven {
+  text-align: center; }
+
 .ajouteven {
   width: 200px;
   margin: auto; }
@@ -282,7 +326,8 @@ html, body {
 
 /*--------formulaire prix--------*/
 .formtitreprix {
-  text-align: center; }
+  text-align: center;
+  width: 600px; }
 
 .formprix {
   padding-top: 20px; }
@@ -301,17 +346,20 @@ html, body {
   text-align: center;
   margin-top: 10px; }
 
-/*----formulaire information------*/
 .titreListInfo {
   text-align: center; }
 
+/*----formulaire information------*/
 .blocinfos {
   margin-bottom: 10px;
   padding: 10px; }
 
 .boutonMiseAjour {
-  width: 190px;
+  width: 170px;
   margin: auto; }
+
+.titreListeInfoAdmin {
+  text-align: center; }
 
 .titreInfo {
   text-align: center;
@@ -325,11 +373,6 @@ html, body {
 /*----------formulaire fos_user---------------*/
 /*--------------------------------------------*/
 /*----formulaire mise a jour---*/
-#misejourinfo {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px; }
-
 #fos_user_profile_form_current_password, #fos_user_profile_form_email, #fos_user_profile_form_username {
   width: 350px; }
 

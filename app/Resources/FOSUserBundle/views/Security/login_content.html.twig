@@ -6,7 +6,9 @@
 <div class="container modif">
 
     <header>
-        <h3 id="misejourinfo">Connexion a votre compte</h3>
+        <div class="titreconnexion">
+            <h2>Connexion a votre compte</h2>
+        </div>
         {% trans_default_domain 'FOSUserBundle' %}
 
         {% if error %}
@@ -29,13 +31,13 @@
                     <div class="offset-5 mb-3"><input type="checkbox" id="remember_me" name="_remember_me" value="on" /></div>
                     <div class="col-6"><label for="remember_me">{{ 'security.login.remember_me'|trans }}</label></div>
 
-                <div class="offset-5 mb-4"><input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" /></div>
+                <div class="offset-5 col-6 mb-4"><input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" /></div>
             </div>
         </form>
 
 
         <div class="row">
-            <div class="offset-5 mb-4">
+            <div class="offset-5 col-6 mb-4">
                 <button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>
             </div>
         </div>

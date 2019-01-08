@@ -2,27 +2,23 @@
 
 
 {% block content %}
-
-
-
-
-    <section>
-
-        {% for even in types.evenement %}
-        <div class="container my-5 texte">
-            <H4 class="mt-4">La categorie {{ even.type.nom }}</H4>
-        {% endfor %}
-
-        {% for even in types.evenement %}
-            <div class="container my-5 ">
-                <div>
-                    <h5 class="mt-4">{{ even.titre }}</h5>
-                    <p>{{ even.contenu }}</p>
-                    <p>{{ even.date | date("d/m/y") }}</p>
-                </div>
+<section>
+    <article>
+            {% for even in types.evenement %}
+            <div class="container my-5 texte">
+                <h2>La categorie {{ even.type.nom }}</h2>
             </div>
-        {% endfor %}
-    </section>
+            {% endfor %}
 
-
+            {% for even in types.evenement %}
+                <div class="container my-5 texte ">
+                    <div>
+                        <h5 class="mt-4">{{ even.titre }}</h5>
+                        <p>{{ even.contenu }}</p>
+                        <p>{{ even.date | date("d/m/y") }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+    </article>
+</section>
 {% endblock %}

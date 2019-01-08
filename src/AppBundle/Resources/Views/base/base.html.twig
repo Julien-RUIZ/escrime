@@ -18,9 +18,10 @@
 
 <nav class="barrenav">
     <div class="row d-flex">
-        <div class="col-1 my-1 bob"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" width="80%"></a></div>
+        <div class="d-none d-md-block col-md-1 my-1 col-lg-1 bob"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" width="80%"></a></div>
+        <div class="offset-5 col-2 d-md-none my-1 bob"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" width="80%"></a></div>
 
-        <div class="offset-3 col-4 groupenavstick">
+        <div class=" offset-md-2 col-md-7 offset-lg-3 col-lg-4 groupenavstick">
             {#-----------------------menu déroulant------------------------#}
 
                 <div class="homelogo">
@@ -68,7 +69,7 @@
             {#-------------------------menu déroulant----------------------------#}
         </div>
 
-        <div class="d-flex offset-1 col-2 offset-1 groupeconnex">
+        <div class="d-flex offset-2 col-2 offset-md-4 col-md-2 offset-lg-1 col-lg-3 groupeconnex">
             {% if app.user %}
 {#-----------------menu déroulant pour le profil -----------------------#}
                 <div class="dropdown">
@@ -78,7 +79,7 @@
                     </p>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li><a href="{{ path('fos_user_profile_show') }}" title="Profil">Informations perso</a></li>
-                        <li><a href="{{ path('fos_user_profile_edit') }}" title="Profil">Mise a jour</a></li>
+                        <li><hr></li>
                         <li><a href="{{ path('evenement') }}" title="Lien 2">Tous les evenements</a></li>
 
                         <li><a href="{{ path('info_type', {'id': 1}) }}" title="Lien 2">les Compétitions</a></li>
@@ -89,10 +90,10 @@
 
 {#-----------------menu déroulant pour le profil -----------------------#}
 
-                <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></div>
+                <div class="mx-3 mx-md-4 mt-md-2 deconn"><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></div>
             {% else %}
-                <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_registration_register') }}">Inscription</a></div>
-                <div class="mx-4 mt-2 deconn"><a href="{{ path('fos_user_security_login') }}">Connexion</a></div>
+                <div class="mx-3 mx-md-4 mt-md-2 deconn"><a href="{{ path('fos_user_registration_register') }}">Inscription</a></div>
+                <div class="mx-3 mx-md-4 mt-md-2 deconn"><a href="{{ path('fos_user_security_login') }}">Connexion</a></div>
             {% endif %}
         </div>
     </div>
@@ -103,8 +104,8 @@
     <div class="container-fluid entete">
         <div class="row d-flex align-items-center pt-3">
 
-            <div class="offset-4 col-4"><h1 class="nomclub">Spuc Escrime</h1></div>
-            <div class="offset-3 col-1 my-3"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/MMFichier_14.png') }}" alt="logo" class="img-fluid" ></a></div>
+            <div class="col-12 offset-lg-4 col-lg-4"><h1 class="nomclub">Spuc Escrime</h1></div>
+            <div class="d-none d-lg-block offset-lg-2 col-lg-1 my-3"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/MMFichier_14.png') }}" alt="logo" class="img-fluid" ></a></div>
         </div>
     </div>
 </header>

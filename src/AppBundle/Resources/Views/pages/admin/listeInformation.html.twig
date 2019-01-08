@@ -4,7 +4,11 @@
 {% block admin %}
 <section>
         <header>
-                <h2 class="titreListInfo">Partie de la base de donnée pour les information général du club</h2>
+                <div class="container">
+                        <div class="titreListeInfoAdmin">
+                        <h2>Partie de la base de donnée pour les information général du club</h2>
+                        </div>
+                </div>
         </header>
         <article>
                 <div class="container">
@@ -17,7 +21,7 @@
                         </div>
                     {% endfor %}
 
-                    <div class="mb-5"><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
+                    <div class="mb-5 "><a href="{{ path('homepage_admin') }}"><button>Accueil admin</button></a></div>
                 </div>
         </article>
 </section>
