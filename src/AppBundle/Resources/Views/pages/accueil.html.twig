@@ -6,7 +6,7 @@
 <section>
     <article>
         <div class="grandeimage">
-            <img src="{{ asset('img/image-entete.jpg') }}" alt="deux escrimeurs" class="imagedeuxSabreurs" width="100%">
+            <img src="{{ asset('img/image-entete2.jpg') }}" alt="deux escrimeurs" class="imagedeuxSabreurs" width="100%">
         </div>
     </article>
 
@@ -19,13 +19,15 @@
             {% for actu in actus  %}
                 <div class="container my-5 pb-3 texte">
                     <div class="container">
-                        <h3 class="my-3">{{ actu.titre }}</h3>
+                        <h3 class="my-3 actustitre">{{ actu.titre }}</h3>
                             {% if actu.photo %}
                                 <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite"  width="100%"></div>
                             {% else %}
                                 <p>pas d'image</p>
                             {% endif %}
-                        <p>{{ actu.contenu }}</p>
+                        <div class="texteactus mt-4">
+                        <p>{{ actu.contenu |nl2br }}</p>
+                        </div>
                     </div>
                 </div>
 

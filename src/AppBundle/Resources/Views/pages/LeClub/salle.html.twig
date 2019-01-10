@@ -2,20 +2,27 @@
 
 
 {% block content %}
-    <div class="container my-5 texte">
-        <div class="container d-flex align-items-center">
+    <div class="bloccontact">
+        <div class="container my-5 texte ">
+            <div class="container d-flex align-items-center">
 
-            <div class="py-3 text-center salle">
-                <h1>{{ infos.titre }}</h1>
-                <p>{{ infos.contenu }}</p>
-                <p>Numero de tel: 05 56 15 03 48</p>
-                <p>Adresse mail: spuc.escrime@neuf.fr</p>
+                <div class="py-3 salle">
+                    <h1>{{ infos.titre }}</h1>
+                    <p>{{ infos.contenu }}</p>
+                    <p>Numero de tel: 05 56 15 03 48</p>
+                    <p>Adresse mail: spuc.escrime@neuf.fr</p>
+                </div>
+
+                <div class="map d-none d-md-block">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5263.284573047618!2d-0.6346054177361481!3d44.801848928780764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d8e534c54245%3A0xc7b643aba93f9463!2s7+Avenue+Pierre+Wiehn%2C+33600+Pessac!5e0!3m2!1sfr!2sfr!4v1544019265475" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen ></iframe>
+                </div>
+
             </div>
-
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5263.284573047618!2d-0.6346054177361481!3d44.801848928780764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d8e534c54245%3A0xc7b643aba93f9463!2s7+Avenue+Pierre+Wiehn%2C+33600+Pessac!5e0!3m2!1sfr!2sfr!4v1544019265475" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen ></iframe>
+            <div class=" container map2">
+                <div class="d-md-none">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5263.284573047618!2d-0.6346054177361481!3d44.801848928780764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d8e534c54245%3A0xc7b643aba93f9463!2s7+Avenue+Pierre+Wiehn%2C+33600+Pessac!5e0!3m2!1sfr!2sfr!4v1544019265475" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen ></iframe>
+                </div>
             </div>
-
         </div>
     </div>
 {% endblock %}

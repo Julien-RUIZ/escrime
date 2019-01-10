@@ -4,15 +4,15 @@
 {% block content %}
 <section>
     <article>
-        <div class="container my-5 ">
+        <div class="container my-5 blocsport ">
             <header>
                 <h2 class="titreEscrime">L'Escrime</h2>
             </header>
     {#-----------------------Groupe photo et texte-----------------------------------#}
-
-            <div class="photoTexte">
-                <div class="premierePhotoEscrime my-3"><img src="{{ asset('img/premierePhotoEscrime.jpg') }}" alt="Deux escrimeurs" width="100%"></div>
-                 <div class="texteEscrime my-3">
+        <div class="container">
+            <div class="row">
+                <div class="premierePhotoEscrime offset-1 col-10 offset-md-1 col-md-5 my-3"><img src="{{ asset('img/premierePhotoEscrime.jpg') }}" alt="Deux escrimeurs" class="img-fluid"></div>
+                 <div class="texteEscrime offset-1 col-10 col-md-5 my-3">
                      <p>L’escrime est un sport de combat. Il s’agit de l’art de toucher un adversaire avec
                     la pointe ou le tranchant (estoc et taille) d’une arme blanche sur les parties
                     valables sans être touché.
@@ -24,8 +24,8 @@
                     </p>
                 </div>
             </div>
-            <div class="photoTexte mt-3">
-                <div class="texteEscrime my-3 ">
+            <div class="row mt-3">
+                <div class="texteEscrime offset-1 col-10 offset-md-1 col-md-5 my-3 ">
                         <p>  Ces trois armes sont
                         sexuées : épée féminine et masculine, fleuret féminin et masculin et sabre féminin
                         et masculin. Les épreuves sont individuelles ou par équipes. Elles sont donc au
@@ -36,8 +36,9 @@
                         obligatoire pour l’arbitrage dans les compétitions internationales.
                     </p>
                 </div>
-                <div class="premierePhotoEscrime my-3"><img src="{{ asset('img/jump900x400.jpg') }}" alt="Deux escrimeurs" width="100%"></div>
+                <div class="premierePhotoEscrime offset-1 col-10 col-md-5 my-3"><img src="{{ asset('img/jump900x400.jpg') }}" alt="Deux escrimeurs" class="img-fluid" width="100%"></div>
             </div>
+        </div>
         </div>
     </article>
 </section>

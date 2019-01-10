@@ -1,7 +1,7 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .lien, .connexion, .defbureau, #titreactus, .texteeven, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
+.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .lien, .connexion, .defbureau, #titreactus, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
   border: 1px solid black;
   border-radius: 10px;
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
@@ -35,7 +35,7 @@ button {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-.marginTopBottom80, .menuadmin, .modif {
+.marginTopBottom80, .infoCredit, .menuadmin, .modif {
   margin-top: 80px;
   margin-bottom: 80px; }
 
@@ -86,21 +86,37 @@ html, body {
 .barrenav {
   position: sticky;
   background-image: url("../img/metal4.jpg");
+  background-size: cover;
   top: 0;
   z-index: 1;
   max-width: 100vw;
-  opacity: 0.9; }
+  opacity: 1; }
 
 .groupenavstick {
-  display: flex;
+  justify-content: center;
   align-items: flex-end; }
 
 .homelogo {
-  padding-bottom: 25px; }
+  padding-bottom: 29px; }
 
 .groupeconnex {
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+  z-index: 1; }
+
+.dropdown-menu {
+  opacity: unset;
+  background-color: gainsboro;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/*------effet scale----------*/
+.dropdown {
+  transition: all 1s ease;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.dropdown:hover {
+  transform: scale(1.1); }
 
 /*------l'escrime description----------*/
 .titreEscrime {
@@ -119,16 +135,9 @@ html, body {
   margin: auto;
   background-color: #560379; }
 
-.premierePhotoEscrime {
-  width: 40%; }
-
-.photoTexte {
-  display: flex;
-  justify-content: space-around; }
-
 .texteEscrime {
-  width: 442px;
-  height: 219px; }
+  width: 50%;
+  height: auto; }
 
 .phototroisarmes {
   width: 10%;
@@ -185,7 +194,7 @@ html, body {
   padding: 5px; }
 
 .salle {
-  margin-left: 50px; }
+  text-align: center; }
 
 .photosalle {
   display: flex;
@@ -225,13 +234,15 @@ html, body {
   padding-top: 10px;
   background-color: #c7ffff; }
 
-.imagedeuxSabreurs {
+.texteactus {
+  text-align: left;
+  margin: auto;
   width: 75%;
-  margin-left: 25%;
-  border-color: black; }
-
-.grandeimage {
-  background-color: black; }
+  border-width: 2px 2px 0 0;
+  border-style: ridge;
+  padding: 10px;
+  border-radius: 0 10px 0 0;
+  border-color: #560379; }
 
 .imageactus {
   width: 50%;
@@ -250,6 +261,18 @@ html, body {
 /*--------footer--------------------------*/
 .piedDepage {
   background-color: #560379; }
+
+.titrecredit {
+  text-align: center; }
+
+.titrecredit2 {
+  text-align: center; }
+
+.infoCredit {
+  text-align: center; }
+
+.mentiontitre {
+  text-align: center; }
 
 /*--------------------------------------------*/
 /*----------partie admin----------------------*/
@@ -297,11 +320,11 @@ html, body {
   text-align: center; }
 
 .ajouteven {
-  width: 200px;
+  width: 170px;
   margin: auto; }
 
 .boutoneven {
-  width: 200px; }
+  width: 170px; }
 
 .liaisontypenom {
   color: #560379;
