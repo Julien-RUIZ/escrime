@@ -8,16 +8,6 @@
   -moz-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75); }
 
-.bordure1, .entete, .piedDepage, .navadmin {
-  border: 1px solid black; }
-
-.bordure2, .titreadminAccueil, .ajoutactusform, .titreinscription, .titreListactus, .titreajouteven, .titremiseajour, .titreconnexion, .titreinfoperso {
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px; }
-
 button {
   padding: 6px 0 6px 0;
   font: bold 13px Arial;
@@ -59,6 +49,16 @@ button {
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75); }
+
+.bordure1, .entete, .piedDepage, .navadmin {
+  border: 1px solid black; }
+
+.bordure2, .titreadminAccueil, .ajoutactusform, .titreinscription, .titreListactus, .titreajouteven, .titremiseajour, .titreconnexion, .titreinfoperso {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px; }
 
 /*--------------------------------------------*/
 /*---------partie public----------------------*/
@@ -133,7 +133,7 @@ html, body {
   justify-content: center;
   width: 600px;
   margin: auto;
-  background-color: #560379; }
+  background-color: #480079; }
 
 .texteEscrime {
   width: 50%;
@@ -162,7 +162,7 @@ html, body {
 
 /*--------Presentation--------------------*/
 .entete {
-  background-color: #560379;
+  background-color: #480079;
   height: 120px; }
 
 .texte {
@@ -238,11 +238,11 @@ html, body {
   text-align: left;
   margin: auto;
   width: 75%;
-  border-width: 2px 2px 0 0;
+  border-width: 2px 2px 2PX 2PX;
   border-style: ridge;
   padding: 10px;
   border-radius: 0 10px 0 0;
-  border-color: #560379; }
+  border-color: #480079; }
 
 .imageactus {
   width: 50%;
@@ -260,7 +260,7 @@ html, body {
 
 /*--------footer--------------------------*/
 .piedDepage {
-  background-color: #560379; }
+  background-color: #480079; }
 
 .titrecredit {
   text-align: center; }
@@ -327,7 +327,7 @@ html, body {
   width: 170px; }
 
 .liaisontypenom {
-  color: #560379;
+  color: #480079;
   text-decoration: underline; }
 
 /*--------Formulaire evenements-------------*/
@@ -422,6 +422,7 @@ label {
 
 .groupebutton {
   display: flex;
+  justify-content: center;
   margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

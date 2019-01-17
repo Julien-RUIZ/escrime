@@ -10,7 +10,6 @@
         </div>
     </article>
 
-
     <article>
         <div class="container my-5 texte">
         <h2>Actualités du club</h2>
@@ -18,19 +17,16 @@
         <div>
             {% for actu in actus  %}
                 <div class="container my-5 pb-3 texte">
-                    <div class="container">
-                        <h3 class="my-3 actustitre">{{ actu.titre }}</h3>
-                            {% if actu.photo %}
-                                <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite"  width="100%"></div>
-                            {% else %}
-                                <p>pas d'image</p>
-                            {% endif %}
-                        <div class="texteactus mt-4">
-                        <p>{{ actu.contenu |nl2br }}</p>
-                        </div>
+                    <h3 class="my-3 actustitre">{{ actu.titre }}</h3>
+                        {% if actu.photo %}
+                            <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite"  width="100%"></div>
+                        {% else %}
+                            <p>pas d'image</p>
+                        {% endif %}
+                    <div class="texteactus mt-4">
+                        <p><strong id="texte">{{ actu.titre }} :</strong><br><span class="texteactus1">{{ actu.contenu |nl2br }}</span></p>
                     </div>
                 </div>
-
             {% endfor %}
         </div>
     </article>

@@ -53,7 +53,7 @@ class MiseajourevenementController extends Controller
     public function formAjoutevenAction(Request $request){
 
 
-        //associe les données envoyé via le formulaire a mettre sur la variable $form, donc la variable $form contient bien le $°post[]
+        //associe les données envoyé via le formulaire a mettre sur la variable $form
         $form=$this->createform(EvenementType::class, new Evenement());
 
         $form->handleRequest($request);

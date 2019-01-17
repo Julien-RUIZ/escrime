@@ -35,13 +35,13 @@
         <div class="col-8 col-md-7"><p>{{ user.codepostal }}</p></div>
 
     {# La partie Role , et la liaison entre les bases user et role, en many to one#}
-        <div class="userspan offset-1 col-3 offset-md-2 col-md-3"><p>{{ 'Role' }}:</p></div>
+        <div class="userspan offset-1 col-3 offset-md-2 col-md-3"><p>{{ 'Rôle' }}:</p></div>
         <div class="col-8 col-md-7"><p>{{ user.role.role }}</p></div>
 
-        <div class="groupebutton">
-                <div class="mt-5 "><a href="{{ path('suppr_membre_manuel', {'id': user.id}) }}"><button>Supprimer</button></a></div>
-                <div class="mx-2 mb-5 mt-5"><a href="{{ path('fos_user_profile_edit') }}"><button>Modifier infos</button></a></div>
-                <div class="mt-5"><a href="{{ path('homepage') }}"><button>Retour page d'accueil</button></a></div>
+        <div class="row groupebutton col-10  col-md-6 my-md-4">
+                <div class="mt-2"><a href="{{ path('suppr_membre_manuel', {'id': user.id}) }}"><button>Supprimer</button></a></div>
+                <div class="mt-2"><a href="{{ path('fos_user_profile_edit') }}"><button>Modifier infos</button></a></div>
+                <div class="mt-2 mb-4"><a href="{{ path('homepage') }}"><button>Retour page d'accueil</button></a></div>
         </div>
     </div>
 </div>

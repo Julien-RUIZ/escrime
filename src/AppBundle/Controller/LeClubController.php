@@ -22,7 +22,8 @@ class LeClubController extends Controller
 
 
     /**
-     * Cette route va nous donner la possibilité d'afficher différentes informations contenu dans une base de donnée, ainsi en utilisant le numero
+     * Cette route va nous donner la possibilité d'afficher différentes informations contenues dans une base de données,
+     * ainsi en utilisant le numéro
      * de l'id concerné dans l'url nous pourrons afficher les informations souhaitées
      * @Route("/leClub/{id}", name="le_club_presentation")
      */
@@ -34,6 +35,7 @@ class LeClubController extends Controller
         $repository = $this->getDoctrine()->getRepository(Information::class);
         //la variable info aura pour répository toutes les données selon la valeur de l'id, ainsi pour chaque
         // valeur nous aurons une redirection sur un twig
+      
         $info = $repository->find($id);
 
         if ($id==2){

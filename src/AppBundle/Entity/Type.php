@@ -23,7 +23,6 @@ class Type
 
     /**
      * @var string
-     *
      * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
@@ -33,8 +32,6 @@ class Type
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Evenement", mappedBy="type")
      */
     private $evenement;
-
-
 
 
     /**

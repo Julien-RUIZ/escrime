@@ -1,6 +1,7 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
+
 .bordure{
   border:1px solid black;
   border-radius: 10px;
@@ -8,19 +9,6 @@
   -moz-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
   box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
 }
-
-.bordure1{
-  border:1px solid black;
-}
-
-.bordure2{
-  border:1px solid black;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-
 button{
   padding:6px 0 6px 0;
   font:bold 13px Arial;
@@ -31,13 +19,12 @@ button{
   box-shadow:1px 1px 3px #999;
   width: 170px;
 }
-
 $degrade:
 linear-gradient(to right, #ffffff, #c9c1e1, #9a85c0, #6f499c, #470076);
 
 $blanc:rgba(255,255,255,0.9);
 
-$mauve:rgb(86,3,121);
+$mauve:rgb(72,0,121);
 
 .bouton{
   width: 170px;
@@ -74,6 +61,18 @@ margin-bottom: 40px;
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
   box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
+}
+
+.bordure1{
+  border:1px solid black;
+}
+
+.bordure2{
+  border:1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 /*--------------------------------------------*/
 /*---------partie public----------------------*/
@@ -147,6 +146,7 @@ justify-content: center;
 }
 
 /*------l'escrime description----------*/
+
 .titreEscrime{
   @extend .bordure;
   text-align: center;
@@ -310,13 +310,13 @@ justify-content: center;
   text-align: left;
   margin: auto;
   width: 75%;
-  border-width: 2px 2px 0 0;
+  border-width: 2px 2px 2PX 2PX;
   border-style: ridge;
   padding: 10px;
   border-radius: 0 10px 0 0;
   border-color: $mauve;
-
 }
+
 .imageactus{
   width: 50%;
   margin: auto;
@@ -580,6 +580,7 @@ label{
 }
 .groupebutton{
   display: flex;
+  justify-content: center;
   margin: auto;
 }
 
