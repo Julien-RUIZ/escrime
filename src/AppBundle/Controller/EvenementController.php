@@ -16,16 +16,17 @@ class EvenementController extends Controller
 {
 
     /**
-     * Avec cette route nous allons avoir la liste de tous les evenements dans la liste du plus ressent au plus anciens
+     * Avec cette route nous allons avoir la liste de tous les évènements dans la liste du plus ressent au plus anciens
      * @Route("/listeevenement", name="evenement")
      */
-    public function indexActusAction()
+    public function listeEvenAction()
     {
-        // Attention c est ici que ce trouve la partie affichage en plublic des actus
+        // Attention c’est ici que ce trouve la partie affichage en public des actus
         //on a besoin du repository pour récupérer le contenu de la table evenement
         // pour récupérer ce repository :
         // on appelle Doctrine (qui gère les répository)
-        // pour appeler la méthode getRepository qui récupère le repository evenement (avec Evenement::class passé en parametre)
+        // pour appeler la méthode getRepository qui récupère le repository évènement (avec Évènement::class passé en paramètre)
+
         $repository = $this->getDoctrine()->getRepository(Evenement::class);
         //affiche dans l'ordre décroissant des id, et ainsi avoir les actualitées affiché du plus recents au plus anciens
         $evens = $repository->findBY(array(), array('id' => 'desc'));
