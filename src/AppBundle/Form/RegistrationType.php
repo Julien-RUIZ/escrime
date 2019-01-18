@@ -32,8 +32,8 @@ class RegistrationType extends AbstractType
     {
 
         $builder
-            ->add('nom')
-            ->add('prenom')
+            ->add('nom',TextType::class)
+            ->add('prenom',TextType::class)
             ->add('adresse',TextType::class, array('required'=> false))
             ->add('code_postal',TextType::class, array('required'=> false))
             ->add('ville',TextType::class, array('required'=> false))
