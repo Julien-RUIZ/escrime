@@ -21,7 +21,7 @@ button {
 .bouton, .boutonescrime {
   width: 170px; }
 
-.marginTopBottom40, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .lien, .formajoutactu, .titreListeInfoAdmin {
+.marginTopBottom40, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .salle, .lien, .formajoutactu, .titreListeInfoAdmin {
   margin-top: 40px;
   margin-bottom: 40px; }
 
@@ -193,15 +193,15 @@ html, body {
   width: 100%;
   padding: 5px; }
 
-.salle {
-  text-align: center; }
-
 .photosalle {
   display: flex;
   justify-content: space-around; }
 
 /*--------Salle---------------------*/
 .bloccontact {
+  text-align: center; }
+
+.salle {
   text-align: center; }
 
 /*---------Horaire-------------------*/

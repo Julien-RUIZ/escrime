@@ -249,9 +249,7 @@ justify-content: center;
 .map2{
 
 }
-.salle{
-  text-align: center;
-}
+
 .photosalle{
   display: flex;
   justify-content: space-around;
@@ -262,6 +260,11 @@ justify-content: center;
   @extend .bordure;
   @extend .marginTopBottom80;
   text-align: center;
+}
+
+.salle{
+  text-align: center;
+  @extend .marginTopBottom40;
 }
 
 /*---------Horaire-------------------*/
