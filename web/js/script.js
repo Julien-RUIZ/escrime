@@ -8,7 +8,9 @@ $(document).ready(function(){
     })
 
 
-
+$(".texteactus1").click(function(){
+    $(this).css('color-webkit-line-clamp','0');
+})
 
 
 

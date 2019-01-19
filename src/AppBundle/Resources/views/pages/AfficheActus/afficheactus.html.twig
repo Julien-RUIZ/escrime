@@ -1,0 +1,30 @@
+
+{% extends '@App/base/base.html.twig' %}
+
+
+
+
+
+{% block content %}
+    <section>
+        <header>
+                <div class="container texte">
+                    <h3 class="my-3 actustitre">{{ actus.titre }}</h3>
+                </div>
+        </header>
+        <article>
+                <div class="container my-5 py-3 texte">
+
+                    {% if actus.photo %}
+                        <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actus.photo) }}" alt="image de l'actualite"  width="100%"></div>
+                    {% else %}
+                        <p>pas d'image</p>
+                    {% endif %}
+                    <div class="texteactus mt-4">
+                        <p><strong id="texte">{{ actus.titre }} :</strong><br><br><span>{{ actus.contenu |nl2br }}</span></p>
+                    </div>
+                    <div class="my-3"><a href="{{ path('homepage') }}"><button>Retour accueil</button></a></div>
+                </div>
+        </article>
+    </section>
+{% endblock %}

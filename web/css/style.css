@@ -1,7 +1,7 @@
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .lien, .connexion, .defbureau, #titreactus, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
+.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .bloccontact, .lien, .connexion, .defbureau, #titreactus, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
   border: 1px solid black;
   border-radius: 10px;
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
@@ -25,7 +25,7 @@ button {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-.marginTopBottom80, .infoCredit, .menuadmin, .modif {
+.marginTopBottom80, .bloccontact, .infoCredit, .menuadmin, .modif {
   margin-top: 80px;
   margin-bottom: 80px; }
 
@@ -200,6 +200,10 @@ html, body {
   display: flex;
   justify-content: space-around; }
 
+/*--------Salle---------------------*/
+.bloccontact {
+  text-align: center; }
+
 /*---------Horaire-------------------*/
 .titrehoraire {
   text-align: center;
@@ -234,10 +238,17 @@ html, body {
   padding-top: 10px;
   background-color: #c7ffff; }
 
+.texteactus1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 .texteactus {
   text-align: left;
   margin: auto;
-  width: 75%;
+  width: 90%;
   border-width: 2px 2px 2PX 2PX;
   border-style: ridge;
   padding: 10px;

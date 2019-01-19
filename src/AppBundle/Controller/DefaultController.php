@@ -36,6 +36,34 @@ class DefaultController extends Controller
 
        );
     }
+
+
+    /**
+     * C'est notre page principale sur laquelle nous allons avoir la liste des actus
+     * @Route("/afficheActus/{id}", name="affiche_actus")
+     */
+    public function afficheActusAction($id)
+    {
+        // Attention c est ici que ce trouve la partie affichage en plublic des actus
+        //on a besoin du repository  pour récupérer le contenu de la table
+        // pour récupérer ce repository :
+        // on appelle Doctrine (qui gère les répository)
+        // pour appeler la méthode getRepository qui récupère le repository Auteur (avec Actualites::class passé en parametre)
+        $repository = $this->getDoctrine()->getRepository(Actualites::class);
+        //affiche dans l'ordre décroissant des id
+        $actus = $repository->find($id);
+
+
+
+
+        //Redirection pour l'affichage sur la page html.twig
+        return $this->render("@App/pages/AfficheActus/afficheactus.html.twig",
+            [
+                'actus' => $actus
+            ]
+
+        );
+    }
 //---------------------partie accueil admin-------------------------------------------------------
 
     /**

@@ -24,8 +24,10 @@
                             <p>pas d'image</p>
                         {% endif %}
                     <div class="texteactus mt-4">
-                        <p><strong id="texte">{{ actu.titre }} :</strong><br><br><span class="texteactus1">{{ actu.contenu |nl2br }}</span></p>
+
+                        <p><strong id="texte">{{ actu.titre }} :</strong><br><br><span class="texteactus1">{{ actu.contenu |nl2br }}</span><br><a href="{{ path('affiche_actus', {'id': actu.id}) }}">Lire l'article complet ici</a></p>
                     </div>
+
                 </div>
             {% endfor %}
         </div>
