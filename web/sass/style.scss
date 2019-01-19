@@ -263,8 +263,9 @@ justify-content: center;
 }
 
 .salle{
+  padding-left: 10%;
   text-align: center;
-  @extend .marginTopBottom40;
+  @extend .marginTopBottom80;
 }
 
 /*---------Horaire-------------------*/

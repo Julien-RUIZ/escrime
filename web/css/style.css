@@ -21,11 +21,11 @@ button {
 .bouton, .boutonescrime {
   width: 170px; }
 
-.marginTopBottom40, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .salle, .lien, .formajoutactu, .titreListeInfoAdmin {
+.marginTopBottom40, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .lien, .formajoutactu, .titreListeInfoAdmin {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-.marginTopBottom80, .bloccontact, .infoCredit, .menuadmin, .modif {
+.marginTopBottom80, .bloccontact, .salle, .infoCredit, .menuadmin, .modif {
   margin-top: 80px;
   margin-bottom: 80px; }
 
@@ -202,6 +202,7 @@ html, body {
   text-align: center; }
 
 .salle {
+  padding-left: 10%;
   text-align: center; }
 
 /*---------Horaire-------------------*/
