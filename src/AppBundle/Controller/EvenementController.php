@@ -31,7 +31,7 @@ class EvenementController extends Controller
         //affiche dans l'ordre décroissant des id, et ainsi avoir les actualitées affiché du plus recents au plus anciens
         $evens = $repository->findBY(array(), array('id' => 'desc'));
 
-        return $this->render("@App/pages/Evenement/evenement.php.twig",
+        return $this->render("@App/pages/Evenement/evenement.html.twig",
             [
                 'evens' => $evens
             ]
@@ -54,7 +54,7 @@ class EvenementController extends Controller
         $types = $repository->find($id);
 
         //cette partie permet de retourner la vue types, celle qui va au final afficher le résultat apres selection
-        return $this->render("@App/pages/Evenement/competition.php.twig",
+        return $this->render("@App/pages/Evenement/competition.html.twig",
             [
                 'types' => $types
             ]
