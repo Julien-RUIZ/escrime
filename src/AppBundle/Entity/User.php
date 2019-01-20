@@ -38,17 +38,17 @@ class User extends BaseUser
     protected $prenom;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $adresse;
 
     /**
-     * @ORM\Column(type="integer", length=5)
+     * @ORM\Column(type="integer", length=5, nullable=true)
      */
     protected $code_postal;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     protected $ville;
 
@@ -61,6 +61,7 @@ class User extends BaseUser
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Role", inversedBy="user")
      */
     private $role;
+
 
     /**
      * @return mixed
