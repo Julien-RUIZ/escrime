@@ -418,6 +418,10 @@ label {
 #fos_user_registration_form_nom, #fos_user_registration_form_prenom, #fos_user_registration_form_username, #fos_user_registration_form_email, #fos_user_registration_form_plainPassword_first, #fos_user_registration_form_plainPassword_second, #fos_user_registration_form_adresse, #fos_user_registration_form_ville, #fos_user_registration_form_code_postal {
   width: 350px; }
 
+.textinscrit {
+  width: 800px;
+  margin: auto; }
+
 /*----Confirmation enregistrement*/
 .confirmEnregistr {
   height: 65vh;
@@ -450,6 +454,9 @@ label {
     text-align: center; }
 
   .entete {
-    height: 80px; } }
+    height: 80px; }
+
+  #fos_user_profile_form_username, #fos_user_profile_form_email, #fos_user_profile_form_current_password {
+    width: 320px; } }
 
 /*# sourceMappingURL=style.css.map */

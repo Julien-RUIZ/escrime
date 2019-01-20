@@ -10,20 +10,23 @@
 
     <div class="row">
 
-        <div>{{ form_errors(form.username) }}</div>
+
         <div class="offset-md-3 col-md-2">{{ form_label(form.username) }}</div>
         <div class="col-md-7 mb-3">{{ form_widget(form.username) }}</div>
 
-        <div>{{ form_errors(form.email) }}</div>
+
         <div class="offset-md-3 col-md-2">{{ form_label(form.email) }}</div>
         <div class="col-md-7 mb-3">{{ form_widget(form.email) }}</div>
 
-        <div>{{ form_errors(form.current_password) }}</div>
+
         <div class="offset-md-3 col-md-2">{{ "Password actuel"}}</div>
         <div class="col-md-7 mb-3">{{ form_widget(form.current_password) }}</div>
 
         <div class="offset-3 offset-md-5 col-md-7 my-3"><input type="submit" value="{{ 'profile.edit.submit'|trans }}" /></div>
 
+        <div>{{ form_errors(form.current_password) }}</div>
+        <div>{{ form_errors(form.email) }}</div>
+        <div>{{ form_errors(form.username) }}</div>
     </div>
         {{ form_end(form) }}
 

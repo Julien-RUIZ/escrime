@@ -120,6 +120,7 @@ html, body{
 .groupenavstick{
 justify-content: center;
   align-items: flex-end;
+
 }
 
 .homelogo{
@@ -580,6 +581,11 @@ label{
   width: 350px;
 }
 
+.textinscrit{
+  width: 800px;
+  margin: auto;
+}
+
 .titreinscription, .titreListactus, .titreajouteven, .titremiseajour, .titreconnexion, .titreinfoperso{
   @extend .bordure2;
 }
@@ -627,7 +633,9 @@ label{
     height: 80px;
   }
 
-
+  #fos_user_profile_form_username, #fos_user_profile_form_email, #fos_user_profile_form_current_password{
+    width: 320px;
+  }
 
 
 

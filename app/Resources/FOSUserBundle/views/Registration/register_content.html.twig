@@ -16,8 +16,11 @@
     <div class="offset-3">{{ form_errors(form.ville) }}</div>
     <div class="offset-3">{{ form_errors(form.code_postal) }}</div>
 
-
-
+    <div class="container mb-5">
+    <div><p class="textinscrit">L'inscription sur notre site, vous permettra d'avoir accès a toutes les informations concernant les compétitions, les réunions, et autres évènements.
+            L'enregistrement est totalement gratuite et non obligatoire.
+        </p></div>
+    </div>
 
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
 

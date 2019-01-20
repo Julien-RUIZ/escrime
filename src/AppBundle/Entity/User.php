@@ -29,11 +29,21 @@ class User extends BaseUser
 
     /**
      * @ORM\Column(type="string", length=255)
+     *   * @Assert\Length(
+     *      min = 1,
+     *      max = 20,
+     *     minMessage = "Votre nom est trop court pour l'enregistrement ",
+     *     maxMessage = "Votre nom est trop long pour l'enregistrement  ")
      */
     protected $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     *   * @Assert\Length(
+     *      min = 1,
+     *      max = 20,
+     *     minMessage = "Votre prénom est trop court pour l'enregistrement ",
+     *     maxMessage = "Votre prénom est trop long pour l'enregistrement")
      */
     protected $prenom;
 

@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Actualites
@@ -39,6 +40,12 @@ class Actualites
      * @var string
      *
      * @ORM\Column(name="photo", type="string", length=1000)
+     *   * @Assert\Image(
+     *     minWidth = 200,
+     *     maxWidth = 900,
+     *     minHeight = 200,
+     *     maxHeight = 900
+     * )
      */
     private $photo;
 

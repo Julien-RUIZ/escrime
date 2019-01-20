@@ -16,20 +16,25 @@
 
             {{ form_start(formactus) }}
         <div class="row">
-            <div>{{ form_errors(formactus.titre) }}</div>
+
             <div class="offset-3 col-2 mb-3">{{ form_label(formactus.titre) }}</div>
             <div class="col-7">{{ form_widget(formactus.titre) }}</div>
 
-            <div>{{ form_errors(formactus.contenu) }}</div>
+
             <div class="offset-3 col-2 ">{{ form_label(formactus.contenu) }}</div>
             <div class="col-7">{{ form_widget(formactus.contenu) }}</div>
 
-            <div>{{ form_errors(formactus.photo) }}</div>
+
             <div class="offset-3 col-2 ">{{ form_label(formactus.photo) }}</div>
             <div class="col-7">{{ form_widget(formactus.photo) }}</div>
 
             <div class="offset-3 col-2 ">{{""}}</div>
             <div class="col-7 my-3 ">{{ form_widget(formactus.save) }}</div>
+
+
+            <div>{{ form_errors(formactus.contenu) }}</div>
+            <div>{{ form_errors(formactus.titre) }}</div>
+            <div>{{ form_errors(formactus.photo) }}</div>
         </div>
             {{ form_end(formactus) }}
 
