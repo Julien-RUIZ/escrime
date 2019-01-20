@@ -95,8 +95,13 @@ html, body{
   color: black;
 }
 .bob{
-  text-align: end;
+  text-align: center;
 }
+.dropdownALL{
+
+}
+
+
 .menuderoul{
   text-align: center;
 }
@@ -125,6 +130,7 @@ justify-content: center;
   display: flex;
   align-items: flex-end;
   z-index: 1;
+
 }
 
 .dropdown-menu{
@@ -601,9 +607,30 @@ label{
   margin: auto;
 }
 
+/*----------------------------------*/
+/*--------Media query---------------*/
+/*----------------------------------*/
+@media screen and (max-width: 500px) {
+
+
+  #username, #password{
+    width: 180px;
+  }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 

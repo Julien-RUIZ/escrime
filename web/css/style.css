@@ -78,7 +78,7 @@ html, body {
   color: black; }
 
 .bob {
-  text-align: end; }
+  text-align: center; }
 
 .menuderoul {
   text-align: center; }
@@ -436,5 +436,12 @@ label {
   display: flex;
   justify-content: center;
   margin: auto; }
+
+/*----------------------------------*/
+/*--------Media query---------------*/
+/*----------------------------------*/
+@media screen and (max-width: 500px) {
+  #username, #password {
+    width: 180px; } }
 
 /*# sourceMappingURL=style.css.map */

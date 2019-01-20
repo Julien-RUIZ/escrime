@@ -22,22 +22,22 @@
                     <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
                 {% endif %}
 
-                    <div class="offset-3 col-2 mb-3"><label for="username">{{ 'NOM'|trans }}</label></div>
-                    <div class="col-7"><input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" /></div>
+                    <div class="offset-1 col-2 offset-md-3 col-md-2 mb-3"><label for="username">{{ 'NOM'|trans }}</label></div>
+                    <div class="offset-1 col-8 offset-md-0 col-md-6"><input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" /></div>
 
-                    <div class="offset-3 col-2 mb-3"><label for="password">{{ 'security.login.password'|trans }}</label></div>
-                    <div class="col-7"><input type="password" id="password" name="_password" required="required" autocomplete="current-password" /></div>
+                    <div class=" offset-1 col-2 offset-md-3 col-md-2 mb-3"><label for="password">{{ 'security.login.password'|trans }}</label></div>
+                    <div class="offset-1 col-8 offset-md-0 col-md-6"><input type="password" id="password" name="_password" required="required" autocomplete="current-password" /></div>
 
-                    <div class="offset-5 mb-3"><input type="checkbox" id="remember_me" name="_remember_me" value="on" /></div>
-                    <div class="col-6"><label for="remember_me">{{ 'security.login.remember_me'|trans }}</label></div>
+                    <div class="offset-1 col-2 offset-md-3 col-md-2  mb-3"><input type="checkbox" id="remember_me" name="_remember_me" value="on" /></div>
+                    <div class="offset-1 col-8 offset-md-0 col-md-5"><label for="remember_me">{{ 'security.login.remember_me'|trans }}</label></div>
 
-                <div class="offset-5 col-6 mb-4"><input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" /></div>
+                <div class="offset-3 col-6 offset-md-5 col-md-6 mb-4"><input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" /></div>
             </div>
         </form>
 
 
         <div class="row">
-            <div class="offset-5 col-6 mb-4">
+            <div class=" offset-3 col-7 offset-md-5 col-md-6 mb-4">
                 <button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>
             </div>
         </div>

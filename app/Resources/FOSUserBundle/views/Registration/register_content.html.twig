@@ -23,51 +23,51 @@
 
     <div class="row">
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.civilite) }}*</div>
-            <div class="col-7">{{ form_widget(form.civilite) }}</div>
+            <div class="col-3 offset-md-3 col-md-2 mb-3">{{ form_label(form.civilite) }}*</div>
+            <div class="offset-1 col-7 offset-md-0 col-md-5">{{ form_widget(form.civilite) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.nom) }}*</div>
-            <div class="col-7">{{ form_widget(form.nom) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.nom) }}*</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.nom) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.prenom) }}*</div>
-            <div class="col-7">{{ form_widget(form.prenom) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.prenom) }}*</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.prenom) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.username) }}*</div>
-            <div class="col-7">{{ form_widget(form.username) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.username) }}*</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.username) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.email) }}*</div>
-            <div class="col-7">{{ form_widget(form.email) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.email) }}*</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.email) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.plainPassword.first)}}*</div>
-            <div class="col-7">{{ form_widget(form.plainPassword.first) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.plainPassword.first)}}*</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.plainPassword.first) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.plainPassword.second) }}*</div>
-            <div class="col-7">{{ form_widget(form.plainPassword.second) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.plainPassword.second) }}*</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.plainPassword.second) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.adresse) }}</div>
-            <div class="col-7">{{ form_widget(form.adresse) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.adresse) }}</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.adresse) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.ville) }}</div>
-            <div class="col-7">{{ form_widget(form.ville) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.ville) }}</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.ville) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.code_postal) }}</div>
-            <div class="col-7">{{ form_widget(form.code_postal) }}</div>
+            <div class="offset-md-3 col-md-2 ">{{ form_label(form.code_postal) }}</div>
+            <div class="col-md-7 mb-3">{{ form_widget(form.code_postal) }}</div>
 
 
-            <div class="offset-3 col-2 mb-3">{{ form_label(form.role) }}*</div>
-            <div class="col-7">{{ form_widget(form.role) }}</div>
+            <div class="col-3 offset-md-3 col-md-2 mb-3">{{ form_label(form.role) }}*</div>
+            <div class="offset-1 col-7 offset-md-0 col-md-5">{{ form_widget(form.role) }}</div>
     </div>
 
-    <div class="offset-5 col-7 my-3">
+    <div class="offset-3 col-7 offset-md-5 col-md-7 my-3">
         <input type="submit" value="Enregistrer" />
     </div>
 {{ form_end(form) }}
@@ -76,7 +76,7 @@
 
 
     <div class="row">
-        <div class="offset-5 col-7 mb-">
+        <div class="offset-3 col-7 offset-md-5 col-md-7 mb-5">
             <button><a href="{{ path('homepage') }}">Retour page d'accueil</a></button>
         </div>
         <p class="offset-1">  * Partie obligatoire a remplir</p>
