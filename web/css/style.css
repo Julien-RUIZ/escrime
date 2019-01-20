@@ -442,6 +442,14 @@ label {
 /*----------------------------------*/
 @media screen and (max-width: 500px) {
   #username, #password {
-    width: 180px; } }
+    width: 180px; }
+
+  .nomclub {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center; }
+
+  .entete {
+    height: 80px; } }
 
 /*# sourceMappingURL=style.css.map */
