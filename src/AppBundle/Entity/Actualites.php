@@ -28,14 +28,12 @@ class Actualites
      * @ORM\Column(name="titre", type="string", length=255)
      */
     private $titre;
-
     /**
      * @var string
      *
      * @ORM\Column(name="contenu", type="string", length=100000)
      */
     private $contenu;
-
     /**
      * @var string
      *
@@ -48,8 +46,6 @@ class Actualites
      * )
      */
     private $photo;
-
-
     /**
      * Get id
      *
@@ -59,7 +55,6 @@ class Actualites
     {
         return $this->id;
     }
-
     /**
      * Set titre
      *

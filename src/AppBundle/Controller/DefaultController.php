@@ -10,6 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class DefaultController extends Controller
 {
 //---------------------partie accueil qui va afficher les actus------------------------------------------------------------
+
+
     /**
      * C'est notre page principale sur laquelle nous allons avoir la liste des actus
      * @Route("/", name="homepage")
@@ -20,13 +22,10 @@ class DefaultController extends Controller
         //on a besoin du repository  pour récupérer le contenu de la table
         // pour récupérer ce repository :
         // on appelle Doctrine (qui gère les répository)
-        // pour appeler la méthode getRepository qui récupère le repository Auteur (avec Actualites::class passé en parametre)
+        // pour appeler la méthode getRepository qui récupère le repository Actualités (avec Actualites::class passé en parametre)
         $repository = $this->getDoctrine()->getRepository(Actualites::class);
         //affiche dans l'ordre décroissant des id
         $actus = $repository->findBy(array(), array('id' => 'desc'));
-
-
-
 
         //Redirection pour l'affichage sur la page html.twig
        return $this->render("@App/pages/accueil.html.twig",

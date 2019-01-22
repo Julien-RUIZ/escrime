@@ -17,7 +17,7 @@ class ActualitesType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('titre')
+            ->add('titre', TextareaType::class)
             ->add('contenu', TextareaType::class)
             ->add('photo',FileType::class, array('data_class' => null))
             ->add('save', SubmitType::class, array('label' => 'valide'));;
