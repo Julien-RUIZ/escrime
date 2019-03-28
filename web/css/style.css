@@ -1,7 +1,99 @@
 /*--------------------------------------------*/
+/*-----------Parallax-------------------------*/
+/*--------------------------------------------*/
+.parallax-window {
+  border: 1px solid black;
+  min-height: 550px;
+  background: transparent; }
+
+.titreAcceuil {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-top: 200px;
+  text-align: center; }
+
+/*--------------------------------------------*/
+/*---------Menu Principale--------------------*/
+/*--------------------------------------------*/
+body, html {
+  margin-top: 0;
+  padding: 0; }
+
+.bodyMenuPrincipale {
+  background-color: black;
+  height: 100vh; }
+
+.borderGeneric {
+  margin-top: 20%;
+  height: 400px;
+  width: 200px;
+  border: 1px solid black;
+  transition: all 0.7s ease;
+  background-color: black; }
+
+.borderGeneric:hover {
+  border: 2px solid black;
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 3px 89px 12px #7a177a;
+  -moz-box-shadow: 0px 3px 89px 12px #7a177a;
+  box-shadow: 0px 3px 89px 12px #7a177a; }
+
+.flexborder {
+  display: flex;
+  justify-content: space-around; }
+
+.titreUn, .titreDeux, .titreTrois, .titreQuatre {
+  margin-top: 30px;
+  text-align: center;
+  color: white; }
+
+.text {
+  width: 200px;
+  color: white; }
+
+.logo {
+  text-align: center;
+  width: 100px;
+  margin-right: 10px; }
+
+.club {
+  color: white;
+  font-size: 65px;
+  font-family: 'Dancing Script', cursive; }
+
+.image1 {
+  z-index: 2; }
+
+.enteteMenuPrincipale {
+  display: flex;
+  justify-content: center; }
+
+.LienDansImage {
+  height: 400px;
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.LienDansImage1, .LienDansImage2, .LienDansImage3 {
+  position: absolute;
+  z-index: 2;
+  border: 2px solid white;
+  height: 400px;
+  width: 200px;
+  background-color: rgba(203, 195, 195, 0.7); }
+
+.liste {
+  padding-top: 50%; }
+
+.lesTitresListes {
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  color: #480079; }
+
+/*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .bloccontact, .lien, .connexion, .defbureau, #titreactus, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
+.bordure, .titreAcceuil, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .bloccontact, .lien, .connexion, .defbureau, #titreactus, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
   border: 1px solid black;
   border-radius: 10px;
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
@@ -21,13 +113,17 @@ button {
 .bouton, .boutonescrime {
   width: 170px; }
 
-.marginTopBottom40, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .lien, .formajoutactu, .titreListeInfoAdmin {
+.marginTopBottom40, .textpresentation, .lien, .formajoutactu, .titreListeInfoAdmin {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-.marginTopBottom80, .bloccontact, .salle, .infoCredit, .menuadmin, .modif {
+.marginTopBottom80, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .salle, .infoCredit, .menuadmin, .modif {
   margin-top: 80px;
   margin-bottom: 80px; }
+
+.marginTopBottom90, .blocsport {
+  margin-top: 90px;
+  margin-bottom: 90px; }
 
 .marginTopBottom30, .titreformactus, .bloceven {
   margin-top: 30px;
@@ -199,6 +295,8 @@ html, body {
 
 /*--------Salle---------------------*/
 .bloccontact {
+  margin-bottom: 180px;
+  margin-top: 180px;
   text-align: center; }
 
 .salle {
@@ -208,7 +306,7 @@ html, body {
 /*---------Horaire-------------------*/
 .titrehoraire {
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 100px; }
 
 /*-------Lien utile----------------*/
 .lien {
@@ -447,6 +545,10 @@ label {
 /*----------------------------------*/
 /*--------Media query---------------*/
 /*----------------------------------*/
+@media screen and (min-width: 1500px) {
+  .menuadmin {
+    margin-top: 130px;
+    margin-bottom: 130px; } }
 @media screen and (max-width: 500px) {
   #username, #password {
     width: 180px; }

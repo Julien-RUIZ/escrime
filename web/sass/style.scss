@@ -1,4 +1,109 @@
 /*--------------------------------------------*/
+/*-----------Parallax-------------------------*/
+/*--------------------------------------------*/
+
+.parallax-window {
+  border:1px solid black;
+  min-height: 550px;
+  background: transparent;
+}
+.titreAcceuil{
+  background-color: rgba(255,255,255,0.4);
+  margin-top: 200px;
+  @extend .bordure;
+  text-align: center;
+}
+
+/*--------------------------------------------*/
+/*---------Menu Principale--------------------*/
+/*--------------------------------------------*/
+
+body, html{
+  margin-top: 0;
+  padding: 0;
+}
+.bodyMenuPrincipale{
+  background-color: black;
+  height: 100vh;
+}
+
+
+.borderGeneric{
+  margin-top: 20%;
+  height: 400px;
+  width: 200px;
+  border: 1px solid black;
+  transition: all 0.7s ease;
+  background-color: black;
+}
+.borderGeneric:hover{
+  border:2px solid black;
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 3px 89px 12px rgba(122,23,122,1);
+  -moz-box-shadow: 0px 3px 89px 12px rgba(122,23,122,1);
+  box-shadow: 0px 3px 89px 12px rgba(122,23,122,1);
+
+}
+
+.flexborder{
+  display: flex;
+  justify-content: space-around;
+}
+
+.titreUn, .titreDeux, .titreTrois, .titreQuatre{
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+.text{
+  width: 200px;
+  color: white;
+}
+.logo{
+  text-align: center;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.club{
+  color: white;
+  font-size: 65px;
+  font-family: 'Dancing Script', cursive;
+}
+.image1{
+  z-index: 2;
+}
+.enteteMenuPrincipale{
+  display: flex;
+  justify-content: center;
+}
+.LienDansImage{
+  height: 400px;
+  width: 200px;
+  position:absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.LienDansImage1, .LienDansImage2, .LienDansImage3{
+  position:absolute;
+  z-index: 2;
+  border:2px solid white;
+  height: 400px;
+  width: 200px;
+  background-color: rgba(203, 195, 195, 0.7);
+}
+.liste{
+  padding-top: 50%;
+}
+
+.lesTitresListes{
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  color: rgb(72,0,121);
+}
+
+
+/*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
 
@@ -38,6 +143,10 @@ $mauve:rgb(72,0,121);
 .marginTopBottom80{
   margin-top: 80px;
   margin-bottom: 80px;
+}
+.marginTopBottom90{
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .marginTopBottom30{
@@ -97,10 +206,6 @@ html, body{
 .bob{
   text-align: center;
 }
-.dropdownALL{
-
-}
-
 
 .menuderoul{
   text-align: center;
@@ -166,7 +271,9 @@ justify-content: center;
 .boutonescrime{
   @extend .bouton;
 }
-
+.blocsport{
+  @extend .marginTopBottom90;
+}
 
 .GroupeBoutonEscrime{
   display: flex;
@@ -177,12 +284,9 @@ justify-content: center;
   margin: auto;
   background-color: $mauve;
 }
-
-
 .texteEscrime{
   width: 50%;
   height: auto;
-
 }
 .phototroisarmes{
   width: 10%;
@@ -210,7 +314,6 @@ justify-content: center;
   @extend .bordure1;
   background-color: $mauve;
   height: 120px;
-
 }
 
 .texte{
@@ -221,9 +324,11 @@ justify-content: center;
 
 .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes{
   @extend .bordure;
-  @extend .marginTopBottom40;
+  @extend .marginTopBottom80;
   text-align: center;
 }
+
+
 .textpresentation{
   @extend .bordure;
   @extend .marginTopBottom40;
@@ -265,7 +370,8 @@ justify-content: center;
 
 .bloccontact{
   @extend .bordure;
-  @extend .marginTopBottom80;
+  margin-bottom: 180px;
+  margin-top: 180px;
   text-align: center;
 }
 
@@ -278,8 +384,9 @@ justify-content: center;
 /*---------Horaire-------------------*/
 .titrehoraire{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 100px;
 }
+
 
 /*-------Lien utile----------------*/
 
@@ -345,6 +452,7 @@ justify-content: center;
   width: 50%;
   margin: auto;
 }
+
 /*-------evenement------------------------*/
 .texteeven{
   @extend .bordure;
@@ -619,6 +727,17 @@ label{
 /*----------------------------------*/
 /*--------Media query---------------*/
 /*----------------------------------*/
+
+@media screen and (min-width: 1500px){
+  .menuadmin{
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
+
+}
+
+
+
 @media screen and (max-width: 500px) {
 
 #username, #password{
@@ -646,6 +765,10 @@ label{
 
 
 }
+
+
+
+
 
 
 

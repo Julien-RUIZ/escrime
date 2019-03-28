@@ -11,6 +11,92 @@
     <title>Document</title>
 </head>
 <body>
+{#-------------------------Menu Principale---------------------------------------------#}
+
+<section class="bodyMenuPrincipale">
+    <article>
+        <header>
+            <div class="enteteMenuPrincipale pt-3">
+                <div class="logo"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" width="100%"></a></div>
+                <div><p class="club">SPUC escrime</p></div>
+            </div>
+        </header>
+        <div class="flexborder">
+{#------------------------IMAGE ACTUALITES-----------------------------#}
+            <div>
+                <a href="{{ path('homepage') }}#Actualites"><div class="borderGeneric imageUne">
+
+                        <img src="{{ asset('img/escrimeGauche.jpg') }}" alt="handi" class="img-fluid"></div></a>
+                <div class="titreUn"><p>Actualités</p></div>
+                <div class="text partieUne"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi,
+                        consectetur eius et eum.</p>
+                </div>
+            </div>
+{#------------------------IMAGE LE CLUB---------------------------#}
+            <div>
+                <div class="borderGeneric imageDeux">
+                    <div class="LienDansImage1">
+                        <ul class="liste">
+                            <li><a href="{{ path('le_club_presentation', {'id': 1}) }}#Presentation" class="lesTitresListes">Presentation</a></li>
+                            <br>
+                            <li><a href="{{ path('le_club_presentation', {'id': 2}) }}#Contact" class="lesTitresListes">Contact</a></li>
+                            <br>
+                            <li><a href="{{ path('le_club_les_horaires') }}#horaire" class="lesTitresListes">Les horaires</a></li>
+                            <br>
+                            <li><a href="{{ path('les_membres_du_club') }}#staff" class="lesTitresListes">Staff</a></li>
+                        </ul>
+                    </div>
+                    <img src="{{ asset('img/masque1PagePrincipale.jpg') }}" alt="handi" class="img-fluid">
+                </div>
+
+                <div class="titreDeux"><p>Le Club</p></div>
+                <div class="text partieDeux"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi,
+                        consectetur eius et eum.</p>
+                </div>
+            </div>
+{#-------------------------IMAGE L ESCRIME----------------------------#}
+            <div>
+                <div class="borderGeneric imageTrois">
+                    <div class="LienDansImage2">
+                        <ul class="liste">
+                            <li><a href="{{ path('le_sport') }}#le_sport" class="lesTitresListes">Description</a></li>
+                            <br>
+                            <li><a href="{{ path('les_trois_armes') }}#les_trois_armes" class="lesTitresListes">Les trois armes</a></li>
+                            <br>
+                            <li><a href="{{ path('handisport') }}#handisport" class="lesTitresListes">Handisport</a></li>
+                        </ul>
+                    </div>
+                    <img src="{{ asset('img/Masque2PagePrincipale.jpg') }}" alt="handi" class="img-fluid"></div>
+
+                <div class="titreTrois"><p>L'Escrime</p></div>
+                <div class="text partieTrois"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi,
+                        consectetur eius et eum.</p>
+                </div>
+            </div>
+{#--------------------------IMAGE INFO PRATIQUE---------------------------#}
+            <div>
+                <div class="borderGeneric imageQuatre">
+                    <div class="LienDansImage3">
+                        <ul class="liste">
+                            <li><a href="{{ path('location_materiel') }}#location_materiel" class="lesTitresListes">Location</a></li>
+                            <br>
+                            <li><a href="{{ path('licence') }}#licence" class="lesTitresListes">Licence</a></li>
+                            <br>
+                            <li><a href="{{ path('lien_utile') }}#lien_utile" class="lesTitresListes">Liens utiles</a></li>
+                        </ul>
+                    </div>
+                    <img src="{{ asset('img/escrimeDroite.jpg') }}" alt="handi" class="img-fluid"></div>
+
+                <div class="titreQuatre"><p>Info pratique</p></div>
+                <div class="text partieQuatre"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi,
+                        consectetur eius et eum.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+
 
 
 
@@ -51,51 +137,8 @@
         {#-----------------------Format tablette et plus------------------------#}
         <div class="d-none d-md-block col-md-2 my-1 col-lg-1 bob dropdown"><a href="{{ path('homepage') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" class="img-fluid" width="80%"></a></div>
         {#-----------------------groupe menu déroulant------------------------#}
-        <div class="d-none d-md-flex offset-md-1 col-md-7 offset-lg-3 col-lg-4 groupenavstick">
-
-
-                <div class="d-md-none homelogo">
-                    <a href="{{ path('homepage') }}"><img src="{{ asset('img/home.png') }}" alt="symbol-home" class="img-fluid dropdown" width="50%"></a>
-                </div>
-
-                <div class="dropdown">
-                    <p class="btn btn-default dropdown-toggle " id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
-
-                        <span class="caret">Le club</span>
-                    </p>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="{{ path('le_club_presentation', {'id': 1}) }}">Presentation</a></li>
-                        <li><a href="{{ path('le_club_presentation', {'id': 2}) }}">Contact</a></li>
-                        <li><a href="{{ path('le_club_les_horaires') }}">Les horaires</a></li>
-                        <li><a href="{{ path('les_membres_du_club') }}">Staff</a></li>
-                    </ul>
-                </div>
-
-                <div class="dropdown">
-                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-
-                        <span class="caret">L'escrime</span>
-                    </p>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="{{ path('homepage') }}">Page d'accueil</a></li>
-                        <li><hr></li>
-                        <li><a href="{{ path('le_sport') }}">Description</a></li>
-                        <li><a href="{{ path('les_trois_armes') }}">Les trois armes</a></li>
-                        <li><a href="{{ path('handisport') }}">Handisport</a></li>
-                    </ul>
-                </div>
-
-                <div class="dropdown">
-                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-
-                        <span class="caret">Info Pratique</span>
-                    </p>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="{{ path('location_materiel') }}">Location</a></li>
-                        <li><a href="{{ path('licence') }}">Licence</a></li>
-                        <li><a href="{{ path('lien_utile') }}">Liens utiles</a></li>
-                    </ul>
-                </div>
+        <div class="d-none d-md-flex offset-md-1 col-md-7 offset-lg-3 col-lg-4 mb-md-4 groupenavstick">
+            <button><a href="{{ path('homepage') }}">Page d'accueil</a></button>
         </div>
 
 {#-----------------menu déroulant pour le profil apres connexion -----------------------#}
@@ -128,32 +171,10 @@
         </div>
     </div>
 </nav>
-{#--------------------------------------------------------Header avec nom du club---------------------------------------------------#}
-
-<header>
-    <div class="container-fluid entete">
-        <div class="row d-flex align-items-center pt-3">
-
-            <div class="col-12 offset-lg-4 col-lg-4"><h1 class="nomclub">Spuc Escrime</h1></div>
-            <div class="d-none d-lg-block offset-lg-2 col-lg-1 my-3"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/MMFichier_14.png') }}" alt="logo" class="img-fluid" ></a></div>
-        </div>
-    </div>
-</header>
-
-
-
 
 
 {% block content %}
-
-
-
-
-
-
 {% endblock %}
-
-
 
 
 
@@ -172,9 +193,40 @@
     </div>
 </footer>
 
+{#--------------------PLUGIN FACEBOOK----------------------------------------#}
+{#https://developers.facebook.com/apps/349555448895407/settings/basic/ ---- Compt facebook dév#}
+{#https://www.facebook.com/business/help/1550411888622740 ----- Politique de confidentialité#}
+{#https://developers.facebook.com/docs/javascript/examples#dialogs --- instal plugin#}
+    {#<div id="fb-root"></div>#}
+    {#<script src="https://connect.facebook.net/en_US/sdk.js"></script>#}
 
+    {#<script>#}
+        {#FB.init({#}
+            {#appId   : 349555448895407,#}
+            {#status  : true,#}
+            {#xfbml   : true,#}
+            {#version : 'v3.2'#}
+        {#});#}
+        {#FB.AppEvents.logPageView();#}
 
+        {#FB.ui({#}
+            {#method: 'share',#}
+            {#href: 'https://developers.facebook.com/docs/'#}
+        {#}, function(response){});#}
 
+        {#FB.login(function(response) {#}
+            {#if (response.authResponse) {#}
+                {#console.log('Welcome!  Fetching your information.... ');#}
+                {#FB.api('/me', function(response) {#}
+                    {#console.log('Good to see you, ' + response.name + '.');#}
+                {#});#}
+            {#} else {#}
+                {#console.log('User cancelled login or did not fully authorize.');#}
+            {#}#}
+        {#});#}
+    {#</script>#}
+
+{#----------------------------------------------------------------------------#}
 
 
 
@@ -184,6 +236,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="{{ asset('parallax.js-1.5.0/parallax.js')}}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

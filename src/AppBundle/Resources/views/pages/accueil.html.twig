@@ -8,16 +8,15 @@
 
 
 {% block content %}
-<section>
+<section id="Actualites">
     <article>
-        <div class="grandeimage">
-            <img src="{{ asset('img/image-entete2.jpg') }}" alt="deux escrimeurs" class="imagedeuxSabreurs" width="100%">
-        </div>
-    </article>
+{#----------Image en parallax sur la page d'acceuil-----#}
+        <div class="parallax-window grandeimage" data-parallax="scroll" data-image-src="{{ asset('img/image-entete2.jpg') }}">
+{#----------------------------------------------------#}
 
-    <article>
-        <div class="container my-5 texte">
-        <h2>Actualités</h2>
+        <div class="container titreAcceuil">
+            <h2>Actualités</h2>
+        </div>
         </div>
         <div>
             {% for actu in actus  %}
