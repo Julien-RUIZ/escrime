@@ -4,6 +4,7 @@
 
 
 {% block content %}
+    <span id="affiche_actus">-</span>
     <section>
         <header>
                 <div class="container texte">
@@ -21,7 +22,7 @@
                     <div class="texteactus mt-4">
                         <p><strong id="texte">{{ actus.titre }} :</strong><br><br><span>{{ actus.contenu |nl2br }}</span></p>
                     </div>
-                    <div class="my-3"><a href="{{ path('homepage') }}"><button>Retour accueil</button></a></div>
+                    <div class="my-3"><a href="{{ path('homepage') }}#Actualites2"><button>Retour accueil</button></a></div>
                 </div>
         </article>
     </section>

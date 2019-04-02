@@ -9,32 +9,37 @@
 
 {% block content %}
 <section id="Actualites">
-    <article>
+    <header>
 {#----------Image en parallax sur la page d'acceuil-----#}
         <div class="parallax-window grandeimage" data-parallax="scroll" data-image-src="{{ asset('img/image-entete2.jpg') }}">
 {#----------------------------------------------------#}
-
-        <div class="container titreAcceuil">
-            <h2>Actualités</h2>
+            <div class="container titreAcceuil">
+                <h2>Actualités</h2>
+            </div>
         </div>
-        </div>
-        <div>
+    </header>
+    <span id="Actualites2">-</span>
+    <article>
+        <div class="Accueilflex">
             {% for actu in actus  %}
-                <div class="container my-5 pb-3 texte">
-                    <h3 class="my-3 actustitre">{{ actu.titre }}</h3>
-                        {% if actu.photo %}
-                            <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite"  width="100%"></div>
-                        {% else %}
-                            <p>pas d'image</p>
-                        {% endif %}
-                    <div class="texteactus mt-4">
 
-                        <p><strong id="texte">{{ actu.titre }} :</strong><br><br><a href="{{ path('affiche_actus', {'id': actu.id}) }}"><span class="texteactus1">{{ actu.contenu |nl2br }}</span><br>Lire l'article complet ici</a></p>
+                    <div class="container mb-5 pb-3 texteActus3">
+                        <h3 class="my-3 actustitre">{{ actu.titre }}</h3>
+                            {% if actu.photo %}
+                                <div class="imageactus"><img src="{{ asset('uploads/images/' ~ actu.photo) }}" alt="image de l'actualite"  width="100%"></div>
+                            {% else %}
+                                <p>pas d'image</p>
+                            {% endif %}
+                        <div class="texteactus mt-4">
+
+                            <p><strong id="texte">{{ actu.titre }} :</strong><br><br><a href="{{ path('affiche_actus', {'id': actu.id}) }}#affiche_actus"><span class="texteactus1">{{ actu.contenu |nl2br }}</span><br>Lire l'article complet ici...</a></p>
+                        </div>
+
                     </div>
 
-                </div>
             {% endfor %}
         </div>
     </article>
+
 </section>
 {% endblock %}

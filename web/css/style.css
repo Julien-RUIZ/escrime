@@ -77,7 +77,7 @@ body, html {
 .LienDansImage1, .LienDansImage2, .LienDansImage3 {
   position: absolute;
   z-index: 2;
-  border: 2px solid white;
+  border: 2px solid #480079;
   height: 400px;
   width: 200px;
   background-color: rgba(203, 195, 195, 0.7); }
@@ -93,7 +93,7 @@ body, html {
 /*--------------------------------------------*/
 /*-------------SASS---------------------------*/
 /*--------------------------------------------*/
-.bordure, .titreAcceuil, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .bloccontact, .lien, .connexion, .defbureau, #titreactus, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
+.bordure, .titreAcceuil, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .bloccontact, .lien, .connexion, .defbureau, #titreactus, .texteActus3, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
   border: 1px solid black;
   border-radius: 10px;
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
@@ -137,7 +137,7 @@ button {
   margin-bottom: 50px;
   margin-top: 20px; }
 
-.marginTop90Bottom40, .texte, .textePrix {
+.marginTop90Bottom40, .texte, .textePrix, .texteActus3 {
   margin-top: 90px;
   margin-bottom: 40px; }
 
@@ -337,12 +337,29 @@ html, body {
   padding-top: 10px;
   background-color: #c7ffff; }
 
+#Actualites2 {
+  margin-bottom: 100px;
+  color: white; }
+
 .texteactus1 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.texteActus3 {
+  text-align: center;
+  width: 400px;
+  height: 600px; }
+
+.Accueilflex {
+  display: flex;
+  flex-wrap: wrap; }
+
+#affiche_actus {
+  margin-bottom: 220px;
+  color: white; }
 
 .texteactus {
   text-align: left;
@@ -548,7 +565,10 @@ label {
 @media screen and (min-width: 1500px) {
   .menuadmin {
     margin-top: 130px;
-    margin-bottom: 130px; } }
+    margin-bottom: 130px; }
+
+  #imageBarreNave {
+    width: 50%; } }
 @media screen and (max-width: 500px) {
   #username, #password {
     width: 180px; }

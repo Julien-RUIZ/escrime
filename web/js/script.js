@@ -6,8 +6,11 @@ $(document).ready(function(){
 
 
     //-------------------------------------------
-    $(".actustitre").mouseover(function(){
-        $(this).css('color','rgb(86,3,121)');
+    $(".texteActus3").mouseover(function(){
+        $(this).css('background-color','rgb(234, 233, 233)');
+    })
+    $(".texteActus3").mouseout(function(){
+        $(this).css('background-color','white');
     })
 
 $(".texteactus1").click(function(){

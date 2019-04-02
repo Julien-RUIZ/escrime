@@ -87,7 +87,7 @@ body, html{
 .LienDansImage1, .LienDansImage2, .LienDansImage3{
   position:absolute;
   z-index: 2;
-  border:2px solid white;
+  border:2px solid rgb(72,0,121);
   height: 400px;
   width: 200px;
   background-color: rgba(203, 195, 195, 0.7);
@@ -428,6 +428,11 @@ justify-content: center;
   background-color: rgb(199, 255, 255);
 }
 
+#Actualites2{
+  margin-bottom: 100px;
+  color:white;
+}
+
 .texteactus1{
   display: -webkit-box;
   -webkit-line-clamp:3;
@@ -436,6 +441,23 @@ justify-content: center;
   text-overflow: ellipsis;
 }
 
+.texteActus3{
+  @extend .bordure;
+  @extend .marginTop90Bottom40;
+  text-align: center;
+  width: 400px;
+  height: 600px;
+}
+
+.Accueilflex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#affiche_actus{
+  margin-bottom: 220px;
+  color: white;
+}
 
 .texteactus{
   text-align: left;
@@ -732,6 +754,10 @@ label{
   .menuadmin{
     margin-top: 130px;
     margin-bottom: 130px;
+  }
+
+  #imageBarreNave{
+    width: 50%;
   }
 
 }
