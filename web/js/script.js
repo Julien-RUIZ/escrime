@@ -5,22 +5,24 @@ $(document).ready(function(){
 
 
 
-    //-------------------------------------------
+    //----------Partie accueil.html modif des actus
     $(".texteActus3").mouseover(function(){
         $(this).css('background-color','rgb(234, 233, 233)');
+
     })
     $(".texteActus3").mouseout(function(){
         $(this).css('background-color','white');
     })
 
-$(".texteactus1").click(function(){
+    $(".texteactus1").click(function(){
     $(this).css('color-webkit-line-clamp','0');
-})
+    })
     //-------------------------------------------
 
 
-
+    //-----------Action jquery pour la partie base.html
     $(".imageUne").mouseover(function(){
+        //modif taille titre
         $(".titreUn").css('fontSize','22px');
     })
     $(".imageUne").mouseout(function(){
@@ -29,8 +31,10 @@ $(".texteactus1").click(function(){
     })
 //-------------------------------------------
     $(".imageDeux").mouseover(function(){
-
+        //modif taille titre
         $(".titreDeux").css('fontSize','22px');
+        //modif forme curseur sur l'image
+        $(this).css('cursor','pointer');
     })
     $(".imageDeux").mouseout(function(){
 
@@ -38,7 +42,8 @@ $(".texteactus1").click(function(){
     })
 //-------------------------------------------
     $(".imageTrois").mouseover(function(){
-
+        $(this).css('cursor','pointer');
+        //modif forme curseur sur l'image
         $(".titreTrois").css('fontSize','22px');
     })
     $(".imageTrois").mouseout(function(){
@@ -47,7 +52,8 @@ $(".texteactus1").click(function(){
     })
 //-------------------------------------------
     $(".imageQuatre").mouseover(function(){
-
+        $(this).css('cursor','pointer');
+        //modif forme curseur sur l'image
         $(".titreQuatre").css('fontSize','22px');
     })
     $(".imageQuatre").mouseout(function(){

@@ -32,7 +32,6 @@ class DefaultController extends Controller
            [
                'actus' => $actus
            ]
-
        );
     }
 

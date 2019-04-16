@@ -428,9 +428,12 @@ justify-content: center;
   background-color: rgb(199, 255, 255);
 }
 
-#Actualites2{
+#Actualites2, #handisport{
   margin-bottom: 100px;
   color:white;
+}
+#le_sport, #Presentation, #horaire, #les_trois_armes, #location_materiel, #lien_utile, #inscription, #info_perso, #info_global, #liste_evenement, #mention_legal, #credit{
+  color: white;
 }
 
 .texteactus1{
@@ -454,7 +457,7 @@ justify-content: center;
   flex-wrap: wrap;
 }
 
-#affiche_actus{
+#affiche_actus, #Presentation{
   margin-bottom: 220px;
   color: white;
 }

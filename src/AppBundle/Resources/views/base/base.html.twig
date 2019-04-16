@@ -151,13 +151,13 @@
                         <span class="caret">{{ app.user.username }}</span>
                     </p>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="{{ path('fos_user_profile_show') }}" title="Profil">Informations perso</a></li>
+                        <li><a href="{{ path('fos_user_profile_show') }}#info_perso" title="Profil">Informations perso</a></li>
                         <li><hr></li>
-                        <li><a href="{{ path('evenement') }}" title="Lien 2">Tous les evenements</a></li>
+                        <li><a href="{{ path('evenement') }}#liste_evenement" title="Lien 2">Tous les evenements</a></li>
 
-                        <li><a href="{{ path('info_type', {'id': 1}) }}" title="Lien 2">les Compétitions</a></li>
-                        <li><a href="{{ path('info_type', {'id': 2}) }}" title="Lien 2">les Soirées</a></li>
-                        <li><a href="{{ path('info_type', {'id': 3}) }}" title="Lien 2">les Réunions</a></li>
+                        <li><a href="{{ path('info_type', {'id': 1}) }}#info_global" title="Lien 2">les Compétitions</a></li>
+                        <li><a href="{{ path('info_type', {'id': 2}) }}#info_global" title="Lien 2">les Soirées</a></li>
+                        <li><a href="{{ path('info_type', {'id': 3}) }}#info_global" title="Lien 2">les Réunions</a></li>
                     </ul>
                 </div>
 
@@ -165,8 +165,8 @@
 
                 <div class=" mx-md-2 mt-md-2 deconn dropdown"><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></div>
             {% else %}
-                <div class="mx-2 mr-1 mx-md-2 mt-md-2 deconn dropdown"><a href="{{ path('fos_user_registration_register') }}">Inscription</a></div>
-                <div class="mr-2 mx-md-2 mt-md-2 deconn dropdown"><a href="{{ path('fos_user_security_login') }}">Connexion</a></div>
+                <div class="mx-2 mr-1 mx-md-2 mt-md-2 deconn dropdown"><a href="{{ path('fos_user_registration_register') }}#inscription">Inscription</a></div>
+                <div class="mr-2 mx-md-2 mt-md-2 deconn dropdown"><a href="{{ path('fos_user_security_login') }}#connexion">Connexion</a></div>
             {% endif %}
         </div>
     </div>
@@ -185,8 +185,8 @@
 
 
             <div class="offset-6 col-5 mt-2 d-flex justify-content-center  groupeTrois ">
-                <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 3}) }}"><p class="textblanc">Mentions légales</p></a></div>
-                <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 4}) }}"><p class="textblanc">Crédit</p></a></div>
+                <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 3}) }}#mention_legal"><p class="textblanc">Mentions légales</p></a></div>
+                <div class="mx-4"><a href="{{ path('le_club_presentation', {'id': 4}) }}#credit"><p class="textblanc">Crédit</p></a></div>
             </div>
         </div>
 
