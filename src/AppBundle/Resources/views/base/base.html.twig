@@ -17,13 +17,13 @@
     <article>
         <header>
             <div class="enteteMenuPrincipale pt-3">
-                <div class="logo"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" width="100%"></a></div>
+                <div class="logo d-none d-md-block"><a href="{{ path('homepage_admin') }}"><img src="{{ asset('img/logoSPUC.png') }}" alt="logo" width="100%"></a></div>
                 <div><p class="club">SPUC escrime</p></div>
             </div>
         </header>
         <div class="flexborder">
 {#------------------------IMAGE ACTUALITES-----------------------------#}
-            <div>
+            <div class="d-none d-md-block">
                 <a href="{{ path('homepage') }}#Actualites"><div class="borderGeneric imageUne">
 
                         <img src="{{ asset('img/escrimeGauche.jpg') }}" alt="handi" class="img-fluid"></div></a>
@@ -33,10 +33,10 @@
                 </div>
             </div>
 {#------------------------IMAGE LE CLUB---------------------------#}
-            <div>
+            <div class="d-none d-md-block">
                 <div class="borderGeneric imageDeux">
-                    <div class="LienDansImage1">
-                        <ul class="liste">
+                    <div class="LienDansImage1 ">
+                        <ul class="liste d-none d-md-block">
                             <li><a href="{{ path('le_club_presentation', {'id': 1}) }}#Presentation" class="lesTitresListes">Presentation</a></li>
                             <br>
                             <li><a href="{{ path('le_club_presentation', {'id': 2}) }}#Contact" class="lesTitresListes">Contact</a></li>
@@ -54,11 +54,36 @@
                         consectetur eius et eum.</p>
                 </div>
             </div>
+            {#-----------------------------------------------------------------#}
+            {#---------------Partie responsive mobile image gauche-------------#}
+            {#-----------------------------------------------------------------#}
+            <div class="d-md-none">
+                <div class="borderGeneric imageDeux">
+                    <div class="LienDansImage1 ">
+                        <ul class="listeResp">
+
+                            <li><a href="{{ path('le_club_presentation', {'id': 1}) }}#Presentation" class="lesTitresListes">Presentation</a></li>
+                            <li class="my-3"><a href="{{ path('le_club_presentation', {'id': 2}) }}#Contact" class="lesTitresListes">Contact</a></li>
+                            <li><a href="{{ path('le_club_les_horaires') }}#horaire" class="lesTitresListes">Les horaires</a></li>
+                            <li class="my-3"><a href="{{ path('les_membres_du_club') }}#staff" class="lesTitresListes">Staff</a></li>
+                            <li><a href="{{ path('location_materiel') }}#location_materiel" class="lesTitresListes">Location</a></li>
+                            <li class="my-3"><a href="{{ path('licence') }}#licence" class="lesTitresListes">Licence</a></li>
+                            <li><a href="{{ path('lien_utile') }}#lien_utile" class="lesTitresListes">Liens utiles</a></li>
+
+                        </ul>
+                    </div>
+                    <img src="{{ asset('img/masque1PagePrincipale.jpg') }}" alt="handi" class="img-fluid">
+                </div>
+
+                <div class="titreDeux"><p>Menu</p></div>
+                <div class="text partieDeux"><p></p>
+                </div>
+            </div>
 {#-------------------------IMAGE L ESCRIME----------------------------#}
-            <div>
+            <div class="d-none d-md-block">
                 <div class="borderGeneric imageTrois">
                     <div class="LienDansImage2">
-                        <ul class="liste">
+                        <ul class="liste d-none d-md-block">
                             <li><a href="{{ path('le_sport') }}#le_sport" class="lesTitresListes">Description</a></li>
                             <br>
                             <li><a href="{{ path('les_trois_armes') }}#les_trois_armes" class="lesTitresListes">Les trois armes</a></li>
@@ -73,8 +98,26 @@
                         consectetur eius et eum.</p>
                 </div>
             </div>
+            {#-----------------------------------------------------------------#}
+            {#---------------Partie responsive mobile image droite-------------#}
+            {#-----------------------------------------------------------------#}
+            <div class="d-md-none">
+                <div class="borderGeneric imageTrois">
+                    <div class="LienDansImage2">
+                        <ul class="liste">
+                            <li><a href="{{ path('le_sport') }}#le_sport" class="lesTitresListes">Description</a></li>
+                            <li class="my-3"s><a href="{{ path('les_trois_armes') }}#les_trois_armes" class="lesTitresListes">Les trois armes</a></li>
+                            <li><a href="{{ path('handisport') }}#handisport" class="lesTitresListes">Handisport</a></li>
+                        </ul>
+                    </div>
+                    <img src="{{ asset('img/Masque2PagePrincipale.jpg') }}" alt="handi" class="img-fluid"></div>
+
+                <div class="titreTrois"><p>L'Escrime</p></div>
+                <div class="text partieTrois"><p></p>
+                </div>
+            </div>
 {#--------------------------IMAGE INFO PRATIQUE---------------------------#}
-            <div>
+            <div class="d-none d-md-block">
                 <div class="borderGeneric imageQuatre">
                     <div class="LienDansImage3">
                         <ul class="liste">
@@ -118,16 +161,16 @@
                 <li><a href="{{ path('homepage') }}">Page d'accueil</a></li>
                 <li><hr></li>
                 <li><a href="{{ path('le_club_presentation', {'id': 1}) }}">Presentation</a></li>
-                <li><a href="{{ path('le_club_presentation', {'id': 2}) }}">Contact</a></li>
+                <li class="my-3"><a href="{{ path('le_club_presentation', {'id': 2}) }}">Contact</a></li>
                 <li><a href="{{ path('le_club_les_horaires') }}">Les horaires</a></li>
-                <li><a href="{{ path('les_membres_du_club') }}">Staff</a></li>
+                <li class="mt-3"><a href="{{ path('les_membres_du_club') }}">Staff</a></li>
                 <li><hr></li>
                 <li><a href="{{ path('le_sport') }}">L'escrime</a></li>
-                <li><a href="{{ path('les_trois_armes') }}">Les trois armes</a></li>
+                <li class="my-3"><a href="{{ path('les_trois_armes') }}">Les trois armes</a></li>
                 <li><a href="{{ path('handisport') }}">Handisport</a></li>
                 <li><hr></li>
                 <li><a href="{{ path('location_materiel') }}">Location</a></li>
-                <li><a href="{{ path('licence') }}">Licence</a></li>
+                <li class="my-3"><a href="{{ path('licence') }}">Licence</a></li>
                 <li><a href="{{ path('lien_utile') }}">Liens utiles</a></li>
 
             </ul>
@@ -145,7 +188,7 @@
         <div class="d-flex col-6  offset-md-4 col-md-4 offset-lg-1 col-lg-3 groupeconnex">
             {% if app.user %}
 
-                <div class="dropdown">
+                <div class="dropdown d-none d-md-block">
                     <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 
                         <span class="caret">{{ app.user.username }}</span>
@@ -155,9 +198,29 @@
                         <li><hr></li>
                         <li><a href="{{ path('evenement') }}#liste_evenement" title="Lien 2">Tous les evenements</a></li>
 
-                        <li><a href="{{ path('info_type', {'id': 1}) }}#info_global" title="Lien 2">les Compétitions</a></li>
-                        <li><a href="{{ path('info_type', {'id': 2}) }}#info_global" title="Lien 2">les Soirées</a></li>
-                        <li><a href="{{ path('info_type', {'id': 3}) }}#info_global" title="Lien 2">les Réunions</a></li>
+                        <li><a href="{{ path('info_type', {'id': 1}) }}#info_global" title="Lien 2">Les Compétitions</a></li>
+                        <li><a href="{{ path('info_type', {'id': 2}) }}#info_global" title="Lien 2">Les Soirées</a></li>
+                        <li><a href="{{ path('info_type', {'id': 3}) }}#info_global" title="Lien 2">Les Réunions</a></li>
+                    </ul>
+                </div>
+{#------------------------------------------------------------------------------------------------------------------------#}
+{#Cette partie est le menu perso (dans laquelle il y aura le nom de l'utilisateur) pour le resp en mobil, avec écart des menus#}
+{#------------------------------------------------------------------------------------------------------------------------#}
+                <div class="dropdown d-md-none">
+                    <p class="btn btn-default dropdown-toggle couleurDeroul" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                        <span class="caret">{{ app.user.username }}</span>
+                    </p>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="{{ path('fos_user_profile_show') }}#info_perso" title="Profil">Informations perso</a></li>
+                        <li><hr></li>
+                        <li><a href="{{ path('evenement') }}#liste_evenement" title="Lien 2">Tous les evenements</a></li>
+
+                        <li class="my-4"><a href="{{ path('info_type', {'id': 1}) }}#info_global" title="Lien 2">Les Compétitions</a></li>
+
+                        <li><a href="{{ path('info_type', {'id': 2}) }}#info_global" title="Lien 2">Les Soirées</a></li>
+
+                        <li class="mt-4"><a href="{{ path('info_type', {'id': 3}) }}#info_global" title="Lien 2">Les Réunions</a></li>
                     </ul>
                 </div>
 
