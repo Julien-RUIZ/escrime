@@ -67,7 +67,7 @@ class User extends BaseUser
      */
     private $civilite;
 
-    /**
+     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Role", inversedBy="user")
      */
     private $role;

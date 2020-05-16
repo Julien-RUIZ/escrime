@@ -115,7 +115,7 @@ body, html{
 
 .bordure{
   border:1px solid black;
-  border-radius: 10px;
+
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
   box-shadow: 13px 13px 18px -4px rgba(0,0,0,0.75);
@@ -184,7 +184,6 @@ margin-bottom: 40px;
 
 .bordure2{
   border:1px solid black;
-  border-radius: 10px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 60px;
@@ -217,6 +216,7 @@ html, body{
 }
 
 .barrenav{
+  height: 70px;
   position: sticky;
   background-image: url("../img/metal4.jpg");
   background-size: cover;
@@ -770,9 +770,15 @@ label{
 
 }
 
-
+//------------------------------------------------------------------
 
 @media screen and (max-width: 500px) {
+  .titreAcceuil{
+    margin-top: 30px;
+  }
+ .titrepresentation{
+   margin-top: 120px;
+ }
 
 #username, #password{
     width: 180px;

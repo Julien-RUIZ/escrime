@@ -101,7 +101,6 @@ body, html {
 /*--------------------------------------------*/
 .bordure, .titreAcceuil, .titreEscrime, .titrearme, .GroupeBoutonEscrime, .texte, .titrepresentation, .titreeven1, .titrehandisport, .titrelien, .titrelicence, .titreprix, .titrehoraire, .titremembre, .titre3armes, .textpresentation, .textePrix, .bloccontact, .lien, .connexion, .defbureau, #titreactus, .texteActus3, .texteeven, .titrecredit2, .infoCredit, .texteMention, .menuadmin, .bloclisteactus, .titreadmin, .formajoutactu, .bloclisteeven, .bloceven, .formtitreprix, .formprix, .titreListInfo, .blocinfos, .titreListeInfoAdmin, .modif, .confirmEnregistr {
   border: 1px solid black;
-  border-radius: 10px;
   -webkit-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 13px 13px 18px -4px rgba(0, 0, 0, 0.75); }
@@ -157,7 +156,6 @@ button {
 
 .bordure2, .titreadminAccueil, .ajoutactusform, .titreinscription, .titreListactus, .titreajouteven, .titremiseajour, .titreconnexion, .titreinfoperso {
   border: 1px solid black;
-  border-radius: 10px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 60px; }
@@ -186,6 +184,7 @@ html, body {
   text-align: center; }
 
 .barrenav {
+  height: 70px;
   position: sticky;
   background-image: url("../img/metal4.jpg");
   background-size: cover;
@@ -396,7 +395,7 @@ html, body {
 
 /*--------footer--------------------------*/
 .piedDepage {
-  background-color: #480079; }
+  background-color: #000000; }
 
 .titrecredit {
   text-align: center; }
@@ -579,6 +578,12 @@ label {
   #imageBarreNave {
     width: 50%; } }
 @media screen and (max-width: 500px) {
+  .titreAcceuil {
+    margin-top: 30px; }
+
+  .titrepresentation {
+    margin-top: 120px; }
+
   #username, #password {
     width: 180px; }
 
