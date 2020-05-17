@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bdbab0f-59e4-447e-84fe-342b58ef68b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/escrime-spuc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/escrime-spuc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/app/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppCache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/check_email.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/check_email.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config_dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config_test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/src/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/EvenementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/EvenementController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/InfoPratiqueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/InfoPratiqueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/LeClubController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/LeClubController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/SportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/SportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseAJourActusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseAJourActusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseAJourInformationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseAJourInformationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseAJourPrixController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseAJourPrixController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseajourevenementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/admin/MiseajourevenementController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Actualites.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Actualites.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Evenement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Evenement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Information.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Information.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Tarif.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Tarif.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Type.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/civilite.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/civilite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/horaire.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/horaire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/ActualitesType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ActualitesType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/EvenementType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/EvenementType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/InformationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/InformationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/TarifType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/TarifType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/civiliteType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/civiliteType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/ActualitesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/ActualitesRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/EvenementRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/EvenementRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/InformationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/InformationRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/RoleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/RoleRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TarifRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TarifRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TypeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TypeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/civiliteRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/civiliteRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/horaireRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/horaireRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/base/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/base/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/base/baseAdmin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/base/baseAdmin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/AfficheActus/afficheactus.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/AfficheActus/afficheactus.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/Evenement/competition.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/Evenement/competition.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/Evenement/evenement.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/Evenement/evenement.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPiedPage/credit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPiedPage/credit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPiedPage/mentionlegal.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPiedPage/mentionlegal.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPratique/Licence.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPratique/Licence.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPratique/LienUtile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPratique/LienUtile.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPratique/Prix.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/InfoPratique/Prix.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/LeBureau.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/LeBureau.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/Presentation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/Presentation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/horaire.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/horaire.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/salle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeClub/salle.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeSport/handisport.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeSport/handisport.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeSport/sport.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeSport/sport.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeSport/troisArmes.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/LeSport/troisArmes.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/accueil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/accueil.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/accueilAdmin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/accueilAdmin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeInformation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeInformation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeInscrit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeInscrit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeactus.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeactus.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeeven.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/admin/listeeven.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/formPrix.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/formPrix.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/formactus.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/formactus.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/formevenement.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/formevenement.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/forminformation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/pages/form/forminformation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/logs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/var/logs/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/sessions/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/var/sessions/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/web/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app_dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app_dev.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/web/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/Handi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/Handi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/JO-de-Rio-2016-une-combinaison-d-escrime-protege-t-elle-vraiment.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/JO-de-Rio-2016-une-combinaison-d-escrime-protege-t-elle-vraiment.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/MMFichier_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/MMFichier_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/Masque2PagePrincipale.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/Masque2PagePrincipale.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/Sallespuc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/Sallespuc.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/ancien.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/ancien.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/armeEtmasque.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/armeEtmasque.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/banner1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/banner1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/epee.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/epee.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/escrimeDroite.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/escrimeDroite.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/escrimeGauche.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/escrimeGauche.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/fleuretEntrainement.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fleuretEntrainement.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/hommefemme.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/hommefemme.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/image-entete.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/image-entete.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/image-entete2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/image-entete2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/jump900x400.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/jump900x400.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/logoSPUC.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/logoSPUC.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/masque.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/masque.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/masque1PagePrincipale.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/masque1PagePrincipale.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/materiel.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/materiel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/metal4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/metal4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/pantalon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/pantalon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/piste-35020.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/piste-35020.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/piste-png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/piste-png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/premierePhotoEscrime.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/premierePhotoEscrime.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/protection.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/protection.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/prototype.invisio.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/prototype.invisio.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/sabre-escrime.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/sabre-escrime.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/sabreactus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/sabreactus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/salle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/salle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/souscuirasse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/souscuirasse.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tarifs licences 2019.pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/tarifs licences 2019.pdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tarifs_licences_2018.pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/tarifs_licences_2018.pdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/troisArmes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/troisArmes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/veste.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/veste.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/AUTHORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/AUTHORS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/external/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_555555_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_777620_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_777777_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.structure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.structure.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/jquery-ui.theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery-ui-1.12.1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery-ui-1.12.1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/0929559e72a62e611fa220d2e79589b8.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/0929559e72a62e611fa220d2e79589b8.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/135026a68093f5668de7ef0b9780aeea.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/135026a68093f5668de7ef0b9780aeea.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/17b32ac76a5997638f71224654633b45.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/17b32ac76a5997638f71224654633b45.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/1e1fe1811688e2566ce6293f4a7206cd.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/1e1fe1811688e2566ce6293f4a7206cd.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/233968c1a06966641c355b04763fccf3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/233968c1a06966641c355b04763fccf3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/23b22445f9c5d37ec7d44dd73e501f26.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/23b22445f9c5d37ec7d44dd73e501f26.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/39e59818701279889b525e5ed835a889.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/39e59818701279889b525e5ed835a889.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/4a7dd792f01e150f4834cbf1e1990799.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/4a7dd792f01e150f4834cbf1e1990799.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/59c1e47aa6d99bed00cf351999055e10.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/59c1e47aa6d99bed00cf351999055e10.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/5dc302fe5e0bb6845d4fb27a8dc0e612.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/5dc302fe5e0bb6845d4fb27a8dc0e612.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/63e44a70c7b8c7e343bf72ccae474da0.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/63e44a70c7b8c7e343bf72ccae474da0.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/761a34754d0abf8d7ecb24f171cfb66a.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/761a34754d0abf8d7ecb24f171cfb66a.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/7b6f668803239f4279cc02c76768303f.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/7b6f668803239f4279cc02c76768303f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/8857d5e0056970cb039c8131333e1cf5.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/8857d5e0056970cb039c8131333e1cf5.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/89f1a0f956467ff432bd3655749ebbad.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/89f1a0f956467ff432bd3655749ebbad.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/8f95e06bb423aa7044e0bd5abda6e6a4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/8f95e06bb423aa7044e0bd5abda6e6a4.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/9c25c8820ee67ef00d679fbaa9eb476c.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/9c25c8820ee67ef00d679fbaa9eb476c.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/9dd67e10c19fdddab89e07e80b78a878.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/9dd67e10c19fdddab89e07e80b78a878.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/a9069508bd38a13ecbc626d71bb4078d.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/a9069508bd38a13ecbc626d71bb4078d.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/b2e3349a763d0e4d7e259d1a12d42060.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/b2e3349a763d0e4d7e259d1a12d42060.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/b2fc3b516a2f2de566e718481742966f.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/b2fc3b516a2f2de566e718481742966f.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/b334daa7ba34d9556b8afff3befaafda.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/b334daa7ba34d9556b8afff3befaafda.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/b7257a452165a5615da8a4beabce9e12.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/b7257a452165a5615da8a4beabce9e12.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/b80ea278f1ca797afeab0c775cb2a078.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/b80ea278f1ca797afeab0c775cb2a078.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/c46aa0e25e60edfae22b979c7d2b1820.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/c46aa0e25e60edfae22b979c7d2b1820.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/d3756ad228959e250d4329218ba628ae.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/d3756ad228959e250d4329218ba628ae.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/d6e39d300de09ef8abd83b256b63f9d7.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/d6e39d300de09ef8abd83b256b63f9d7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/df23843e248cf35956ec2678b7fe3ea7.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/df23843e248cf35956ec2678b7fe3ea7.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/uploads/images/ebb1e32b36f2ad4d8357705c02101173.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/web/uploads/images/ebb1e32b36f2ad4d8357705c02101173.jpeg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ProfilFormType</find>
+      <find>RegistrationType</find>
+      <find>password</find>
+      <find>email</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/AppBundle</dir>
+      <dir>$PROJECT_DIR$/app</dir>
+      <dir>$PROJECT_DIR$/vendor</dir>
+      <dir>$PROJECT_DIR$/vendor/friendsofsymfony</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="manytomany" />
+      </map>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1STPIUx020TlzjQpRAddIYcGbMR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/app/config/parameters.yml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/AppBundle/Controller/admin" />
+      <recent name="$PROJECT_DIR$/src/AppBundle/Controller" />
+      <recent name="$PROJECT_DIR$/src/AppBundle/Resources/Views/pages" />
+      <recent name="$PROJECT_DIR$/src/AppBundle/Resources/Views/pages/Le club" />
+      <recent name="$PROJECT_DIR$/src/AppBundle/Controller/PublicController" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bdbab0f-59e4-447e-84fe-342b58ef68b8" name="Default Changelist" comment="" />
+      <created>1543755241316</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543755241316</updated>
+      <workItem from="1543755242485" duration="477668000" />
+      <workItem from="1548332985670" duration="50000" />
+      <workItem from="1548775229320" duration="6456000" />
+      <workItem from="1549309265603" duration="1458000" />
+      <workItem from="1551435597053" duration="6772000" />
+      <workItem from="1553114668652" duration="24754000" />
+      <workItem from="1553427652529" duration="21967000" />
+      <workItem from="1554293459468" duration="567000" />
+      <workItem from="1555084857214" duration="19035000" />
+      <workItem from="1556024987572" duration="1613000" />
+      <workItem from="1556985374254" duration="418000" />
+      <workItem from="1558982254048" duration="866000" />
+      <workItem from="1571584535233" duration="2549000" />
+      <workItem from="1572627754642" duration="5644000" />
+      <workItem from="1573475559496" duration="8871000" />
+      <workItem from="1575730207102" duration="537000" />
+      <workItem from="1575730791274" duration="1290000" />
+      <workItem from="1575837923957" duration="3386000" />
+    </task>
+    <task id="LOCAL-00001" summary="modif en many to one">
+      <created>1544530305697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544530305697</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Avancé sur les tables et leurs affichages">
+      <created>1544559409450</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544559409450</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Avancé sur les tables et leurs affichages, modif mentionlegal">
+      <created>1544620668479</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544620668479</updated>
+    </task>
+    <task id="LOCAL-00004" summary="étape avec information actualité">
+      <created>1545160188125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545160188125</updated>
+    </task>
+    <task id="LOCAL-00005" summary="étape avec information actualité">
+      <created>1545160252524</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545160252524</updated>
+    </task>
+    <task id="LOCAL-00006" summary="étape avec information actualité, affichage actu et début des évenements">
+      <created>1545173840223</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545173840223</updated>
+    </task>
+    <task id="LOCAL-00007" summary="partie evenement et actus réalisé">
+      <created>1545244327218</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545244327218</updated>
+    </task>
+    <task id="LOCAL-00008" summary="partie evenement et actus réalisé + party type avec jointure">
+      <created>1545244426325</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545244426325</updated>
+    </task>
+    <task id="LOCAL-00009" summary="partie evenement et actus réalisé + party type avec jointure, fin de la relation">
+      <created>1545383784799</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545383784799</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Réalisation d'une table civilite et liaison manyto one avec la table user">
+      <created>1545599976088</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545599976088</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Réalisation d'une table civilite et liaison manyto one avec la table user">
+      <created>1545600044196</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545600044196</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Réalisation d'une table civilite et liaison manyto one avec la table user+ mise a jour des commentaires sur les methodes">
+      <created>1545605559808</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545605559808</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Réalisation d'une table civilite et liaison manyto one avec la table user+ mise a jour des commentaires sur les methodes">
+      <created>1545606220094</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545606220094</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Réalisation d'une table civilite et liaison manyto one avec la table user+ mise a jour des commentaires sur les methodes+ nouvelle table role en liaison avec user">
+      <created>1545612590701</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545612590701</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Réalisation d'une table civilite et liaison manyto one avec la table user+ mise a jour des commentaires sur les methodes+ nouvelle table role en liaison avec user">
+      <created>1545612618526</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545612618526</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fin de la partie admin, début de la partie front">
+      <created>1545862129539</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1545862129539</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fin de la partie admin, début de la partie front, réalisation de la page principale avec modification des l'affichage des tarif">
+      <created>1545937265120</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1545937265120</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Modification des formulaires fos-user, et début du front">
+      <created>1546040833672</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1546040833672</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Modification des formulaires fos-user, et début du front">
+      <created>1546112464255</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1546112464255</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modifications des formulaires, et mise en page">
+      <created>1546475681736</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1546475681736</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Modifications du responsive + visu de la barre nav et défilement">
+      <created>1546693012216</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1546693012216</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Modifications du responsive + visu de la barre nav et défilement + ajout de la partie escrime et handisport">
+      <created>1546811897152</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1546811897152</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Partie responsive, taille telephone et tablette, fin mise en form du front">
+      <created>1546956998952</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1546956998953</updated>
+    </task>
+    <task id="LOCAL-00024" summary="J'ai fait le responsive en telephone et tablette, voir en 1920x1080, début du javascript">
+      <created>1547136052523</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1547136052524</updated>
+    </task>
+    <task id="LOCAL-00025" summary="J'ai fait le responsive en telephone et tablette, voir en 1920x1080, début du javascript">
+      <created>1547767064842</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1547767064842</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fin de la mise en responsive, modif a faire et voir passage en vps">
+      <created>1547801632622</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1547801632622</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Fin de la mise en responsive, modif a faire et voir passage en vps">
+      <created>1547826733579</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1547826733581</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fin de la mise en responsive, modif a faire et voir passage en vps">
+      <created>1547914489044</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1547914489044</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Amélioration des page twig pour l'affichage en ligne">
+      <created>1547928956764</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1547928956764</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Amélioration des page twig pour l'affichage en ligne">
+      <created>1547932261528</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1547932261529</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Amélioration des page twig pour l'affichage en ligne">
+      <created>1547933877388</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1547933877388</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Mise a jour du responsive en version mobile">
+      <created>1547983073773</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1547983073773</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Mise a jour du responsive en version mobile">
+      <created>1547983996574</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1547983996574</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Mise a jour du responsive en version mobile">
+      <created>1547997326818</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1547997326819</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Mise a jour du responsive en version mobile= dernier ajout pour le site et son responsive">
+      <created>1548007123245</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1548007123245</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Mise a jour du responsive en version mobile= dernier ajout pour le site et son responsive">
+      <created>1548016252902</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1548016252902</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Cloture du projet pour le moment, fin de formation et de réalisation du site">
+      <created>1548168697904</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1548168697904</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Mise a jour premiere page, design et liens vers les autres pages + javascript">
+      <created>1553769422227</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1553769422228</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Mise a jour premiere page, design et liens vers les autres pages + javascript">
+      <created>1554197250497</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1554197250497</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Mise a jour de toutes les petites modifs">
+      <created>1554293685492</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1554293685492</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Réalisation des différents lien pour chaques page, avec amélioration couleur de la page de base.">
+      <created>1555436325087</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1555436325087</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Modification du responsive, page accueil en mode mobile et image de présentation">
+      <created>1555441329065</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1555441329065</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Modification du responsive, page accueil en mode mobile et image de présentation">
+      <created>1555513933878</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1555513933878</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="étape avec information actualité" />
+    <MESSAGE value="étape avec information actualité, affichage actu et début des évenements" />
+    <MESSAGE value="partie evenement et actus réalisé" />
+    <MESSAGE value="partie evenement et actus réalisé + party type avec jointure" />
+    <MESSAGE value="partie evenement et actus réalisé + party type avec jointure, fin de la relation" />
+    <MESSAGE value="Réalisation d'une table civilite et liaison manyto one avec la table user" />
+    <MESSAGE value="Réalisation d'une table civilite et liaison manyto one avec la table user+ mise a jour des commentaires sur les methodes" />
+    <MESSAGE value="Réalisation d'une table civilite et liaison manyto one avec la table user+ mise a jour des commentaires sur les methodes+ nouvelle table role en liaison avec user" />
+    <MESSAGE value="Fin de la partie admin, début de la partie front" />
+    <MESSAGE value="Fin de la partie admin, début de la partie front, réalisation de la page principale avec modification des l'affichage des tarif" />
+    <MESSAGE value="Modification des formulaires fos-user, et début du front" />
+    <MESSAGE value="Modifications des formulaires, et mise en page" />
+    <MESSAGE value="Modifications du responsive + visu de la barre nav et défilement" />
+    <MESSAGE value="Modifications du responsive + visu de la barre nav et défilement + ajout de la partie escrime et handisport" />
+    <MESSAGE value="Partie responsive, taille telephone et tablette, fin mise en form du front" />
+    <MESSAGE value="J'ai fait le responsive en telephone et tablette, voir en 1920x1080, début du javascript" />
+    <MESSAGE value="Fin de la mise en responsive, modif a faire et voir passage en vps" />
+    <MESSAGE value="Amélioration des page twig pour l'affichage en ligne" />
+    <MESSAGE value="Mise a jour du responsive en version mobile" />
+    <MESSAGE value="Mise a jour du responsive en version mobile= dernier ajout pour le site et son responsive" />
+    <MESSAGE value="Cloture du projet pour le moment, fin de formation et de réalisation du site" />
+    <MESSAGE value="Mise a jour premiere page, design et liens vers les autres pages + javascript" />
+    <MESSAGE value="Mise a jour de toutes les petites modifs" />
+    <MESSAGE value="Réalisation des différents lien pour chaques page, avec amélioration couleur de la page de base." />
+    <MESSAGE value="Modification du responsive, page accueil en mode mobile et image de présentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification du responsive, page accueil en mode mobile et image de présentation" />
+  </component>
+</project>
